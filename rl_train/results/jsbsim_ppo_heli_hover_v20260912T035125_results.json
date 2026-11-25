@@ -1,0 +1,91 @@
+{
+  "engine": "jsbsim-1.3.1",
+  "aircraft": "helispike",
+  "physics": "helispike-0.2-WIP (200Hz FDM + AFCS)",
+  "task": "heli_hover",
+  "task_metric": "mean_alt_err_m",
+  "mode": "direct",
+  "steps": 1000000,
+  "train_seconds": 815.2,
+  "steps_per_second": 1226.6,
+  "overall_success_rate": 0.17,
+  "overall_crash_rate": 0.0,
+  "overall_mean_alt_err_m": 1.55,
+  "procurement_acceptance_target": ">= 85% success, 0% crash",
+  "acceptance_passed": false,
+  "env_config": {
+    "engine": "jsbsim-1.3.1",
+    "aircraft": "helispike",
+    "physics": "helispike-0.2-WIP (200Hz FDM + AFCS)",
+    "action_mode": "direct",
+    "wind_enabled": true,
+    "wind_range_fps": [
+      -6.0,
+      6.0
+    ],
+    "dt": 0.005,
+    "action_repeat": 4,
+    "crash_criteria": "俯仰/滚转 > 60° 或 硬接地 vz < -3 m/s",
+    "success_criteria": "未坠毁 且 满足任务指标"
+  },
+  "train_config": {
+    "algorithm": "PPO",
+    "total_steps": 1000000,
+    "n_envs": 4,
+    "learning_rate": 0.0001,
+    "ent_coef": 0.01,
+    "seed": 123,
+    "eval_seeds": [
+      42,
+      123,
+      7,
+      0,
+      99
+    ],
+    "eval_episodes_per_seed": 20,
+    "ppo_hyperparams": {
+      "n_steps": 1024,
+      "batch_size": 128,
+      "n_epochs": 10,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5
+    },
+    "init_model": "results/checkpoints/jsbsim_ppo_heli_hover_v20260912T031653/jsbsim_ppo_heli_hover_v20260912T031653_2000000_steps.zip"
+  },
+  "seed_results": {
+    "seed_42": {
+      "success_rate": 0.3,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 1.560178330445168,
+      "episodes": 20
+    },
+    "seed_123": {
+      "success_rate": 0.1,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 1.6427871819628976,
+      "episodes": 20
+    },
+    "seed_7": {
+      "success_rate": 0.2,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 1.556610355587302,
+      "episodes": 20
+    },
+    "seed_0": {
+      "success_rate": 0.2,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 1.4670334285876014,
+      "episodes": 20
+    },
+    "seed_99": {
+      "success_rate": 0.05,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 1.5110617106043311,
+      "episodes": 20
+    }
+  },
+  "verified_timestamp": "2026-09-12 04:05:59"
+}

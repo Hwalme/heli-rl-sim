@@ -1,0 +1,49 @@
+{
+  "engine": "jsbsim-1.3.1",
+  "aircraft": "ah1s",
+  "physics": "6-DoF rigid body + BET rotor + ground effect + aero tables",
+  "task": "forward",
+  "task_metric": "mean_speed_err_kt",
+  "mode": "direct",
+  "steps": 600000,
+  "train_seconds": 282.3,
+  "steps_per_second": 2125.2,
+  "overall_success_rate": 0.0,
+  "overall_crash_rate": 0.0,
+  "overall_mean_alt_err_m": 33.65,
+  "procurement_acceptance_target": ">= 85% success, 0% crash",
+  "acceptance_passed": false,
+  "seed_results": {
+    "seed_42": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 34.097545051321774,
+      "episodes": 20
+    },
+    "seed_123": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 33.95066246850712,
+      "episodes": 20
+    },
+    "seed_7": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 32.932272305940636,
+      "episodes": 20
+    },
+    "seed_0": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 34.12354457224991,
+      "episodes": 20
+    },
+    "seed_99": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 33.132533694507124,
+      "episodes": 20
+    }
+  },
+  "verified_timestamp": "2026-08-28 16:15:45"
+}

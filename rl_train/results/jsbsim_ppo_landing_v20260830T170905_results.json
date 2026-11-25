@@ -1,0 +1,29 @@
+{
+  "steps": 500000,
+  "overall_success_rate": 0.0,
+  "overall_crash_rate": 0.0,
+  "acceptance_passed": false,
+  "seed_results": {
+    "seed_42": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    "seed_123": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    "seed_7": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    "seed_0": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    "seed_99": {
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    }
+  },
+  "verified": "2026-08-30 (E 手动评估 landing(b)45度 final3-500k)"
+}

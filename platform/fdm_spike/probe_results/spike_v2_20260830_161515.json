@@ -1,0 +1,20 @@
+{
+ "stamp": "20260830_161515",
+ "roll_sign": -1.0,
+ "pitch_sign": 1.0,
+ "hdg_sign": 1.0,
+ "ff_sign": -1,
+ "sign_T": -1,
+ "sign_S": -1,
+ "probeA": {
+  "peak_yawr_dps": 0.0,
+  "hdg_drift_deg": 5.56,
+  "pass": true
+ },
+ "probeB": {
+  "flip": true,
+  "alt_gain_ft": 0,
+  "pass": false,
+  "note": "hover establishment failed"
+ }
+}

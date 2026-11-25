@@ -1,0 +1,413 @@
+{
+  "model_path": "rl_train\\results\\jsbsim_ppo_direct.zip",
+  "conditions": {
+    "w_calm__m_nominal__d_L0": {
+      "wind": "calm",
+      "mass": "nominal",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1994137751212586,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1994137751212586,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_calm__m_nominal__d_L1": {
+      "wind": "calm",
+      "mass": "nominal",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1994137751212586,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1994137751212586,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_calm__m_heavy15__d_L0": {
+      "wind": "calm",
+      "mass": "heavy15",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1994137751212586,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1994137751212586,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_calm__m_heavy15__d_L1": {
+      "wind": "calm",
+      "mass": "heavy15",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1994137751212586,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1994137751212586,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_calm__m_heavy25__d_L0": {
+      "wind": "calm",
+      "mass": "heavy25",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1994137751212586,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1994137751212586,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_calm__m_heavy25__d_L1": {
+      "wind": "calm",
+      "mass": "heavy25",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1994137751212586,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1994137751212586,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_nominal__d_L0": {
+      "wind": "nominal",
+      "mass": "nominal",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.2040891376362266,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.2040891376362266,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_nominal__d_L1": {
+      "wind": "nominal",
+      "mass": "nominal",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.2040891376362266,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.2040891376362266,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_heavy15__d_L0": {
+      "wind": "nominal",
+      "mass": "heavy15",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.2040891376362266,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.2040891376362266,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_heavy15__d_L1": {
+      "wind": "nominal",
+      "mass": "heavy15",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.2040891376362266,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.2040891376362266,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_heavy25__d_L0": {
+      "wind": "nominal",
+      "mass": "heavy25",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.2040891376362266,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.2040891376362266,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_heavy25__d_L1": {
+      "wind": "nominal",
+      "mass": "heavy25",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.2040891376362266,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.2040891376362266,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_nominal__d_L0": {
+      "wind": "strong",
+      "mass": "nominal",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1599751388930484,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1599751388930484,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_nominal__d_L1": {
+      "wind": "strong",
+      "mass": "nominal",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1599751388930484,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1599751388930484,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_heavy15__d_L0": {
+      "wind": "strong",
+      "mass": "heavy15",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1599751388930484,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1599751388930484,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_heavy15__d_L1": {
+      "wind": "strong",
+      "mass": "heavy15",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1599751388930484,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1599751388930484,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_heavy25__d_L0": {
+      "wind": "strong",
+      "mass": "heavy25",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1599751388930484,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1599751388930484,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_heavy25__d_L1": {
+      "wind": "strong",
+      "mass": "heavy25",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1599751388930484,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1599751388930484,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_nominal__d_L0": {
+      "wind": "gust",
+      "mass": "nominal",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1687767772208,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1687767772208,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_nominal__d_L1": {
+      "wind": "gust",
+      "mass": "nominal",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1687767772208,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1687767772208,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_heavy15__d_L0": {
+      "wind": "gust",
+      "mass": "heavy15",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1687767772208,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1687767772208,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_heavy15__d_L1": {
+      "wind": "gust",
+      "mass": "heavy15",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1687767772208,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1687767772208,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_heavy25__d_L0": {
+      "wind": "gust",
+      "mass": "heavy25",
+      "delay": "L0",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1687767772208,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1687767772208,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_heavy25__d_L1": {
+      "wind": "gust",
+      "mass": "heavy25",
+      "delay": "L1",
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_err": 3.1687767772208,
+      "seed_results": [
+        {
+          "success_rate": 1.0,
+          "crash_rate": 0.0,
+          "mean_err": 3.1687767772208,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    }
+  }
+}

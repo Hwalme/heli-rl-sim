@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-08-30 07:24:59",
+  "method": "scripted V(vertical) vs G(gliding) trajectories, no training",
+  "seed": 42,
+  "fail_rule": "G.success and (R_V - R_G) < 1.0",
+  "audits": {
+    "landing": {
+      "V": {
+        "success": false,
+        "crashed": false,
+        "reward": -271.14,
+        "steps": 1000,
+        "net_drift_m": 25.1,
+        "path_len_m": 71.8,
+        "max_groundspeed_mps": 6.89,
+        "terminal_info": {
+          "agl_m": 0.406,
+          "vz_mps": -0.003,
+          "crashed": false,
+          "landed": false,
+          "success": false,
+          "mean_err": 0.73
+        },
+        "label": "V=垂直下降"
+      },
+      "G": {
+        "success": false,
+        "crashed": false,
+        "reward": -256.31,
+        "steps": 1000,
+        "net_drift_m": 108.2,
+        "path_len_m": 273.3,
+        "max_groundspeed_mps": 21.61,
+        "terminal_info": {
+          "agl_m": 0.827,
+          "vz_mps": -0.052,
+          "crashed": false,
+          "landed": false,
+          "success": false,
+          "mean_err": 0.631
+        },
+        "label": "G=滑翔下降(前推杆0.45)"
+      },
+      "reward_delta": -14.83,
+      "verdict": "PASS"
+    },
+    "hover": {
+      "V": {
+        "success": true,
+        "crashed": false,
+        "reward": 577.25,
+        "steps": 1000,
+        "net_drift_m": 163.4,
+        "path_len_m": 200.8,
+        "max_groundspeed_mps": 13.94,
+        "terminal_info": {
+          "agl": 29.02,
+          "vz": 0.512,
+          "target_alt": 25.479,
+          "alt_err": 3.541,
+          "crashed": false,
+          "mean_alt_err": 10.492
+        },
+        "label": "V=原地悬停意图"
+      },
+      "G": {
+        "success": true,
+        "crashed": false,
+        "reward": 391.26,
+        "steps": 1000,
+        "net_drift_m": 342.6,
+        "path_len_m": 377.8,
+        "max_groundspeed_mps": 34.19,
+        "terminal_info": {
+          "agl": 25.083,
+          "vz": 0.568,
+          "target_alt": 25.479,
+          "alt_err": 0.396,
+          "crashed": false,
+          "mean_alt_err": 12.639
+        },
+        "label": "G=漂移悬停(前推杆0.45)"
+      },
+      "reward_delta": 185.99,
+      "verdict": "PASS"
+    }
+  },
+  "n_fail": 0,
+  "n_audited": 2
+}

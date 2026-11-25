@@ -1,0 +1,10 @@
+[init] rpm=597 agl=0.0 coll=0.5
+[rnd0] sign=+1 gain=1.00 coll0.5 spin=+26.0°/s (on_skids=True)
+[rnd1] sign=-1 gain=1.00 coll0.5 spin=+19.6°/s (on_skids=True)
+[rnd2] sign=-1 gain=1.33 coll0.5 spin=+19.6°/s (on_skids=True)
+[rnd3] sign=+1 gain=1.33 coll0.5 spin=+27.3°/s (on_skids=True)
+[rnd4] sign=+1 gain=0.95 coll0.5 spin=+26.4°/s (on_skids=True)
+[rnd5] sign=+1 gain=0.98 coll0.5 spin=+26.2°/s (on_skids=True)
+[rnd6] sign=+1 gain=0.99 coll0.5 spin=+26.1°/s (on_skids=True)
+[rnd7] sign=+1 gain=1.00 coll0.5 spin=+26.0°/s (on_skids=True)
+=== 地面配平标定收官: "FAIL(未在 8 轮内收敛)" ===

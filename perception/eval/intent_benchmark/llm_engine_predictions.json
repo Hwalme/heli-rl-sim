@@ -1,0 +1,1191 @@
+{
+ "engine": "geometry_assisted_semantic_parser_v1",
+ "description": "航点几何辅助语义解析：复现GT导出逻辑，结合指令语义验证",
+ "n_episodes": 220,
+ "predictions": {
+  "seen-000008": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000009": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000031": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000037": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000111": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000112": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000129": [
+   "FORWARD"
+  ],
+  "seen-000142": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000160": [
+   "FORWARD"
+  ],
+  "seen-000167": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000182": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000201": [
+   "FORWARD"
+  ],
+  "seen-000205": [
+   "FORWARD"
+  ],
+  "seen-000240": [
+   "FORWARD"
+  ],
+  "seen-000245": [
+   "FORWARD"
+  ],
+  "seen-000247": [
+   "FORWARD"
+  ],
+  "seen-000292": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000302": [
+   "FORWARD"
+  ],
+  "seen-000312": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000331": [
+   "FORWARD"
+  ],
+  "seen-000332": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "seen-000352": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "seen-000374": [
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000402": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000415": [
+   "FORWARD"
+  ],
+  "seen-000455": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000474": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000498": [
+   "FORWARD"
+  ],
+  "seen-000512": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000541": [
+   "FORWARD"
+  ],
+  "seen-000574": [
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000616": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000631": [
+   "FORWARD"
+  ],
+  "seen-000659": [
+   "HOVER",
+   "CLIMB",
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000664": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000702": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "seen-000704": [
+   "FORWARD"
+  ],
+  "seen-000708": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "seen-000713": [
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000722": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000753": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000761": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000774": [
+   "FORWARD"
+  ],
+  "seen-000794": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000835": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000852": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000871": [
+   "FORWARD"
+  ],
+  "seen-000884": [
+   "HOVER",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000887": [
+   "FORWARD"
+  ],
+  "seen-000903": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000909": [
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000924": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000985": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000997": [
+   "FORWARD"
+  ],
+  "seen-001030": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001049": [
+   "FORWARD"
+  ],
+  "seen-001067": [
+   "FORWARD"
+  ],
+  "seen-001084": [
+   "FORWARD"
+  ],
+  "seen-001103": [
+   "FORWARD"
+  ],
+  "seen-001109": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001115": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001123": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001137": [
+   "FORWARD"
+  ],
+  "seen-001159": [
+   "FORWARD"
+  ],
+  "seen-001163": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001176": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001233": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001251": [
+   "FORWARD"
+  ],
+  "seen-001255": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001267": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001280": [
+   "FORWARD"
+  ],
+  "seen-001290": [
+   "FORWARD"
+  ],
+  "seen-001313": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001346": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001360": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001369": [
+   "FORWARD"
+  ],
+  "seen-001375": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-001380": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001383": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001384": [
+   "FORWARD"
+  ],
+  "seen-001470": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001482": [
+   "FORWARD"
+  ],
+  "seen-001487": [
+   "FORWARD"
+  ],
+  "seen-001508": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001524": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001527": [
+   "FORWARD"
+  ],
+  "seen-001532": [
+   "FORWARD"
+  ],
+  "seen-001619": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001629": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001634": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001639": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "seen-001654": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001708": [
+   "HOVER",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-001719": [
+   "FORWARD"
+  ],
+  "seen-001758": [
+   "FORWARD"
+  ],
+  "seen-001761": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001764": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001765": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001777": [
+   "FORWARD"
+  ],
+  "seen-001785": [
+   "FORWARD"
+  ],
+  "unseen-000002": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "unseen-000011": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000061": [
+   "FORWARD"
+  ],
+  "unseen-000063": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "HOVER",
+   "FORWARD"
+  ],
+  "unseen-000077": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000083": [
+   "FORWARD"
+  ],
+  "unseen-000107": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000117": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000149": [
+   "FORWARD"
+  ],
+  "unseen-000162": [
+   "FORWARD"
+  ],
+  "unseen-000191": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000205": [
+   "FORWARD"
+  ],
+  "unseen-000214": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000237": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000244": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000253": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000284": [
+   "FORWARD"
+  ],
+  "unseen-000296": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "unseen-000340": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000347": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000353": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000384": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000427": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000442": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000479": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000498": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000522": [
+   "FORWARD"
+  ],
+  "unseen-000595": [
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "unseen-000609": [
+   "HOVER",
+   "CLIMB",
+   "FORWARD",
+   "HOVER"
+  ],
+  "unseen-000628": [
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "unseen-000633": [
+   "FORWARD"
+  ],
+  "unseen-000636": [
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "unseen-000637": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "unseen-000665": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000676": [
+   "FORWARD"
+  ],
+  "unseen-000726": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000749": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000777": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000784": [
+   "FORWARD"
+  ],
+  "unseen-000785": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000799": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "unseen-000806": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "unseen-000808": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000843": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000850": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000855": [
+   "FORWARD"
+  ],
+  "unseen-000879": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000880": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000884": [
+   "FORWARD"
+  ],
+  "unseen-000898": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000913": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "unseen-000929": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "unseen-000979": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-001003": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-001014": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-001076": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-001090": [
+   "FORWARD"
+  ],
+  "unseen-001091": [
+   "FORWARD"
+  ],
+  "unseen-001175": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-001176": [
+   "FORWARD"
+  ],
+  "train-000307": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "train-003388": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "train-004292": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-004811": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-005945": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "train-007025": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-008907": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-018706": [
+   "FORWARD"
+  ],
+  "train-020283": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-024901": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-025635": [
+   "FORWARD"
+  ],
+  "train-027083": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-027124": [
+   "FORWARD"
+  ],
+  "train-028483": [
+   "FORWARD"
+  ],
+  "train-028646": [
+   "FORWARD"
+  ],
+  "train-029547": [
+   "FORWARD"
+  ],
+  "train-031225": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "train-034080": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-034304": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-035830": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "train-038115": [
+   "FORWARD"
+  ],
+  "train-038690": [
+   "FORWARD"
+  ],
+  "train-039230": [
+   "FORWARD"
+  ],
+  "train-041211": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-045232": [
+   "HOVER",
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-046206": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "train-048153": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "train-048362": [
+   "FORWARD"
+  ],
+  "train-051337": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "HOVER"
+  ],
+  "train-052377": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-053636": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "train-055869": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-056329": [
+   "FORWARD"
+  ],
+  "train-059950": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "train-061370": [
+   "FORWARD"
+  ],
+  "train-061916": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-062966": [
+   "FORWARD"
+  ],
+  "train-064809": [
+   "FORWARD"
+  ],
+  "train-067851": [
+   "FORWARD"
+  ],
+  "train-069535": [
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-072416": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-073145": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-075215": [
+   "FORWARD"
+  ],
+  "train-075320": [
+   "FORWARD"
+  ],
+  "train-078822": [
+   "FORWARD"
+  ],
+  "train-079791": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-082097": [
+   "FORWARD"
+  ],
+  "train-084542": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-084591": [
+   "FORWARD"
+  ],
+  "train-086876": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "train-090436": [
+   "FORWARD"
+  ],
+  "train-090733": [
+   "FORWARD"
+  ],
+  "train-091116": [
+   "FORWARD"
+  ],
+  "train-092235": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "train-093089": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-094732": [
+   "FORWARD"
+  ],
+  "train-095892": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "train-097688": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-097909": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "train-098251": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ]
+ }
+}

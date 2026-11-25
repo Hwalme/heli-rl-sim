@@ -1,0 +1,30 @@
+{"result": "not-ready", "score": 0.0, "ep": 0, "rpm": 0.0, "roll": 0.0, "pitch": 0.0, "agl": 0.224299327160828, "crashed": 1.0, "iter": 0}
+{"result": "not-ready", "score": 0.0, "ep": 1, "rpm": 0.0, "roll": 0.0, "pitch": 0.0, "agl": 0.224299327160828, "crashed": 1.0, "iter": 0}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 0}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 0}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 0}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 0}
+{"result": "not-ready", "score": 0.0, "ep": 0, "rpm": 0.0, "roll": 0.0, "pitch": 0.0, "agl": 0.224299327160828, "crashed": 1.0, "iter": 1}
+{"result": "not-ready", "score": 0.0, "ep": 1, "rpm": 0.0, "roll": 0.0, "pitch": 0.0, "agl": 0.224299327160828, "crashed": 1.0, "iter": 1}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 1}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 1}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 1}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 1}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 2}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 2}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 2}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 2}
+{"result": "timeout", "score": 0.058823529411764705, "t": 240.39050364494324, "max_phase": 2.0, "ep": 0, "params": {"ffw": 1.7729837848607788, "ramp_fast": 0.05558108751938996, "punch": 0.45555476052106086, "yaw_hold": 1.2039295464070403, "damper": 0.9917524237287215}, "tag": "C", "iter": 2}
+{"result": "not-ready", "score": 0.0, "ep": 1, "rpm": 0.0, "roll": 0.08822373924005641, "pitch": 1.330321707615496, "agl": 4.011186404285052, "crashed": 0.0, "iter": 2}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 3}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 3}
+{"result": "worker-error", "score": 0.0, "ep": 0, "iter": 3}
+{"result": "worker-error", "score": 0.0, "ep": 1, "iter": 3}
+{"result": "not-ready", "score": 0.0, "ep": 0, "rpm": 0.0, "roll": 0.08781209361053753, "pitch": 1.329734311346875, "agl": 4.01122701345045, "crashed": 0.0, "iter": 3}
+{"result": "not-ready", "score": 0.0, "ep": 1, "rpm": 0.0, "roll": 0.08779332393053323, "pitch": 1.329219379116479, "agl": 4.0112787231981, "crashed": 0.0, "iter": 3}
+{"result": "no-instance", "score": 0.0, "ep": 0, "iter": 4}
+{"result": "no-instance", "score": 0.0, "ep": 1, "iter": 4}
+{"result": "flip", "score": 0.058823529411764705, "t": 10.406324625015259, "max_phase": 2.0, "flip_t": 10.406323671340942, "ep": 0, "params": {"ffw": 1.2314258995519067, "ramp_fast": 0.05598866900864923, "punch": 0.4617369186719244, "yaw_hold": 1.128958688218273, "damper": 0.9910529038085667}, "tag": "B", "iter": 4}
+{"result": "not-ready", "score": 0.0, "ep": 1, "rpm": 0.0, "roll": 160.829207631483, "pitch": -10.1142662125863, "agl": -0.3924664421001888, "crashed": 0.0, "iter": 4}
+{"result": "not-ready", "score": 0.0, "ep": 0, "rpm": 0.0, "roll": 0.08817251282128133, "pitch": 1.327944268175802, "agl": 4.011397705821264, "crashed": 0.0, "iter": 4}
+{"result": "not-ready", "score": 0.0, "ep": 1, "rpm": 0.0, "roll": 0.0880476884461567, "pitch": 1.327423359529883, "agl": 4.011447909459764, "crashed": 0.0, "iter": 4}

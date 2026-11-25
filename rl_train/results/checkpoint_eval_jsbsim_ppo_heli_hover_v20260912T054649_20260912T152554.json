@@ -1,0 +1,153 @@
+{
+  "ckpt_dir": "rl_train\\results\\checkpoints\\jsbsim_ppo_heli_hover_v20260912T054649",
+  "task": "heli_hover",
+  "mode": "direct",
+  "screen": [
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_500000_steps.zip",
+      "success_rate": 0.6,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_1750000_steps.zip",
+      "success_rate": 0.5,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_750000_steps.zip",
+      "success_rate": 0.5,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_1000000_steps.zip",
+      "success_rate": 0.4,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_1250000_steps.zip",
+      "success_rate": 0.3,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_250000_steps.zip",
+      "success_rate": 0.3,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_1500000_steps.zip",
+      "success_rate": 0.2,
+      "crash_rate": 0.0
+    }
+  ],
+  "final": [
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_500000_steps.zip",
+      "overall_success_rate": 0.6599999999999999,
+      "overall_crash_rate": 0.0,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.6,
+          "crash_rate": 0.0
+        },
+        "seed_123": {
+          "success_rate": 0.5,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.8,
+          "crash_rate": 0.0
+        },
+        "seed_0": {
+          "success_rate": 0.7,
+          "crash_rate": 0.0
+        },
+        "seed_99": {
+          "success_rate": 0.7,
+          "crash_rate": 0.0
+        }
+      }
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_750000_steps.zip",
+      "overall_success_rate": 0.43999999999999995,
+      "overall_crash_rate": 0.0,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.5,
+          "crash_rate": 0.0
+        },
+        "seed_123": {
+          "success_rate": 0.4,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.5,
+          "crash_rate": 0.0
+        },
+        "seed_0": {
+          "success_rate": 0.5,
+          "crash_rate": 0.0
+        },
+        "seed_99": {
+          "success_rate": 0.3,
+          "crash_rate": 0.0
+        }
+      }
+    },
+    {
+      "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_1750000_steps.zip",
+      "overall_success_rate": 0.38,
+      "overall_crash_rate": 0.0,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.5,
+          "crash_rate": 0.0
+        },
+        "seed_123": {
+          "success_rate": 0.3,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.4,
+          "crash_rate": 0.0
+        },
+        "seed_0": {
+          "success_rate": 0.4,
+          "crash_rate": 0.0
+        },
+        "seed_99": {
+          "success_rate": 0.3,
+          "crash_rate": 0.0
+        }
+      }
+    }
+  ],
+  "best": {
+    "checkpoint": "jsbsim_ppo_heli_hover_v20260912T054649_500000_steps.zip",
+    "overall_success_rate": 0.6599999999999999,
+    "overall_crash_rate": 0.0,
+    "seed_results": {
+      "seed_42": {
+        "success_rate": 0.6,
+        "crash_rate": 0.0
+      },
+      "seed_123": {
+        "success_rate": 0.5,
+        "crash_rate": 0.0
+      },
+      "seed_7": {
+        "success_rate": 0.8,
+        "crash_rate": 0.0
+      },
+      "seed_0": {
+        "success_rate": 0.7,
+        "crash_rate": 0.0
+      },
+      "seed_99": {
+        "success_rate": 0.7,
+        "crash_rate": 0.0
+      }
+    }
+  },
+  "timestamp": "2026-09-12 15:25:54"
+}

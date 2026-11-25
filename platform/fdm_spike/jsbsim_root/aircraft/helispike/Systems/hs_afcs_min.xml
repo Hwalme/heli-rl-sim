@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!-- ISOLATION TEST: collective-only AFCS (no velocities/* references).
+     If run_ic passes with this file, the velocity references were the blocker. -->
+<system name="hs_afcs_min">
+
+  <property value="1.0"> fcs/hs/ff-sign </property>
+  <property value="1.0"> fcs/hs/ff-gain </property>
+  <property value="1.0"> fcs/hs/afcs-enable </property>
+  <property value="0.0"> fcs/collective-cmd-norm </property>
+
+  <channel name="collective">
+    <fcs_function name="fcs/hs/collective-ctrl">
+      <function>
+        <table>
+          <independentVar>fcs/collective-cmd-norm</independentVar>
+          <tableData>
+            0.0   0.0
+            1.0   0.30
+          </tableData>
+        </table>
+      </function>
+      <output> propulsion/engine/collective-ctrl-rad </output>
+    </fcs_function>
+  </channel>
+
+  <channel name="yaw_afcs">
+    <fcs_function name="fcs/hs/antitorque-ff">
+      <function>
+        <product>
+          <property> fcs/hs/ff-sign </property>
+          <property> fcs/hs/ff-gain </property>
+          <property> fcs/hs/afcs-enable </property>
+          <table>
+            <independentVar>fcs/collective-cmd-norm</independentVar>
+            <tableData>
+              0.0    0.00
+              0.3    0.06
+              0.5    0.16
+              0.7    0.26
+              0.85   0.33
+              1.0    0.40
+            </tableData>
+          </table>
+        </product>
+      </function>
+    </fcs_function>
+
+    <pure_gain name="fcs/hs/pedal-gain">
+      <input> fcs/rudder-cmd-norm </input>
+      <gain> 0.35 </gain>
+    </pure_gain>
+
+    <summer name="fcs/hs/antitorque-sum">
+      <input> fcs/hs/antitorque-ff </input>
+      <input> fcs/hs/pedal-gain </input>
+      <clipto>
+        <min> -0.70 </min>
+        <max>  0.70 </max>
+      </clipto>
+      <output> propulsion/engine[1]/antitorque-ctrl-rad </output>
+    </summer>
+  </channel>
+
+  <channel name="pitch_roll_centering">
+    <pure_gain name="fcs/hs/ele-center">
+      <input> fcs/elevator-cmd-norm </input>
+      <gain> 1.0 </gain>
+      <output> propulsion/engine/longitudinal-ctrl-rad </output>
+    </pure_gain>
+    <fcs_function name="fcs/hs/roll-trim-from-ff">
+      <description> T2-1a: roll trim expanded to 2D (collective x airspeed)
+        to fix >23kt forward-flight roll divergence. Default values are
+        engineering estimates (T2 probe 03b could not calibrate due to
+        r-radps DEAD - see INTERFACE_CONTRACT_v1 §3.2). The operator
+        should recalibrate via forward-flight roll-probe. </description>
+      <function>
+        <product>
+          <property> fcs/hs/ff-sign </property>
+          <table>
+            <independentVar lookup="row">fcs/collective-cmd-norm</independentVar>
+            <independentVar lookup="column">velocities/ve-kts</independentVar>
+            <tableData>
+                     0    30    60
+              0.0    0.00  0.00  0.00
+              0.5    0.012 -0.020 -0.050
+              0.7    0.024 -0.030 -0.080
+              1.0    0.036 -0.040 -0.100
+            </tableData>
+          </table>
+        </product>
+      </function>
+    </fcs_function>
+    <pure_gain name="fcs/hs/ail-center">
+      <input> fcs/aileron-cmd-norm </input>
+      <gain> 1.0 </gain>
+    </pure_gain>
+    <summer name="fcs/hs/lat-sum">
+      <input> fcs/hs/ail-center </input>
+      <input> fcs/hs/roll-trim-from-ff </input>
+      <clipto>
+        <min> -0.30 </min>
+        <max> 0.30 </max>
+      </clipto>
+      <output> propulsion/engine/lateral-ctrl-rad </output>
+    </summer>
+  </channel>
+
+
+  <channel name="rpm_governor">
+    <!-- Rotor RPM governor: throttle = 0.64 + 0.36 * clamp(1 - 2.8*(rpm-530)/530, 0, 1) -->
+    <fcs_function name="fcs/hs/gov-throttle">
+      <function>
+        <sum>
+          <value> 0.64 </value>
+          <product>
+            <value> 0.36 </value>
+            <table>
+              <independentVar>propulsion/engine[0]/rotor-rpm</independentVar>
+              <tableData>
+                470.0   1.0
+                500.0   0.80
+                530.0   0.35
+                555.0   0.10
+                575.0   0.0
+              </tableData>
+            </table>
+          </product>
+        </sum>
+      </function>
+      <clipto>
+        <min> 0.00 </min>
+        <max> 1.00 </max>
+      </clipto>
+      <output> fcs/throttle-cmd-norm[0] </output>
+    </fcs_function>
+  </channel>
+</system>

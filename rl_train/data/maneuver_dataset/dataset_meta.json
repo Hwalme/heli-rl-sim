@@ -1,0 +1,54 @@
+{
+  "dataset_name": "low_altitude_embodied_maneuver_dataset",
+  "contract_target": "指标2: 操纵数据有效时长 >= 1000h",
+  "effective_duration_definition": "有效时长口径 = 策略成功回合的飞行时长累计; 失败回合留档记无效",
+  "policy_generation": "Generation 1 (AH-1S 6-DoF Closed-Loop Policies)",
+  "updated_at": "2026-09-06T04:34:29.230348+08:00",
+  "total_shards": 20,
+  "total_episodes": 2000,
+  "total_frames": 1317562,
+  "overall_success_rate": 0.6675,
+  "overall_crash_rate": 0.0,
+  "nan_rate": 0.0,
+  "total_effective_hours": 4.2217,
+  "total_invalid_hours": 3.0981,
+  "total_sim_hours": 7.3198,
+  "effective_target_1000h_progress_pct": 0.4222,
+  "task_distribution": {
+    "takeoff_hard": {
+      "desc": "起飞(地面->15m, 漂移<30m)",
+      "model": "jsbsim_ppo_takeoff_hard_v20260830T091717.zip",
+      "episodes": 400,
+      "successes": 385,
+      "success_rate": 0.9625
+    },
+    "landing": {
+      "desc": "定点降落(软接地+航向/漂移/近地门)",
+      "model": "jsbsim_ppo_landing_gold_gen1.zip",
+      "episodes": 400,
+      "successes": 179,
+      "success_rate": 0.4475
+    },
+    "hover": {
+      "desc": "起飞与稳定悬停",
+      "model": "jsbsim_ppo_direct.zip",
+      "episodes": 400,
+      "successes": 160,
+      "success_rate": 0.4
+    },
+    "forward": {
+      "desc": "前飞速度跟踪(30kt)",
+      "model": "jsbsim_ppo_forward.zip",
+      "episodes": 400,
+      "successes": 211,
+      "success_rate": 0.5275
+    },
+    "roll": {
+      "desc": "滚转机动(压坡度/改平)",
+      "model": "jsbsim_ppo_roll.zip",
+      "episodes": 400,
+      "successes": 400,
+      "success_rate": 1.0
+    }
+  }
+}

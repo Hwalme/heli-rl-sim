@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
+<fdm_config
+  name="helispike"
+  version="2.0"
+  release="SPIKE"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
+
+<!-- Rate properties declared E0PROPS-style so FCS references resolve at IC
+     (jsbsim 1.3.1 creates these lazily; custom-root models hit them before
+     the standard binding). Same pattern as al3.xml's E0PROPS block. -->
+<!-- NOTE: this custom-root exec cannot resolve velocities/*-radps in XML at
+     run_ic (jsbsim 1.3.1 quirk), so rate damping lives in the probe
+     harness SAS layer (platform/fdm_spike/probe_fdm_spike.py), not in XML. -->
+
+  <fileheader>
+    <author>Track B director session (D2 ledger track b, FDM SPIKE 2026-08-30)</author>
+    <filecreationdate>2026-08-30</filecreationdate>
+    <version>0.1</version>
+    <description>
+      Minimal self-built helicopter FDM (R22 Beta II class) with industrial
+      FGRotor main+tail rotors, synthetic turboshaft engine, and a BUILT-IN
+      collective x airspeed trim table (AFCS) - the piece JSBSim issue #1139
+      showed missing from stock helicopter FDMs.
+      Standalone/headless: no external FG systems. Probes run via jsbsim python.
+      Physics reference for magnitudes: R22 Beta II specs (_fdm_src/R22 header);
+      rotor parameter structure: Alouette-III Engines/*.xml.
+      SPIKE scope: hover stability + collective step + trim sweep. Not a
+      certified model; released SPIKE grade.
+    </description>
+    <license>
+      <licenseName>project internal (SPIKE)</licenseName>
+    </license>
+  </fileheader>
+
+  <metrics>
+    <wingarea  unit="M2">  0.0  </wingarea>
+    <wingspan  unit="M">   0.0  </wingspan>
+    <wing_incidence unit="DEG"> 0 </wing_incidence>
+    <chord     unit="M">   0.0  </chord>
+    <htailarea unit="M2">  0.30 </htailarea>
+    <htailarm  unit="M">   3.80 </htailarm>
+    <vtailarea unit="M2">  0.25 </vtailarea>
+    <vtailarm  unit="M">   4.20 </vtailarm>
+    <location name="AERORP" unit="M">
+      <x> 0.0 </x> <y> 0.0 </y> <z> 0.6 </z>
+    </location>
+    <location name="EYEPOINT" unit="M">
+      <x> -0.90 </x> <y> 0.0 </y> <z> 0.30 </z>
+    </location>
+    <location name="VRP" unit="M">
+      <x> 0.0 </x> <y> 0.0 </y> <z> 0.0 </z>
+    </location>
+  </metrics>
+
+  <mass_balance>
+    <ixx unit="SLUG*FT2">  480  </ixx>
+    <iyy unit="SLUG*FT2"> 1150  </iyy>
+    <izz unit="SLUG*FT2">  800  </izz>
+    <ixz unit="SLUG*FT2">    0  </ixz>
+    <emptywt unit="LBS">   900  </emptywt>
+    <location name="CG" unit="M">
+      <x> 0.0 </x> <y> 0.0 </y> <z> -0.55 </z>
+    </location>
+    <pointmass name="Pilot">
+      <weight unit="LBS"> 170 </weight>
+      <location name="PilotPos" unit="M">
+        <x> -0.85 </x> <y> 0.0 </y> <z> 0.0 </z>
+      </location>
+    </pointmass>
+  </mass_balance>
+
+  <ground_reactions>
+    <contact type="BOGEY" name="skid_front_left">
+      <location unit="M">
+        <x> -0.75 </x> <y> -0.93 </y> <z> -1.15 </z>
+      </location>
+      <static_friction>  0.85 </static_friction>
+      <dynamic_friction> 0.60 </dynamic_friction>
+      <rolling_friction> 0.05 </rolling_friction>
+      <spring_coeff unit="LBS/FT">      4000 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">  800 </damping_coeff>
+      <retractable>0</retractable>
+      <brake_group> NONE </brake_group>
+    </contact>
+    <contact type="BOGEY" name="skid_front_right">
+      <location unit="M">
+        <x> -0.75 </x> <y> 0.93 </y> <z> -1.15 </z>
+      </location>
+      <static_friction>  0.85 </static_friction>
+      <dynamic_friction> 0.60 </dynamic_friction>
+      <rolling_friction> 0.05 </rolling_friction>
+      <spring_coeff unit="LBS/FT">      4000 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">  800 </damping_coeff>
+      <retractable>0</retractable>
+      <brake_group> NONE </brake_group>
+    </contact>
+    <contact type="BOGEY" name="skid_rear_left">
+      <location unit="M">
+        <x> 0.95 </x> <y> -0.93 </y> <z> -1.15 </z>
+      </location>
+      <static_friction>  0.85 </static_friction>
+      <dynamic_friction> 0.60 </dynamic_friction>
+      <rolling_friction> 0.05 </rolling_friction>
+      <spring_coeff unit="LBS/FT">      4000 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">  800 </damping_coeff>
+      <retractable>0</retractable>
+      <brake_group> NONE </brake_group>
+    </contact>
+    <contact type="BOGEY" name="skid_rear_right">
+      <location unit="M">
+        <x> 0.95 </x> <y> 0.93 </y> <z> -1.15 </z>
+      </location>
+      <static_friction>  0.85 </static_friction>
+      <dynamic_friction> 0.60 </dynamic_friction>
+      <rolling_friction> 0.05 </rolling_friction>
+      <spring_coeff unit="LBS/FT">      4000 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">  800 </damping_coeff>
+      <retractable>0</retractable>
+      <brake_group> NONE </brake_group>
+    </contact>
+    <contact type="STRUCTURE" name="tail_bumper">
+      <location unit="M">
+        <x> 4.30 </x> <y> 0.0 </y> <z> -0.35 </z>
+      </location>
+      <static_friction>  0.5 </static_friction>
+      <dynamic_friction> 0.4 </dynamic_friction>
+      <rolling_friction> 0.3 </rolling_friction>
+      <spring_coeff unit="LBS/FT">      1000 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">  200 </damping_coeff>
+      <retractable>0</retractable>
+      <brake_group> NONE </brake_group>
+    </contact>
+    <contact type="STRUCTURE" name="rotor_head">
+      <location unit="M">
+        <x> 0.0 </x> <y> 0.0 </y> <z> 1.55 </z>
+      </location>
+      <static_friction>  0.5 </static_friction>
+      <dynamic_friction> 0.4 </dynamic_friction>
+      <rolling_friction> 0.3 </rolling_friction>
+      <spring_coeff unit="LBS/FT">      1000 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC">  200 </damping_coeff>
+      <retractable>0</retractable>
+      <brake_group> NONE </brake_group>
+    </contact>
+  </ground_reactions>
+
+  <propulsion>
+    <engine file="hs_turbine">
+      <location unit="M">
+        <x> 0.20 </x> <y> 0.0 </y> <z> 0.10 </z>
+      </location>
+      <feed>0</feed>
+      <thruster file="hs_main_rotor">
+        <location unit="M">
+          <x> 0.0 </x> <y> 0.0 </y> <z> 1.55 </z>
+        </location>
+        <orient unit="DEG">
+          <roll>  0.0  </roll>
+          <pitch> 90.0 </pitch>
+          <yaw>   0.0  </yaw>
+        </orient>
+        <sense> -1.0 </sense>
+      </thruster>
+    </engine>
+    <engine file="hs_dummy">
+      <location unit="M">
+        <x> 4.20 </x> <y> 0.20 </y> <z> 0.30 </z>
+      </location>
+      <feed>0</feed>
+      <thruster file="hs_tail_rotor">
+        <location unit="M">
+          <x> 4.60 </x> <y> 0.25 </y> <z> 0.30 </z>
+        </location>
+        <orient unit="DEG">
+          <roll>  0.0  </roll>
+          <pitch> 0.0  </pitch>
+          <yaw>   91.5 </yaw>
+        </orient>
+        <sense> 1.0 </sense>
+      </thruster>
+    </engine>
+    <tank type="FUEL" number="0">
+      <location unit="M">
+        <x> 0.0 </x> <y> 0.0 </y> <z> -0.40 </z>
+      </location>
+      <capacity unit="LBS"> 120 </capacity>
+      <contents unit="LBS">  90 </contents>
+    </tank>
+  </propulsion>
+
+  <system file="hs_afcs_min"/>
+
+  <aerodynamics>
+    <axis name="DRAG">
+      <function name="aero/force/flatplate-drag">
+        <description> Fuselage flat-plate drag (spike: hover-only fidelity) </description>
+        <product>
+          <property> aero/qbar-psf </property>
+          <value> 28.6 </value>
+        </product>
+      </function>
+    </axis>
+  </aerodynamics>
+
+  <flight_control name="helispike_fcs">
+  </flight_control>
+
+</fdm_config>

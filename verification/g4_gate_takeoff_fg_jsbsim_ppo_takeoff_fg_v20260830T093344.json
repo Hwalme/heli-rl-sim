@@ -1,0 +1,41 @@
+{
+  "file": "rl_train\\results\\jsbsim_ppo_takeoff_fg_v20260830T093344_trajectory.json",
+  "task": "takeoff_fg",
+  "verdict": "PASS",
+  "n_total": 15,
+  "n_success": 2,
+  "replayable": [
+    [
+      "seed_42",
+      0,
+      {
+        "net_drift_m": 14.9,
+        "path_len_m": 15.2,
+        "heading_drift_deg": 121.8,
+        "max_alt_m": 25.4,
+        "end_alt_m": 25.4,
+        "max_hs_mps": 4.59,
+        "end_vz_mps": 1.45,
+        "end_hs_mps": 4.58,
+        "duration_s": 5.0,
+        "position_source": "truth"
+      }
+    ],
+    [
+      "seed_0",
+      0,
+      {
+        "net_drift_m": 8.9,
+        "path_len_m": 9.2,
+        "heading_drift_deg": 65.9,
+        "max_alt_m": 27.2,
+        "end_alt_m": 27.2,
+        "max_hs_mps": 2.79,
+        "end_vz_mps": 4.07,
+        "end_hs_mps": 2.79,
+        "duration_s": 4.3,
+        "position_source": "truth"
+      }
+    ]
+  ]
+}

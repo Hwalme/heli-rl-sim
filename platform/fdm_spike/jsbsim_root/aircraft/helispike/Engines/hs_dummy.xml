@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<electric_engine name="hs_dummy">
+  <power unit="HP"> 1.00 </power>
+</electric_engine>

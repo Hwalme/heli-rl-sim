@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+  helispike tail rotor — FGRotor with TAIL control mapping.
+
+  Sized for the main-rotor torque: at hover the main rotor needs ~1000 ft-lb
+  of shaft torque; the tail (arm ~15 ft to CG) must make ~70 lb of side thrust.
+  Tail: diameter 1.07 m (3.5 ft), 2 blades, chord 0.10 m, 3200 rpm.
+  Driven by the 1 hp dummy electric engine (Alouette trick) so the tail rotor
+  is independent of the main turbine; control via antitorque-ctrl-rad.
+-->
+<rotor name="hs_tail_rotor">
+
+  <diameter unit="M">    1.07  </diameter>
+  <numblades>            2     </numblades>
+  <gearratio>            10.47 </gearratio>
+  <nominalrpm>           3200.0</nominalrpm>
+  <minrpm>               0     </minrpm>
+  <chord unit="M">       0.10  </chord>
+  <flappingmoment unit="SLUG*FT2">  2.0   </flappingmoment>
+  <liftcurveslope>       6.0   </liftcurveslope>
+  <twist>                0.0   </twist>
+  <massmoment>           0.8   </massmoment>
+  <tiplossfactor>        1.00  </tiplossfactor>
+  <inflowlag>            0.3   </inflowlag>
+  <hingeoffset unit="FT">0.015 </hingeoffset>
+
+  <ExternalRPM>          0     </ExternalRPM>
+  <controlmap>           TAIL  </controlmap>
+
+</rotor>

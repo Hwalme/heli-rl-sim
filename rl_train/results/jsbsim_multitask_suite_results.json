@@ -1,0 +1,142 @@
+{
+  "suite": "jsbsim-ah1s-multitask-maneuvers",
+  "procurement_item": "需求5: 全数字仿真自主飞行动作, 成功率>=85%, 覆盖起飞/悬停/前飞/滚转/偏航/降落",
+  "maneuvers": {
+    "hover": {
+      "maneuver": "起飞与稳定悬停",
+      "status": "pass",
+      "required": true,
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "episodes": 100,
+      "seeds": [
+        "seed_0",
+        "seed_123",
+        "seed_42",
+        "seed_7",
+        "seed_99"
+      ],
+      "metric": "mean_alt_err_m",
+      "metric_value": 3.31,
+      "results_file": "jsbsim_ppo_direct_results.json"
+    },
+    "takeoff": {
+      "maneuver": "起飞(地面→15m, 漂移<30m)",
+      "status": "pass",
+      "required": true,
+      "success_rate": 0.9800000000000001,
+      "crash_rate": 0.0,
+      "episodes": 100,
+      "seeds": [
+        "seed_0",
+        "seed_123",
+        "seed_42",
+        "seed_7",
+        "seed_99"
+      ],
+      "metric": "mean_alt_err_m",
+      "metric_value": 0.0,
+      "results_file": "jsbsim_ppo_takeoff_hard_v20260830T091717_results.json"
+    },
+    "forward": {
+      "maneuver": "前飞速度跟踪 (30kt)",
+      "status": "pass",
+      "required": true,
+      "success_rate": 0.95,
+      "crash_rate": 0.0,
+      "episodes": 100,
+      "seeds": [
+        "seed_0",
+        "seed_123",
+        "seed_42",
+        "seed_7",
+        "seed_99"
+      ],
+      "metric": "mean_speed_err_kt",
+      "metric_value": 2.33,
+      "results_file": "jsbsim_ppo_forward_results.json"
+    },
+    "roll": {
+      "maneuver": "滚转机动 (压坡度/改平)",
+      "status": "pass",
+      "required": true,
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "episodes": 100,
+      "seeds": [
+        "seed_0",
+        "seed_123",
+        "seed_42",
+        "seed_7",
+        "seed_99"
+      ],
+      "metric": "mean_bank_err_deg",
+      "metric_value": 1.97,
+      "results_file": "jsbsim_ppo_roll_results.json"
+    },
+    "yaw": {
+      "maneuver": "偏航机动 (航向改变/保持)",
+      "status": "pass",
+      "required": true,
+      "success_rate": 0.9800000000000001,
+      "crash_rate": 0.0,
+      "episodes": 100,
+      "seeds": [
+        "seed_0",
+        "seed_123",
+        "seed_42",
+        "seed_7",
+        "seed_99"
+      ],
+      "metric": "mean_heading_err_deg",
+      "metric_value": 1.89,
+      "results_file": "jsbsim_ppo_yaw_results.json"
+    },
+    "landing": {
+      "maneuver": "定点降落 (软接地+航向/漂移/近地门)",
+      "status": "pass",
+      "required": true,
+      "success_rate": 0.8799999999999999,
+      "crash_rate": 0.0,
+      "episodes": 100,
+      "seeds": [
+        "seed_0",
+        "seed_123",
+        "seed_42",
+        "seed_7",
+        "seed_99"
+      ],
+      "metric": "mean_descent_profile_err_mps",
+      "metric_value": 0.12,
+      "results_file": "jsbsim_ppo_landing_250k_g2verify_results.json"
+    },
+    "waypoint": {
+      "maneuver": "航路点导航 (航线机动, 扩展)",
+      "status": "pass",
+      "required": false,
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "episodes": 100,
+      "seeds": [
+        "seed_0",
+        "seed_123",
+        "seed_42",
+        "seed_7",
+        "seed_99"
+      ],
+      "metric": "mean_wp_miss_dist_m",
+      "metric_value": 14.93,
+      "results_file": "jsbsim_ppo_waypoint_results.json"
+    }
+  },
+  "maneuvers_passed": 6,
+  "maneuvers_required_total": 6,
+  "extension_passed": [
+    "waypoint"
+  ],
+  "overall_success_rate": 0.965,
+  "overall_crash_rate": 0.0,
+  "acceptance_passed": true,
+  "acceptance_rule": "覆盖验收6动作的5个必需任务各自多种子(5 seeds x 20 eps)成功率>=85% 且坠毁率=0; 扩展项不设门禁",
+  "verified_timestamp": "2026-08-31 05:47:34"
+}

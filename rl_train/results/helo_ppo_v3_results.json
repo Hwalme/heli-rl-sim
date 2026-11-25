@@ -1,0 +1,9 @@
+{
+  "mode": "direct",
+  "steps": 1000000,
+  "train_seconds": 185.0,
+  "steps_per_second": 5404,
+  "success_rate": 1.0,
+  "crash_rate": 0.0,
+  "mean_alt_err_m": 6.73
+}

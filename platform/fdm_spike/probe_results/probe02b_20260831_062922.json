@@ -1,0 +1,129 @@
+{
+ "stamp": "20260831_062922",
+ "version": "helispike 0.2 (probe_02b 流程修正版)",
+ "hover_coll_calibrated": 0.846,
+ "forward_trim_points": [
+  {
+   "pitch_cmd_deg": -3.0,
+   "ve_kts": 0.0,
+   "theta_deg": NaN,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "pitch_cmd_deg": -6.0,
+   "ve_kts": 0.0,
+   "theta_deg": NaN,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "pitch_cmd_deg": -9.0,
+   "ve_kts": 0.0,
+   "theta_deg": NaN,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "pitch_cmd_deg": -12.0,
+   "ve_kts": 0.0,
+   "theta_deg": NaN,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "pitch_cmd_deg": -15.0,
+   "ve_kts": 0.0,
+   "theta_deg": NaN,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "pitch_cmd_deg": -18.0,
+   "ve_kts": 0.0,
+   "theta_deg": NaN,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  }
+ ],
+ "descent_matrix": [
+  {
+   "coll": 0.826,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.786,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.746,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.706,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.666,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.626,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.586,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.546,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.506,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.466,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  },
+  {
+   "coll": 0.426,
+   "vs_fpm": NaN,
+   "alt_ft": NaN,
+   "diverged": false
+  }
+ ],
+ "touchdown": {
+  "touched": false,
+  "td_vs_fpm": null,
+  "td_roll_pitch": null,
+  "post_settle_stable_lock": false
+ }
+}

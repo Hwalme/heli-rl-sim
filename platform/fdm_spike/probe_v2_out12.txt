@@ -1,0 +1,1177 @@
+=== FDM SPIKE v2 (helispike, hover coll=0.72) ===
+
+
+     JSBSim Flight Dynamics Model v1.3.1 [GitHub build 1837/commit 3b25f25e49b42d0489c04ac805674fc1450ca579] May 17 2026 14:28:34
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+Reading Aircraft Configuration File: helispike
+                            Version: 2.0
+
+
+This aircraft model is an SPIKE release!!!
+
+This aircraft model may not even properly load, and probably will not fly as expected.
+
+Use this model for development purposes ONLY!!!
+
+  Description:   Minimal self-built helicopter FDM (R22 Beta II class) with industrial
+  Model Author:  Track B director session (D2 ledger track b, FDM SPIKE 2026-08-30)
+  Creation Date: 2026-08-30
+  Version:       0.1
+
+  Aircraft Metrics:
+    WingArea: 0.000000
+    WingSpan: 0.000000
+    Incidence: 0.000000
+    Chord: 0.000000
+    H. Tail Area: 3.229173
+    H. Tail Arm: 12.467192
+    V. Tail Area: 2.690978
+    V. Tail Arm: 13.779528
+    Eyepoint (x, y, z): -35.433071 , 0.000000 , -11.811024
+    Ref Pt (x, y, z): 0.000000 , 0.000000 , -23.622047
+    Visual Ref Pt (x, y, z): 0.000000 , 0.000000 , 0.000000
+
+  Mass and Balance:
+    baseIxx: 480.000000 slug-ft2
+    baseIyy: 1150.000000 slug-ft2
+    baseIzz: 800.000000 slug-ft2
+    baseIxy: -0.000000 slug-ft2
+    baseIxz: 0.000000 slug-ft2
+    baseIyz: -0.000000 slug-ft2
+    Empty Weight: 900.000000 lbm
+    CG (x, y, z): 0.000000 , 0.000000 , 21.653543
+    Point Mass Object: 170.000000 lbs. at X, Y, Z (in.): -33.464567  0.000000  0.000000
+
+  Ground Reactions: 
+    BOGEY skid_front_left
+      Location: -29.527559 , -36.614173 , 45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_front_right
+      Location: -29.527559 , 36.614173 , 45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_rear_left
+      Location: 37.401575 , -36.614173 , 45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_rear_right
+      Location: 37.401575 , 36.614173 , 45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    STRUCTURE tail_bumper
+      Location: 169.291339 , 0.000000 , 13.779528
+      Spring Constant:  1000.000000
+      Damping Constant: 200.000000 (linear)
+      Rebound Damping Constant: 200.000000 (linear)
+      Dynamic Friction: 0.400000
+      Static Friction:  0.500000
+    STRUCTURE rotor_head
+      Location: 0.000000 , 0.000000 , -61.023622
+      Spring Constant:  1000.000000
+      Damping Constant: 200.000000 (linear)
+      Rebound Damping Constant: 200.000000 (linear)
+      Dynamic Friction: 0.400000
+      Static Friction:  0.500000
+
+  Propulsion:
+       (FUEL) tank holds 120 lbs. FUEL
+      currently at 75% of maximum capacity
+      Tank location (X, Y, Z): 0, 0, 15.748
+      Effective radius: 0 inches
+      Initial temperature: -9999 Fahrenheit
+      Priority: 1
+    2 dimensional table with 7 rows, 4 columns.
+		0	50	100	150	
+	503	0.357	0.38	0.4	0.425	
+	1048	0.586	0.589	0.6	0.621	
+	1328	0.707	0.721	0.731	0.757	
+	1496	0.779	0.786	0.808	0.821	
+	1684	0.85	0.857	0.874	0.9	
+	1896	0.914	0.929	0.946	0.971	
+	2117	1	1.011	1.029	1.043	
+    Function: propulsion/engine[0]/EnginePowerVC
+Engine location ignored, only thruster location is used.
+
+    Rotor Name: hs_main_rotor
+      Diameter = 25.164 ft.
+      Number of Blades = 2
+      Gear Ratio = 63.208
+      Sense = -1
+      Nominal RPM = 530
+      Minimal RPM = 1
+      Maximal RPM = 600
+      Blade Chord = 0.600394
+      Lift Curve Slope = 5.75
+      Blade Twist = -0.14
+      Hinge Offset = 0
+      Blade Flapping Moment = 40
+      Blade Mass Moment = 15
+      Polar Moment = 88
+      Inflow Lag = 0.08
+      Tip Loss = 0.97
+      Lock Number = 5.0959 (SL)
+      Solidity = 0.0303785
+      Max Brake Power = 3 HP
+      Gear Loss = 1 HP
+      Gear Moment = 8.8
+      Control Mapping = Main Rotor
+      X = 0
+      Y = 0
+      Z = -61.0236
+      Pitch = -90 degrees
+      Yaw = 0 degrees
+    2 dimensional table with 7 rows, 9 columns.
+		0	5	60	86	94	96	98	100	102	
+	-100	0	0.4	0.4	0.4	0.4	0.4	1	2	3	
+	1.2e+04	0	0.03	1	2	3	4	5	6	7	
+	2.4e+04	0	0.03	3	63	110	130	152	176	188	
+	2.7e+04	0	0.084	5.21	66	121	141	164	190	202	
+	3.35e+04	0	0.084	8.4	62	124	145	168	193	205	
+	3.7e+04	0	0.084	8.4	56	121	142	166	191	203	
+	4e+04	0	0	0	0	0	0	0	0	0	
+    2 dimensional table with 5 rows, 2 columns.
+		0	1	
+	0	0	0	
+	15	100	100	
+	60	180	460	
+	96	270	620	
+	100	280	670	
+Engine location ignored, only thruster location is used.
+
+    Rotor Name: hs_tail_rotor
+      Diameter = 3.5105 ft.
+      Number of Blades = 2
+      Gear Ratio = 10.47
+      Sense = 1
+      Nominal RPM = 3200
+      Minimal RPM = 1
+      Maximal RPM = 6400
+      RPM source set to thruster 0
+      Blade Chord = 0.328084
+      Lift Curve Slope = 6
+      Blade Twist = 0
+      Hinge Offset = 0.015
+      Blade Flapping Moment = 2
+      Blade Mass Moment = 0.8
+      Polar Moment = 4.4
+      Inflow Lag = 0.3
+      Tip Loss = 1
+      Lock Number = 0.0220109 (SL)
+      Solidity = 0.118994
+      Max Brake Power = 0.0336931 HP
+      Gear Loss = 0 HP
+      Gear Moment = 0
+      Control Mapping = Tail Rotor
+      X = 181.102
+      Y = 9.84252
+      Z = -11.811
+      Pitch = 0 degrees
+      Yaw = 91.5 degrees
+
+      Engine Name: hs_dummy
+      Power Watts: 745.7
+
+    Declared properties
+
+      fcs/hs/ff-sign (initial value: 1)
+
+      fcs/hs/ff-gain (initial value: 1)
+
+      fcs/hs/afcs-enable (initial value: 1)
+
+      fcs/collective-cmd-norm (initial value: 0)
+
+
+  System: hs_afcs_min
+
+    Channel collective
+
+    Loading Component "fcs/hs/collective-ctrl" of type: FCS_FUNCTION
+    1 dimensional table with 2 rows.
+	0	0	
+	1	0.3	
+      OUTPUT: collective-ctrl-rad
+      OUTPUT: collective-ctrl
+
+    Channel yaw_afcs
+
+    Loading Component "fcs/hs/antitorque-ff" of type: FCS_FUNCTION
+    1 dimensional table with 6 rows.
+	0	0	
+	0.3	0.06	
+	0.5	0.16	
+	0.7	0.26	
+	0.85	0.33	
+	1	0.4	
+      OUTPUT: antitorque-ff
+
+    Loading Component "fcs/hs/pedal-gain" of type: PURE_GAIN
+      INPUT: rudder-cmd-norm
+      GAIN: constant value 0.350000
+      OUTPUT: pedal-gain
+
+    Loading Component "fcs/hs/antitorque-sum" of type: SUMMER
+      Minimum limit: constant value -0.700000
+      Maximum limit: constant value 0.700000
+      INPUTS: 
+       antitorque-ff
+       pedal-gain
+      OUTPUT: antitorque-ctrl-rad
+      OUTPUT: antitorque-sum
+
+    Channel pitch_roll_centering
+
+    Loading Component "fcs/hs/ele-center" of type: PURE_GAIN
+      INPUT: elevator-cmd-norm
+      GAIN: constant value 1.000000
+      OUTPUT: longitudinal-ctrl-rad
+      OUTPUT: ele-center
+
+    Loading Component "fcs/hs/roll-trim-from-ff" of type: FCS_FUNCTION
+    1 dimensional table with 4 rows.
+	0	0	
+	0.5	0.012	
+	0.7	0.024	
+	1	0.036	
+      OUTPUT: roll-trim-from-ff
+
+    Loading Component "fcs/hs/ail-center" of type: PURE_GAIN
+      INPUT: aileron-cmd-norm
+      GAIN: constant value 1.000000
+      OUTPUT: ail-center
+
+    Loading Component "fcs/hs/lat-sum" of type: SUMMER
+      Minimum limit: constant value -0.300000
+      Maximum limit: constant value 0.300000
+      INPUTS: 
+       ail-center
+       roll-trim-from-ff
+      OUTPUT: lateral-ctrl-rad
+      OUTPUT: lat-sum
+
+    Channel rpm_governor
+
+In file C:/Users/Administrator/AppData/Roaming/Python/Python313/site-packages/jsbsim/aircraft/helispike/Systems/hs_afcs_min.xml: line 105
+Unknown FCS component: description
+
+    Loading Component "fcs/hs/gov-throttle" of type: FCS_FUNCTION
+      Minimum limit: constant value 0.000000
+      Maximum limit: constant value 1.000000
+    1 dimensional table with 5 rows.
+	470	1	
+	500	0.8	
+	530	0.35	
+	555	0.1	
+	575	0	
+      OUTPUT: throttle-cmd-norm
+      OUTPUT: gov-throttle
+
+  FCS: helispike_fcs
+
+  The aerodynamic moment axis system has been set by default to the bodyXYZ system.
+
+  Aerodynamics (Lift|Side|Drag axes):
+
+    Function: aero/force/flatplate-drag
+GEAR_CONTACT: 0.000000 seconds: rotor_head 1
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0    21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m          90       0       0  15.748           0           0           0
+                                                                                                                                            
+    Total:                            1160.0    -4.9     0.0    18.0       494.6      1199.6       835.1         0.0       -22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0    21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m          90       0       0  15.748           0           0           0
+                                                                                                                                            
+    Total:                            1160.0    -4.9     0.0    18.0       494.6      1199.6       835.1         0.0       -22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+GEAR_CONTACT: 2.033333 seconds: skid_front_right 1
+GEAR_CONTACT: 2.041667 seconds: skid_front_left 1
+GEAR_CONTACT: 2.058333 seconds: skid_front_left 0
+GEAR_CONTACT: 2.058333 seconds: skid_front_right 0
+GEAR_CONTACT: 2.058333 seconds: rotor_head 0
+GEAR_CONTACT: 4.475000 seconds: tail_bumper 1
+GEAR_CONTACT: 4.750000 seconds: tail_bumper 0
+GEAR_CONTACT: 4.925000 seconds: rotor_head 1
+GEAR_CONTACT: 5.041667 seconds: skid_front_right 1
+GEAR_CONTACT: 5.416667 seconds: rotor_head 0
+GEAR_CONTACT: 5.550000 seconds: skid_front_right 0
+GEAR_CONTACT: 6.316667 seconds: skid_rear_right 1
+GEAR_CONTACT: 6.383333 seconds: skid_front_right 1
+GEAR_CONTACT: 6.400000 seconds: tail_bumper 1
+GEAR_CONTACT: 6.775000 seconds: skid_front_left 1
+GEAR_CONTACT: 6.808333 seconds: skid_rear_left 1
+GEAR_CONTACT: 6.825000 seconds: rotor_head 1
+
+Touchdown report for skid_front_left (WOW at time: 10.400000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  2.453511 knots,  1.262161 mps
+  Maximum contact force: 42113.453092 lbs,    187320.639355 Newtons
+  Maximum strut travel:  9.740101 inches, 24.739857 cm
+  Distance traveled:     67.781017 ft,     20.659654 meters
+
+Touchdown report for skid_front_right (WOW at time: 10.400000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  2.590448 knots,  1.332605 mps
+  Maximum contact force: 36589.083288 lbs,    162748.242467 Newtons
+  Maximum strut travel:  9.611329 inches, 24.412777 cm
+  Distance traveled:     67.817450 ft,     20.670759 meters
+
+Touchdown report for skid_rear_left (WOW at time: 10.400000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  9.045352 knots,  4.653204 mps
+  Maximum contact force: 0.000000 lbs,    0.000000 Newtons
+  Maximum strut travel:  0.000000 inches, 0.000000 cm
+  Distance traveled:     21.520363 ft,     6.559407 meters
+
+Touchdown report for skid_rear_right (WOW at time: 10.400000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  9.294489 knots,  4.781368 mps
+  Maximum contact force: 0.000000 lbs,    0.000000 Newtons
+  Maximum strut travel:  0.000000 inches, 0.000000 cm
+  Distance traveled:     29.595518 ft,     9.020714 meters
+
+Touchdown report for tail_bumper (WOW at time: 10.400000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  6.599452 knots,  3.394959 mps
+  Maximum contact force: 9833.749021 lbs,    43740.515646 Newtons
+  Maximum strut travel:  38.977515 inches, 99.002887 cm
+  Distance traveled:     57.186610 ft,     17.430479 meters
+
+Touchdown report for rotor_head (WOW at time: 10.400000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000000 knots,  0.000000 mps
+  Maximum contact force: 4534.537065 lbs,    20169.620865 Newtons
+  Maximum strut travel:  31.045615 inches, 78.855862 cm
+  Distance traveled:     72.880426 ft,     22.213954 meters
+GEAR_CONTACT: 20.833333 seconds: tail_bumper 0
+GEAR_CONTACT: 22.683333 seconds: tail_bumper 1
+GEAR_CONTACT: 22.958333 seconds: tail_bumper 0
+GEAR_CONTACT: 23.883333 seconds: tail_bumper 1
+GEAR_CONTACT: 24.333333 seconds: tail_bumper 0
+GEAR_CONTACT: 24.425000 seconds: tail_bumper 1
+[sign-cal] rnd0: roll发散帧=1600 pitch发散帧=1539 (roll_sign=-1 pitch_sign=+1)
+GEAR_CONTACT: 33.991667 seconds: skid_front_left 0
+GEAR_CONTACT: 33.991667 seconds: skid_front_right 0
+GEAR_CONTACT: 33.991667 seconds: skid_rear_left 0
+GEAR_CONTACT: 33.991667 seconds: skid_rear_right 0
+GEAR_CONTACT: 33.991667 seconds: tail_bumper 0
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0    21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m      89.558       0       0  15.748           0           0           0
+                                                                                                                                            
+    Total:                            1159.6    -4.9     0.0    18.0       494.6      1199.6       835.1         0.0       -22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+GEAR_CONTACT: 35.341667 seconds: skid_front_right 1
+GEAR_CONTACT: 35.441667 seconds: skid_front_left 1
+GEAR_CONTACT: 35.458333 seconds: skid_front_left 0
+GEAR_CONTACT: 35.458333 seconds: skid_front_right 0
+GEAR_CONTACT: 35.508333 seconds: rotor_head 0
+GEAR_CONTACT: 35.833333 seconds: rotor_head 1
+GEAR_CONTACT: 35.916667 seconds: skid_front_right 1
+GEAR_CONTACT: 35.933333 seconds: skid_front_right 0
+GEAR_CONTACT: 36.375000 seconds: skid_front_left 1
+GEAR_CONTACT: 36.391667 seconds: skid_front_left 0
+GEAR_CONTACT: 36.583333 seconds: skid_front_right 1
+GEAR_CONTACT: 36.600000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.058333 seconds: skid_front_right 1
+GEAR_CONTACT: 37.100000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.216667 seconds: skid_front_right 1
+GEAR_CONTACT: 37.233333 seconds: skid_front_right 0
+GEAR_CONTACT: 37.291667 seconds: skid_front_right 1
+GEAR_CONTACT: 37.316667 seconds: skid_front_right 0
+GEAR_CONTACT: 37.375000 seconds: skid_front_right 1
+GEAR_CONTACT: 37.450000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.458333 seconds: skid_front_right 1
+GEAR_CONTACT: 37.475000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.483333 seconds: skid_front_right 1
+GEAR_CONTACT: 37.500000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.508333 seconds: skid_front_right 1
+GEAR_CONTACT: 37.525000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.533333 seconds: skid_front_left 1
+GEAR_CONTACT: 37.533333 seconds: skid_front_right 1
+GEAR_CONTACT: 37.550000 seconds: skid_front_left 0
+GEAR_CONTACT: 37.550000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.850000 seconds: skid_front_right 1
+GEAR_CONTACT: 38.008333 seconds: skid_front_right 0
+GEAR_CONTACT: 38.016667 seconds: skid_front_right 1
+GEAR_CONTACT: 38.033333 seconds: skid_front_right 0
+GEAR_CONTACT: 38.041667 seconds: skid_front_right 1
+GEAR_CONTACT: 38.066667 seconds: skid_front_right 0
+GEAR_CONTACT: 38.075000 seconds: skid_front_right 1
+GEAR_CONTACT: 38.091667 seconds: skid_front_right 0
+GEAR_CONTACT: 38.116667 seconds: skid_front_left 1
+GEAR_CONTACT: 38.133333 seconds: skid_front_left 0
+GEAR_CONTACT: 38.208333 seconds: skid_front_left 1
+GEAR_CONTACT: 38.208333 seconds: skid_front_right 1
+GEAR_CONTACT: 38.225000 seconds: skid_front_left 0
+GEAR_CONTACT: 38.225000 seconds: skid_front_right 0
+GEAR_CONTACT: 38.358333 seconds: skid_front_right 1
+GEAR_CONTACT: 38.375000 seconds: skid_front_right 0
+GEAR_CONTACT: 38.425000 seconds: skid_front_left 1
+GEAR_CONTACT: 38.441667 seconds: skid_front_left 0
+GEAR_CONTACT: 38.466667 seconds: skid_front_right 1
+GEAR_CONTACT: 38.483333 seconds: skid_front_right 0
+GEAR_CONTACT: 38.558333 seconds: skid_front_right 1
+GEAR_CONTACT: 38.583333 seconds: skid_front_right 0
+GEAR_CONTACT: 38.683333 seconds: skid_front_left 1
+GEAR_CONTACT: 38.708333 seconds: skid_front_left 0
+GEAR_CONTACT: 38.725000 seconds: skid_front_right 1
+GEAR_CONTACT: 38.750000 seconds: skid_front_right 0
+GEAR_CONTACT: 38.800000 seconds: skid_front_right 1
+GEAR_CONTACT: 38.816667 seconds: skid_front_right 0
+GEAR_CONTACT: 38.866667 seconds: skid_front_right 1
+GEAR_CONTACT: 38.883333 seconds: skid_front_right 0
+GEAR_CONTACT: 38.916667 seconds: skid_front_right 1
+GEAR_CONTACT: 38.941667 seconds: skid_front_right 0
+GEAR_CONTACT: 38.950000 seconds: skid_front_right 1
+GEAR_CONTACT: 38.966667 seconds: skid_front_right 0
+GEAR_CONTACT: 38.975000 seconds: skid_front_right 1
+GEAR_CONTACT: 38.991667 seconds: skid_front_right 0
+GEAR_CONTACT: 39.000000 seconds: skid_front_right 1
+GEAR_CONTACT: 39.016667 seconds: skid_front_right 0
+GEAR_CONTACT: 39.058333 seconds: skid_front_right 1
+GEAR_CONTACT: 39.075000 seconds: skid_front_right 0
+GEAR_CONTACT: 39.141667 seconds: skid_front_right 1
+GEAR_CONTACT: 39.158333 seconds: skid_front_right 0
+GEAR_CONTACT: 39.208333 seconds: skid_front_left 1
+GEAR_CONTACT: 39.225000 seconds: skid_front_left 0
+GEAR_CONTACT: 39.233333 seconds: skid_front_left 1
+GEAR_CONTACT: 39.308333 seconds: skid_front_right 1
+GEAR_CONTACT: 39.316667 seconds: skid_front_left 0
+GEAR_CONTACT: 39.333333 seconds: skid_front_right 0
+GEAR_CONTACT: 39.425000 seconds: skid_front_right 1
+GEAR_CONTACT: 39.441667 seconds: skid_front_right 0
+GEAR_CONTACT: 39.450000 seconds: skid_front_right 1
+GEAR_CONTACT: 39.458333 seconds: skid_front_right 0
+GEAR_CONTACT: 39.475000 seconds: skid_front_right 1
+GEAR_CONTACT: 39.508333 seconds: skid_front_right 0
+GEAR_CONTACT: 39.516667 seconds: skid_front_right 1
+GEAR_CONTACT: 39.533333 seconds: skid_front_right 0
+GEAR_CONTACT: 39.541667 seconds: skid_front_right 1
+GEAR_CONTACT: 39.558333 seconds: skid_front_right 0
+GEAR_CONTACT: 39.608333 seconds: skid_front_right 1
+GEAR_CONTACT: 39.625000 seconds: skid_front_right 0
+GEAR_CONTACT: 39.675000 seconds: skid_front_left 1
+GEAR_CONTACT: 39.700000 seconds: skid_front_left 0
+GEAR_CONTACT: 39.758333 seconds: skid_front_right 1
+GEAR_CONTACT: 39.783333 seconds: skid_front_right 0
+GEAR_CONTACT: 39.983333 seconds: skid_front_right 1
+GEAR_CONTACT: 40.008333 seconds: skid_front_right 0
+GEAR_CONTACT: 40.100000 seconds: skid_front_left 1
+GEAR_CONTACT: 40.100000 seconds: skid_front_right 1
+GEAR_CONTACT: 40.116667 seconds: skid_front_left 0
+GEAR_CONTACT: 40.116667 seconds: skid_front_right 0
+GEAR_CONTACT: 40.125000 seconds: skid_front_left 1
+GEAR_CONTACT: 40.141667 seconds: skid_front_left 0
+GEAR_CONTACT: 40.150000 seconds: skid_front_left 1
+GEAR_CONTACT: 40.175000 seconds: skid_front_right 1
+GEAR_CONTACT: 40.183333 seconds: skid_front_left 0
+GEAR_CONTACT: 40.191667 seconds: skid_front_right 0
+GEAR_CONTACT: 40.233333 seconds: skid_front_right 1
+GEAR_CONTACT: 40.258333 seconds: skid_front_right 0
+GEAR_CONTACT: 40.358333 seconds: skid_front_right 1
+GEAR_CONTACT: 40.375000 seconds: skid_front_right 0
+GEAR_CONTACT: 40.525000 seconds: skid_front_left 1
+GEAR_CONTACT: 40.541667 seconds: skid_front_left 0
+GEAR_CONTACT: 40.583333 seconds: skid_front_right 1
+GEAR_CONTACT: 40.841667 seconds: skid_front_right 0
+GEAR_CONTACT: 40.850000 seconds: skid_front_right 1
+GEAR_CONTACT: 40.866667 seconds: skid_front_right 0
+GEAR_CONTACT: 40.875000 seconds: skid_front_right 1
+GEAR_CONTACT: 40.891667 seconds: skid_front_right 0
+GEAR_CONTACT: 40.925000 seconds: skid_front_right 1
+GEAR_CONTACT: 40.950000 seconds: skid_front_right 0
+GEAR_CONTACT: 41.033333 seconds: skid_front_right 1
+GEAR_CONTACT: 41.050000 seconds: skid_front_right 0
+GEAR_CONTACT: 41.125000 seconds: skid_front_right 1
+GEAR_CONTACT: 41.133333 seconds: skid_front_left 1
+GEAR_CONTACT: 41.150000 seconds: skid_front_left 0
+GEAR_CONTACT: 41.150000 seconds: skid_front_right 0
+GEAR_CONTACT: 41.458333 seconds: skid_front_right 1
+GEAR_CONTACT: 41.475000 seconds: skid_front_right 0
+GEAR_CONTACT: 41.766667 seconds: skid_front_right 1
+GEAR_CONTACT: 41.791667 seconds: skid_front_right 0
+GEAR_CONTACT: 41.916667 seconds: skid_front_left 1
+GEAR_CONTACT: 41.975000 seconds: skid_front_right 1
+GEAR_CONTACT: 41.991667 seconds: skid_front_left 0
+GEAR_CONTACT: 42.008333 seconds: skid_front_right 0
+GEAR_CONTACT: 42.091667 seconds: skid_front_right 1
+GEAR_CONTACT: 42.108333 seconds: skid_front_right 0
+GEAR_CONTACT: 42.200000 seconds: skid_front_right 1
+GEAR_CONTACT: 42.283333 seconds: skid_front_right 0
+GEAR_CONTACT: 42.291667 seconds: skid_front_right 1
+GEAR_CONTACT: 42.308333 seconds: skid_front_right 0
+GEAR_CONTACT: 42.316667 seconds: skid_front_right 1
+GEAR_CONTACT: 42.333333 seconds: skid_front_right 0
+GEAR_CONTACT: 42.366667 seconds: skid_front_right 1
+GEAR_CONTACT: 42.400000 seconds: skid_front_right 0
+GEAR_CONTACT: 42.408333 seconds: skid_front_right 1
+GEAR_CONTACT: 42.433333 seconds: skid_front_left 1
+GEAR_CONTACT: 42.450000 seconds: skid_front_left 0
+GEAR_CONTACT: 42.450000 seconds: skid_front_right 0
+GEAR_CONTACT: 42.525000 seconds: skid_front_right 1
+GEAR_CONTACT: 42.591667 seconds: skid_front_right 0
+GEAR_CONTACT: 42.600000 seconds: skid_front_right 1
+GEAR_CONTACT: 42.633333 seconds: skid_front_right 0
+GEAR_CONTACT: 42.641667 seconds: skid_front_right 1
+GEAR_CONTACT: 42.658333 seconds: skid_front_right 0
+GEAR_CONTACT: 42.683333 seconds: skid_front_right 1
+GEAR_CONTACT: 42.691667 seconds: skid_front_left 1
+GEAR_CONTACT: 42.700000 seconds: skid_front_left 0
+GEAR_CONTACT: 42.700000 seconds: skid_front_right 0
+GEAR_CONTACT: 42.708333 seconds: skid_front_left 1
+GEAR_CONTACT: 42.708333 seconds: skid_front_right 1
+GEAR_CONTACT: 42.725000 seconds: skid_front_left 0
+GEAR_CONTACT: 42.725000 seconds: skid_front_right 0
+GEAR_CONTACT: 42.833333 seconds: skid_front_right 1
+GEAR_CONTACT: 42.850000 seconds: skid_front_right 0
+GEAR_CONTACT: 42.991667 seconds: skid_front_right 1
+GEAR_CONTACT: 43.008333 seconds: skid_front_right 0
+GEAR_CONTACT: 43.150000 seconds: skid_front_left 1
+GEAR_CONTACT: 43.158333 seconds: skid_front_right 1
+GEAR_CONTACT: 43.166667 seconds: skid_front_left 0
+GEAR_CONTACT: 43.166667 seconds: skid_front_right 0
+GEAR_CONTACT: 43.191667 seconds: skid_front_right 1
+GEAR_CONTACT: 43.216667 seconds: skid_front_right 0
+GEAR_CONTACT: 43.291667 seconds: skid_front_right 1
+GEAR_CONTACT: 43.308333 seconds: skid_front_right 0
+GEAR_CONTACT: 43.375000 seconds: skid_front_right 1
+GEAR_CONTACT: 43.391667 seconds: skid_front_right 0
+GEAR_CONTACT: 43.466667 seconds: skid_front_right 1
+GEAR_CONTACT: 43.558333 seconds: skid_front_right 0
+GEAR_CONTACT: 43.566667 seconds: skid_front_right 1
+GEAR_CONTACT: 43.583333 seconds: skid_front_right 0
+GEAR_CONTACT: 43.608333 seconds: skid_front_right 1
+GEAR_CONTACT: 43.625000 seconds: skid_front_right 0
+GEAR_CONTACT: 43.633333 seconds: skid_front_right 1
+GEAR_CONTACT: 43.650000 seconds: skid_front_right 0
+GEAR_CONTACT: 43.683333 seconds: skid_front_right 1
+GEAR_CONTACT: 43.700000 seconds: skid_front_right 0
+GEAR_CONTACT: 43.708333 seconds: skid_front_right 1
+GEAR_CONTACT: 43.716667 seconds: skid_front_right 0
+GEAR_CONTACT: 43.725000 seconds: skid_front_right 1
+GEAR_CONTACT: 43.866667 seconds: skid_front_right 0
+GEAR_CONTACT: 43.875000 seconds: skid_front_right 1
+GEAR_CONTACT: 43.891667 seconds: skid_front_right 0
+GEAR_CONTACT: 43.900000 seconds: skid_front_right 1
+GEAR_CONTACT: 43.925000 seconds: skid_front_right 0
+GEAR_CONTACT: 43.933333 seconds: skid_front_right 1
+GEAR_CONTACT: 43.950000 seconds: skid_front_right 0
+GEAR_CONTACT: 43.958333 seconds: skid_front_right 1
+GEAR_CONTACT: 43.975000 seconds: skid_front_right 0
+GEAR_CONTACT: 43.983333 seconds: skid_front_left 1
+GEAR_CONTACT: 44.000000 seconds: skid_front_left 0
+GEAR_CONTACT: 44.008333 seconds: skid_front_left 1
+GEAR_CONTACT: 44.025000 seconds: skid_front_left 0
+GEAR_CONTACT: 44.058333 seconds: skid_front_left 1
+GEAR_CONTACT: 44.058333 seconds: skid_front_right 1
+GEAR_CONTACT: 44.075000 seconds: skid_front_left 0
+GEAR_CONTACT: 44.075000 seconds: skid_front_right 0
+GEAR_CONTACT: 44.216667 seconds: skid_front_right 1
+GEAR_CONTACT: 44.233333 seconds: skid_front_right 0
+GEAR_CONTACT: 44.408333 seconds: skid_front_right 1
+GEAR_CONTACT: 44.416667 seconds: skid_front_left 1
+GEAR_CONTACT: 44.433333 seconds: skid_front_left 0
+GEAR_CONTACT: 44.433333 seconds: skid_front_right 0
+GEAR_CONTACT: 44.850000 seconds: skid_front_right 1
+GEAR_CONTACT: 44.866667 seconds: skid_front_right 0
+GEAR_CONTACT: 44.875000 seconds: skid_front_right 1
+GEAR_CONTACT: 45.033333 seconds: skid_front_left 1
+GEAR_CONTACT: 45.058333 seconds: skid_front_left 0
+GEAR_CONTACT: 45.058333 seconds: skid_front_right 0
+GEAR_CONTACT: 45.225000 seconds: skid_front_right 1
+GEAR_CONTACT: 45.425000 seconds: skid_front_right 0
+GEAR_CONTACT: 45.433333 seconds: skid_front_right 1
+GEAR_CONTACT: 45.450000 seconds: skid_front_right 0
+GEAR_CONTACT: 45.466667 seconds: skid_front_right 1
+GEAR_CONTACT: 45.516667 seconds: skid_front_right 0
+GEAR_CONTACT: 45.525000 seconds: skid_front_right 1
+GEAR_CONTACT: 45.541667 seconds: skid_front_right 0
+GEAR_CONTACT: 45.550000 seconds: skid_front_right 1
+GEAR_CONTACT: 45.566667 seconds: skid_front_right 0
+GEAR_CONTACT: 45.600000 seconds: skid_front_right 1
+GEAR_CONTACT: 45.625000 seconds: skid_front_right 0
+GEAR_CONTACT: 45.691667 seconds: skid_front_left 1
+GEAR_CONTACT: 45.708333 seconds: skid_front_left 0
+GEAR_CONTACT: 45.716667 seconds: skid_front_left 1
+GEAR_CONTACT: 45.716667 seconds: skid_front_right 1
+GEAR_CONTACT: 45.733333 seconds: skid_front_left 0
+GEAR_CONTACT: 45.733333 seconds: skid_front_right 0
+GEAR_CONTACT: 45.833333 seconds: skid_front_right 1
+GEAR_CONTACT: 45.850000 seconds: skid_front_right 0
+GEAR_CONTACT: 45.858333 seconds: skid_front_right 1
+GEAR_CONTACT: 45.908333 seconds: skid_front_right 0
+GEAR_CONTACT: 45.916667 seconds: skid_front_right 1
+GEAR_CONTACT: 45.933333 seconds: skid_front_right 0
+GEAR_CONTACT: 45.941667 seconds: skid_front_right 1
+GEAR_CONTACT: 45.958333 seconds: skid_front_right 0
+GEAR_CONTACT: 46.016667 seconds: skid_front_right 1
+GEAR_CONTACT: 46.033333 seconds: skid_front_right 0
+GEAR_CONTACT: 46.075000 seconds: skid_front_right 1
+GEAR_CONTACT: 46.091667 seconds: skid_front_right 0
+GEAR_CONTACT: 46.100000 seconds: skid_front_right 1
+GEAR_CONTACT: 46.116667 seconds: skid_front_right 0
+GEAR_CONTACT: 46.141667 seconds: skid_front_left 1
+GEAR_CONTACT: 46.158333 seconds: skid_front_left 0
+GEAR_CONTACT: 46.208333 seconds: skid_front_right 1
+GEAR_CONTACT: 46.233333 seconds: skid_front_right 0
+GEAR_CONTACT: 46.308333 seconds: skid_front_right 1
+GEAR_CONTACT: 46.325000 seconds: skid_front_right 0
+GEAR_CONTACT: 46.383333 seconds: skid_front_right 1
+GEAR_CONTACT: 46.483333 seconds: skid_front_right 0
+GEAR_CONTACT: 46.491667 seconds: skid_front_right 1
+GEAR_CONTACT: 46.508333 seconds: skid_front_right 0
+GEAR_CONTACT: 46.516667 seconds: skid_front_right 1
+GEAR_CONTACT: 46.525000 seconds: skid_front_left 1
+GEAR_CONTACT: 46.533333 seconds: skid_front_right 0
+GEAR_CONTACT: 46.541667 seconds: skid_front_left 0
+GEAR_CONTACT: 46.550000 seconds: skid_front_left 1
+GEAR_CONTACT: 46.558333 seconds: skid_front_right 1
+GEAR_CONTACT: 46.566667 seconds: skid_front_left 0
+GEAR_CONTACT: 46.566667 seconds: skid_front_right 0
+GEAR_CONTACT: 46.575000 seconds: skid_front_right 1
+GEAR_CONTACT: 46.591667 seconds: skid_front_right 0
+GEAR_CONTACT: 46.641667 seconds: skid_front_right 1
+GEAR_CONTACT: 46.658333 seconds: skid_front_right 0
+GEAR_CONTACT: 46.700000 seconds: skid_front_right 1
+GEAR_CONTACT: 46.775000 seconds: skid_front_left 1
+GEAR_CONTACT: 46.791667 seconds: skid_front_left 0
+GEAR_CONTACT: 46.791667 seconds: skid_front_right 0
+GEAR_CONTACT: 46.800000 seconds: skid_front_left 1
+GEAR_CONTACT: 46.800000 seconds: skid_front_right 1
+GEAR_CONTACT: 46.816667 seconds: skid_front_left 0
+GEAR_CONTACT: 46.816667 seconds: skid_front_right 0
+GEAR_CONTACT: 46.833333 seconds: skid_front_right 1
+GEAR_CONTACT: 46.850000 seconds: skid_front_right 0
+GEAR_CONTACT: 46.858333 seconds: skid_front_right 1
+GEAR_CONTACT: 46.875000 seconds: skid_front_right 0
+GEAR_CONTACT: 46.908333 seconds: skid_front_right 1
+GEAR_CONTACT: 46.933333 seconds: skid_front_right 0
+GEAR_CONTACT: 47.000000 seconds: skid_front_right 1
+GEAR_CONTACT: 47.008333 seconds: skid_front_left 1
+GEAR_CONTACT: 47.016667 seconds: skid_front_left 0
+GEAR_CONTACT: 47.016667 seconds: skid_front_right 0
+GEAR_CONTACT: 47.058333 seconds: skid_front_left 1
+GEAR_CONTACT: 47.100000 seconds: skid_front_right 1
+GEAR_CONTACT: 47.116667 seconds: skid_front_left 0
+GEAR_CONTACT: 47.116667 seconds: skid_front_right 0
+GEAR_CONTACT: 47.158333 seconds: skid_front_right 1
+GEAR_CONTACT: 47.183333 seconds: skid_front_right 0
+GEAR_CONTACT: 47.266667 seconds: skid_front_right 1
+GEAR_CONTACT: 47.283333 seconds: skid_front_right 0
+GEAR_CONTACT: 47.291667 seconds: skid_front_right 1
+GEAR_CONTACT: 47.308333 seconds: skid_front_right 0
+GEAR_CONTACT: 47.316667 seconds: skid_front_right 1
+GEAR_CONTACT: 47.333333 seconds: skid_front_right 0
+[sign-cal] rnd1: roll发散帧=5 pitch发散帧=1481 (roll_sign=+1 pitch_sign=-1)
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0    21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m       89.22       0       0  15.748           0           0           0
+                                                                                                                                            
+    Total:                            1159.2    -4.9     0.0    18.0       494.6      1199.6       835.1         0.0       -22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+GEAR_CONTACT: 47.666667 seconds: rotor_head 0
+GEAR_CONTACT: 48.391667 seconds: tail_bumper 1
+GEAR_CONTACT: 48.508333 seconds: rotor_head 1
+GEAR_CONTACT: 48.650000 seconds: tail_bumper 0
+GEAR_CONTACT: 49.016667 seconds: skid_front_right 1
+GEAR_CONTACT: 50.258333 seconds: skid_rear_right 1
+GEAR_CONTACT: 50.275000 seconds: skid_front_right 0
+GEAR_CONTACT: 50.275000 seconds: skid_rear_right 0
+GEAR_CONTACT: 50.358333 seconds: skid_rear_right 1
+GEAR_CONTACT: 50.383333 seconds: skid_rear_right 0
+GEAR_CONTACT: 50.475000 seconds: skid_rear_right 1
+GEAR_CONTACT: 50.491667 seconds: skid_rear_right 0
+GEAR_CONTACT: 50.600000 seconds: skid_rear_right 1
+GEAR_CONTACT: 50.783333 seconds: skid_rear_right 0
+GEAR_CONTACT: 50.791667 seconds: skid_rear_right 1
+GEAR_CONTACT: 50.808333 seconds: skid_rear_right 0
+GEAR_CONTACT: 50.816667 seconds: skid_rear_right 1
+GEAR_CONTACT: 50.858333 seconds: skid_front_right 1
+GEAR_CONTACT: 50.875000 seconds: skid_rear_right 0
+GEAR_CONTACT: 50.925000 seconds: skid_front_right 0
+GEAR_CONTACT: 50.933333 seconds: skid_front_right 1
+GEAR_CONTACT: 50.950000 seconds: skid_front_right 0
+GEAR_CONTACT: 50.975000 seconds: skid_front_right 1
+GEAR_CONTACT: 50.991667 seconds: skid_front_right 0
+GEAR_CONTACT: 51.000000 seconds: skid_front_right 1
+GEAR_CONTACT: 51.016667 seconds: skid_front_right 0
+GEAR_CONTACT: 51.025000 seconds: skid_front_right 1
+GEAR_CONTACT: 51.041667 seconds: skid_front_right 0
+GEAR_CONTACT: 51.050000 seconds: skid_front_right 1
+GEAR_CONTACT: 51.100000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.133333 seconds: skid_front_right 1
+GEAR_CONTACT: 51.150000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.158333 seconds: skid_front_right 1
+GEAR_CONTACT: 51.183333 seconds: skid_rear_right 1
+GEAR_CONTACT: 51.200000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.200000 seconds: skid_rear_right 0
+GEAR_CONTACT: 51.250000 seconds: skid_rear_right 1
+GEAR_CONTACT: 51.275000 seconds: skid_rear_right 0
+GEAR_CONTACT: 51.391667 seconds: skid_rear_right 1
+GEAR_CONTACT: 51.400000 seconds: skid_front_right 1
+GEAR_CONTACT: 51.408333 seconds: skid_front_right 0
+GEAR_CONTACT: 51.408333 seconds: skid_rear_right 0
+GEAR_CONTACT: 51.508333 seconds: skid_front_right 1
+GEAR_CONTACT: 51.525000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.533333 seconds: skid_front_right 1
+GEAR_CONTACT: 51.541667 seconds: skid_front_right 0
+GEAR_CONTACT: 51.566667 seconds: skid_front_right 1
+GEAR_CONTACT: 51.591667 seconds: skid_front_right 0
+GEAR_CONTACT: 51.650000 seconds: skid_front_right 1
+GEAR_CONTACT: 51.666667 seconds: skid_front_right 0
+GEAR_CONTACT: 51.675000 seconds: skid_front_right 1
+GEAR_CONTACT: 51.700000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.708333 seconds: skid_front_right 1
+GEAR_CONTACT: 51.725000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.750000 seconds: skid_front_right 1
+GEAR_CONTACT: 51.775000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.783333 seconds: skid_front_right 1
+GEAR_CONTACT: 51.800000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.808333 seconds: skid_front_right 1
+GEAR_CONTACT: 51.816667 seconds: skid_rear_right 1
+GEAR_CONTACT: 51.825000 seconds: skid_front_right 0
+GEAR_CONTACT: 51.833333 seconds: skid_rear_right 0
+GEAR_CONTACT: 51.841667 seconds: skid_rear_right 1
+GEAR_CONTACT: 51.850000 seconds: skid_rear_right 0
+GEAR_CONTACT: 51.866667 seconds: skid_rear_right 1
+GEAR_CONTACT: 51.991667 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.000000 seconds: skid_rear_right 1
+GEAR_CONTACT: 52.041667 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.075000 seconds: skid_front_right 1
+GEAR_CONTACT: 52.266667 seconds: skid_rear_right 1
+GEAR_CONTACT: 52.283333 seconds: skid_front_right 0
+GEAR_CONTACT: 52.283333 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.300000 seconds: skid_rear_right 1
+GEAR_CONTACT: 52.366667 seconds: skid_front_right 1
+GEAR_CONTACT: 52.391667 seconds: skid_front_right 0
+GEAR_CONTACT: 52.391667 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.400000 seconds: skid_front_right 1
+GEAR_CONTACT: 52.416667 seconds: skid_front_right 0
+GEAR_CONTACT: 52.425000 seconds: skid_front_right 1
+GEAR_CONTACT: 52.466667 seconds: skid_front_right 0
+GEAR_CONTACT: 52.483333 seconds: skid_front_right 1
+GEAR_CONTACT: 52.491667 seconds: skid_rear_right 1
+GEAR_CONTACT: 52.508333 seconds: skid_front_right 0
+GEAR_CONTACT: 52.508333 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.541667 seconds: skid_rear_right 1
+GEAR_CONTACT: 52.566667 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.633333 seconds: skid_front_right 1
+GEAR_CONTACT: 52.741667 seconds: skid_front_right 0
+GEAR_CONTACT: 52.750000 seconds: skid_front_right 1
+GEAR_CONTACT: 52.766667 seconds: skid_front_right 0
+GEAR_CONTACT: 52.775000 seconds: skid_front_right 1
+GEAR_CONTACT: 52.775000 seconds: skid_rear_right 1
+GEAR_CONTACT: 52.791667 seconds: skid_front_right 0
+GEAR_CONTACT: 52.825000 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.833333 seconds: skid_rear_right 1
+GEAR_CONTACT: 52.866667 seconds: skid_front_right 1
+GEAR_CONTACT: 52.883333 seconds: skid_rear_right 0
+GEAR_CONTACT: 52.900000 seconds: skid_front_right 0
+GEAR_CONTACT: 52.908333 seconds: skid_front_right 1
+GEAR_CONTACT: 52.925000 seconds: skid_front_right 0
+GEAR_CONTACT: 52.933333 seconds: skid_front_right 1
+GEAR_CONTACT: 52.983333 seconds: skid_front_right 0
+GEAR_CONTACT: 52.991667 seconds: skid_front_right 1
+GEAR_CONTACT: 53.008333 seconds: skid_front_right 0
+GEAR_CONTACT: 53.016667 seconds: skid_front_right 1
+GEAR_CONTACT: 53.016667 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.033333 seconds: skid_front_right 0
+GEAR_CONTACT: 53.033333 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.050000 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.075000 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.116667 seconds: skid_front_right 1
+GEAR_CONTACT: 53.125000 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.133333 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.141667 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.150000 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.158333 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.166667 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.175000 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.191667 seconds: skid_front_right 0
+GEAR_CONTACT: 53.191667 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.225000 seconds: skid_front_right 1
+GEAR_CONTACT: 53.225000 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.241667 seconds: skid_front_right 0
+GEAR_CONTACT: 53.241667 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.291667 seconds: skid_front_right 1
+GEAR_CONTACT: 53.308333 seconds: skid_front_right 0
+GEAR_CONTACT: 53.358333 seconds: skid_front_right 1
+GEAR_CONTACT: 53.366667 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.375000 seconds: skid_front_right 0
+GEAR_CONTACT: 53.375000 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.416667 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.433333 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.441667 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.475000 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.483333 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.500000 seconds: skid_front_right 1
+GEAR_CONTACT: 53.516667 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.533333 seconds: skid_front_right 0
+GEAR_CONTACT: 53.541667 seconds: skid_front_right 1
+GEAR_CONTACT: 53.550000 seconds: skid_front_right 0
+GEAR_CONTACT: 53.558333 seconds: skid_front_right 1
+GEAR_CONTACT: 53.625000 seconds: skid_front_right 0
+GEAR_CONTACT: 53.633333 seconds: skid_front_right 1
+GEAR_CONTACT: 53.650000 seconds: skid_front_right 0
+GEAR_CONTACT: 53.658333 seconds: skid_front_right 1
+GEAR_CONTACT: 53.675000 seconds: skid_front_right 0
+GEAR_CONTACT: 53.683333 seconds: skid_front_right 1
+GEAR_CONTACT: 53.700000 seconds: skid_front_right 0
+GEAR_CONTACT: 53.716667 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.725000 seconds: skid_front_right 1
+GEAR_CONTACT: 53.741667 seconds: skid_front_right 0
+GEAR_CONTACT: 53.741667 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.858333 seconds: skid_front_right 1
+GEAR_CONTACT: 53.866667 seconds: skid_rear_right 1
+GEAR_CONTACT: 53.883333 seconds: skid_front_right 0
+GEAR_CONTACT: 53.883333 seconds: skid_rear_right 0
+GEAR_CONTACT: 53.958333 seconds: skid_front_right 1
+GEAR_CONTACT: 53.983333 seconds: skid_front_right 0
+GEAR_CONTACT: 54.058333 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.066667 seconds: skid_front_right 1
+GEAR_CONTACT: 54.075000 seconds: skid_front_right 0
+GEAR_CONTACT: 54.075000 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.083333 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.108333 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.116667 seconds: skid_front_right 1
+GEAR_CONTACT: 54.116667 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.133333 seconds: skid_front_right 0
+GEAR_CONTACT: 54.133333 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.200000 seconds: skid_front_right 1
+GEAR_CONTACT: 54.216667 seconds: skid_front_right 0
+GEAR_CONTACT: 54.308333 seconds: skid_front_right 1
+GEAR_CONTACT: 54.325000 seconds: skid_front_right 0
+GEAR_CONTACT: 54.366667 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.466667 seconds: skid_front_right 1
+GEAR_CONTACT: 54.483333 seconds: skid_front_right 0
+GEAR_CONTACT: 54.483333 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.525000 seconds: skid_front_right 1
+GEAR_CONTACT: 54.541667 seconds: skid_front_right 0
+GEAR_CONTACT: 54.550000 seconds: skid_front_right 1
+GEAR_CONTACT: 54.600000 seconds: skid_front_right 0
+GEAR_CONTACT: 54.608333 seconds: skid_front_right 1
+GEAR_CONTACT: 54.625000 seconds: skid_front_right 0
+GEAR_CONTACT: 54.641667 seconds: skid_front_right 1
+GEAR_CONTACT: 54.675000 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.691667 seconds: skid_front_right 0
+GEAR_CONTACT: 54.691667 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.700000 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.766667 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.783333 seconds: skid_front_right 1
+GEAR_CONTACT: 54.791667 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.800000 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.808333 seconds: skid_front_right 0
+GEAR_CONTACT: 54.850000 seconds: skid_front_right 1
+GEAR_CONTACT: 54.866667 seconds: skid_front_right 0
+GEAR_CONTACT: 54.891667 seconds: skid_front_right 1
+GEAR_CONTACT: 54.900000 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.916667 seconds: skid_front_right 0
+GEAR_CONTACT: 54.916667 seconds: skid_rear_right 0
+GEAR_CONTACT: 54.925000 seconds: skid_rear_right 1
+GEAR_CONTACT: 54.941667 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.000000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.000000 seconds: skid_rear_right 1
+GEAR_CONTACT: 55.016667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.016667 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.025000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.041667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.050000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.066667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.075000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.091667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.116667 seconds: skid_front_right 1
+GEAR_CONTACT: 55.150000 seconds: skid_front_right 0
+GEAR_CONTACT: 55.158333 seconds: skid_front_right 1
+GEAR_CONTACT: 55.175000 seconds: skid_rear_right 1
+GEAR_CONTACT: 55.191667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.258333 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.266667 seconds: skid_rear_right 1
+GEAR_CONTACT: 55.275000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.283333 seconds: skid_front_right 0
+GEAR_CONTACT: 55.283333 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.291667 seconds: skid_front_right 1
+GEAR_CONTACT: 55.308333 seconds: skid_front_right 0
+GEAR_CONTACT: 55.333333 seconds: skid_front_right 1
+GEAR_CONTACT: 55.350000 seconds: skid_front_right 0
+GEAR_CONTACT: 55.358333 seconds: skid_front_right 1
+GEAR_CONTACT: 55.375000 seconds: skid_front_right 0
+GEAR_CONTACT: 55.391667 seconds: skid_front_right 1
+GEAR_CONTACT: 55.416667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.425000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.425000 seconds: skid_rear_right 1
+GEAR_CONTACT: 55.441667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.441667 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.475000 seconds: skid_rear_right 1
+GEAR_CONTACT: 55.491667 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.550000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.550000 seconds: skid_rear_right 1
+GEAR_CONTACT: 55.566667 seconds: skid_front_right 0
+GEAR_CONTACT: 55.566667 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.658333 seconds: skid_front_right 1
+GEAR_CONTACT: 55.683333 seconds: skid_front_right 0
+GEAR_CONTACT: 55.816667 seconds: skid_rear_right 1
+GEAR_CONTACT: 55.825000 seconds: skid_front_right 1
+GEAR_CONTACT: 55.833333 seconds: skid_front_right 0
+GEAR_CONTACT: 55.833333 seconds: skid_rear_right 0
+GEAR_CONTACT: 55.916667 seconds: skid_front_right 1
+GEAR_CONTACT: 55.933333 seconds: skid_front_right 0
+GEAR_CONTACT: 55.991667 seconds: skid_front_right 1
+GEAR_CONTACT: 56.008333 seconds: skid_front_right 0
+GEAR_CONTACT: 56.016667 seconds: skid_front_right 1
+GEAR_CONTACT: 56.066667 seconds: skid_front_right 0
+GEAR_CONTACT: 56.075000 seconds: skid_front_right 1
+GEAR_CONTACT: 56.091667 seconds: skid_front_right 0
+GEAR_CONTACT: 56.100000 seconds: skid_front_right 1
+GEAR_CONTACT: 56.133333 seconds: skid_rear_right 1
+GEAR_CONTACT: 56.150000 seconds: skid_front_right 0
+GEAR_CONTACT: 56.150000 seconds: skid_rear_right 0
+GEAR_CONTACT: 56.266667 seconds: skid_front_right 1
+GEAR_CONTACT: 56.266667 seconds: skid_rear_right 1
+GEAR_CONTACT: 56.283333 seconds: skid_front_right 0
+GEAR_CONTACT: 56.283333 seconds: skid_rear_right 0
+GEAR_CONTACT: 56.416667 seconds: skid_front_right 1
+GEAR_CONTACT: 56.575000 seconds: skid_front_right 0
+GEAR_CONTACT: 56.583333 seconds: skid_front_right 1
+GEAR_CONTACT: 56.600000 seconds: skid_front_right 0
+GEAR_CONTACT: 56.608333 seconds: skid_front_right 1
+GEAR_CONTACT: 56.650000 seconds: skid_front_right 0
+GEAR_CONTACT: 56.658333 seconds: skid_front_right 1
+GEAR_CONTACT: 56.658333 seconds: skid_rear_right 1
+GEAR_CONTACT: 56.675000 seconds: skid_front_right 0
+GEAR_CONTACT: 56.683333 seconds: skid_rear_right 0
+GEAR_CONTACT: 56.791667 seconds: skid_rear_right 1
+GEAR_CONTACT: 56.816667 seconds: skid_rear_right 0
+GEAR_CONTACT: 56.916667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.141667 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.150000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.158333 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.166667 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.225000 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.241667 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.266667 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.308333 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.316667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.333333 seconds: skid_front_right 0
+GEAR_CONTACT: 57.333333 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.341667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.375000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.383333 seconds: skid_front_right 1
+GEAR_CONTACT: 57.400000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.408333 seconds: skid_front_right 1
+GEAR_CONTACT: 57.425000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.466667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.491667 seconds: skid_front_right 0
+GEAR_CONTACT: 57.533333 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.541667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.550000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.550000 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.633333 seconds: skid_front_right 1
+GEAR_CONTACT: 57.650000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.691667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.725000 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.741667 seconds: skid_front_right 0
+GEAR_CONTACT: 57.783333 seconds: skid_front_right 1
+GEAR_CONTACT: 57.791667 seconds: skid_front_right 0
+GEAR_CONTACT: 57.791667 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.800000 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.808333 seconds: skid_front_right 1
+GEAR_CONTACT: 57.825000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.825000 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.833333 seconds: skid_front_right 1
+GEAR_CONTACT: 57.850000 seconds: skid_front_right 0
+GEAR_CONTACT: 57.891667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.900000 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.908333 seconds: skid_front_right 0
+GEAR_CONTACT: 57.908333 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.916667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.916667 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.933333 seconds: skid_front_right 0
+GEAR_CONTACT: 57.933333 seconds: skid_rear_right 0
+GEAR_CONTACT: 57.941667 seconds: skid_front_right 1
+GEAR_CONTACT: 57.941667 seconds: skid_rear_right 1
+GEAR_CONTACT: 57.958333 seconds: skid_front_right 0
+GEAR_CONTACT: 57.958333 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.008333 seconds: skid_front_right 1
+GEAR_CONTACT: 58.025000 seconds: skid_front_right 0
+GEAR_CONTACT: 58.033333 seconds: skid_front_right 1
+GEAR_CONTACT: 58.091667 seconds: skid_rear_right 1
+GEAR_CONTACT: 58.108333 seconds: skid_front_right 0
+GEAR_CONTACT: 58.108333 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.150000 seconds: skid_rear_right 1
+GEAR_CONTACT: 58.158333 seconds: skid_front_right 1
+GEAR_CONTACT: 58.166667 seconds: skid_front_right 0
+GEAR_CONTACT: 58.166667 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.216667 seconds: skid_front_right 1
+GEAR_CONTACT: 58.233333 seconds: skid_front_right 0
+GEAR_CONTACT: 58.241667 seconds: skid_front_right 1
+GEAR_CONTACT: 58.250000 seconds: skid_front_right 0
+GEAR_CONTACT: 58.258333 seconds: skid_front_right 1
+GEAR_CONTACT: 58.300000 seconds: skid_front_right 0
+GEAR_CONTACT: 58.325000 seconds: skid_front_right 1
+GEAR_CONTACT: 58.341667 seconds: skid_front_right 0
+GEAR_CONTACT: 58.350000 seconds: skid_front_right 1
+GEAR_CONTACT: 58.366667 seconds: skid_front_right 0
+GEAR_CONTACT: 58.375000 seconds: skid_front_right 1
+GEAR_CONTACT: 58.383333 seconds: skid_rear_right 1
+GEAR_CONTACT: 58.391667 seconds: skid_front_right 0
+GEAR_CONTACT: 58.416667 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.491667 seconds: skid_rear_right 1
+GEAR_CONTACT: 58.500000 seconds: skid_front_right 1
+GEAR_CONTACT: 58.508333 seconds: skid_front_right 0
+GEAR_CONTACT: 58.508333 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.516667 seconds: skid_front_right 1
+GEAR_CONTACT: 58.516667 seconds: skid_rear_right 1
+GEAR_CONTACT: 58.525000 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.533333 seconds: skid_front_right 0
+GEAR_CONTACT: 58.541667 seconds: skid_front_right 1
+GEAR_CONTACT: 58.558333 seconds: skid_front_right 0
+GEAR_CONTACT: 58.566667 seconds: skid_front_right 1
+GEAR_CONTACT: 58.583333 seconds: skid_front_right 0
+GEAR_CONTACT: 58.608333 seconds: skid_front_right 1
+GEAR_CONTACT: 58.633333 seconds: skid_front_right 0
+GEAR_CONTACT: 58.641667 seconds: skid_front_right 1
+GEAR_CONTACT: 58.691667 seconds: skid_front_right 0
+GEAR_CONTACT: 58.700000 seconds: skid_front_right 1
+GEAR_CONTACT: 58.700000 seconds: skid_rear_right 1
+GEAR_CONTACT: 58.716667 seconds: skid_front_right 0
+GEAR_CONTACT: 58.716667 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.791667 seconds: skid_rear_right 1
+GEAR_CONTACT: 58.833333 seconds: skid_front_right 1
+GEAR_CONTACT: 58.850000 seconds: skid_front_right 0
+GEAR_CONTACT: 58.850000 seconds: skid_rear_right 0
+GEAR_CONTACT: 58.891667 seconds: skid_front_right 1
+GEAR_CONTACT: 58.916667 seconds: skid_front_right 0
+GEAR_CONTACT: 58.950000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.033333 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.041667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.083333 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.091667 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.108333 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.116667 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.133333 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.158333 seconds: skid_front_right 1
+GEAR_CONTACT: 59.241667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.250000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.266667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.275000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.300000 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.325000 seconds: skid_front_right 0
+GEAR_CONTACT: 59.383333 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.391667 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.400000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.408333 seconds: skid_front_right 0
+GEAR_CONTACT: 59.408333 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.416667 seconds: skid_front_right 1
+GEAR_CONTACT: 59.433333 seconds: skid_front_right 0
+GEAR_CONTACT: 59.475000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.491667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.525000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.533333 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.541667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.541667 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.550000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.550000 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.566667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.566667 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.625000 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.633333 seconds: skid_front_right 1
+GEAR_CONTACT: 59.641667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.641667 seconds: skid_rear_right 0
+GEAR_CONTACT: 59.725000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.741667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.900000 seconds: skid_front_right 1
+GEAR_CONTACT: 59.908333 seconds: skid_rear_right 1
+GEAR_CONTACT: 59.916667 seconds: skid_front_right 0
+GEAR_CONTACT: 59.916667 seconds: skid_rear_right 0
+GEAR_CONTACT: 60.041667 seconds: skid_rear_right 1
+GEAR_CONTACT: 60.225000 seconds: skid_rear_right 0
+GEAR_CONTACT: 60.233333 seconds: skid_rear_right 1
+GEAR_CONTACT: 60.258333 seconds: skid_front_right 1
+GEAR_CONTACT: 60.275000 seconds: skid_front_right 0
+GEAR_CONTACT: 60.275000 seconds: skid_rear_right 0
+GEAR_CONTACT: 60.483333 seconds: skid_front_right 1
+GEAR_CONTACT: 60.666667 seconds: skid_rear_right 1
+GEAR_CONTACT: 60.683333 seconds: skid_front_right 0
+GEAR_CONTACT: 60.741667 seconds: skid_rear_right 0
+GEAR_CONTACT: 60.750000 seconds: skid_rear_right 1
+GEAR_CONTACT: 60.766667 seconds: skid_rear_right 0
+GEAR_CONTACT: 60.775000 seconds: skid_rear_right 1
+GEAR_CONTACT: 60.800000 seconds: skid_rear_right 0
+GEAR_CONTACT: 60.816667 seconds: skid_rear_right 1
+GEAR_CONTACT: 60.841667 seconds: skid_front_right 1
+GEAR_CONTACT: 60.850000 seconds: skid_front_right 0
+GEAR_CONTACT: 60.850000 seconds: skid_rear_right 0
+GEAR_CONTACT: 60.858333 seconds: skid_front_right 1
+GEAR_CONTACT: 60.883333 seconds: skid_front_right 0
+GEAR_CONTACT: 60.925000 seconds: skid_front_right 1
+GEAR_CONTACT: 60.941667 seconds: skid_front_right 0
+GEAR_CONTACT: 61.000000 seconds: skid_front_right 1
+GEAR_CONTACT: 61.025000 seconds: skid_front_right 0
+GEAR_CONTACT: 61.091667 seconds: skid_rear_right 1
+GEAR_CONTACT: 61.100000 seconds: skid_front_right 1
+GEAR_CONTACT: 61.108333 seconds: skid_front_right 0
+GEAR_CONTACT: 61.108333 seconds: skid_rear_right 0
+GEAR_CONTACT: 61.250000 seconds: skid_front_right 1
+GEAR_CONTACT: 61.266667 seconds: skid_front_right 0
+[sign-cal] rnd2: roll发散帧=1507 pitch发散帧=110 (roll_sign=-1 pitch_sign=+1)
+[FAIL] 3 轮符号尝试后姿态仍发散——物理层问题，如实报告
+exit=1

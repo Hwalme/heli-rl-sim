@@ -1,0 +1,9 @@
+{
+  "mode": "arm",
+  "steps": 1000000,
+  "train_seconds": 186.8,
+  "steps_per_second": 5353,
+  "success_rate": 0.55,
+  "crash_rate": 0.0,
+  "mean_alt_err_m": 10.03
+}

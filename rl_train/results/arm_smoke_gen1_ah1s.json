@@ -1,0 +1,15 @@
+{
+  "test": "arm_smoke_gen1_ah1s",
+  "timestamp_iso": "2026-09-16T15:30:04",
+  "aircraft": "ah1s",
+  "env_class": "JSBSimHeloEnv",
+  "action_mode": "arm",
+  "task": "heli_hover",
+  "ep_steps": 120,
+  "ended_at_step": null,
+  "final_agl_m": 1.9409022411284969,
+  "final_vz_mps": 1.3493662002079778,
+  "crashed": false,
+  "rpm_final": null,
+  "verdict": "arm_mode_path_boots_and_step_OK"
+}

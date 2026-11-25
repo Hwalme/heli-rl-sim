@@ -1,0 +1,10 @@
+{
+  "conditions": 24,
+  "tasks": {
+    "hover": {
+      "model_path": "rl_train\\results\\jsbsim_ppo_direct.zip",
+      "n_conditions": 24,
+      "results_file": "rl_train\\results\\robustness_hover.json"
+    }
+  }
+}

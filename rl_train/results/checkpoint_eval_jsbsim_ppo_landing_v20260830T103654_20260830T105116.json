@@ -1,0 +1,101 @@
+{
+  "ckpt_dir": "rl_train\\results\\checkpoints\\jsbsim_ppo_landing_v20260830T103654",
+  "task": "landing",
+  "mode": "direct",
+  "screen": [
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T103654_500000_steps.zip",
+      "success_rate": 0.4,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T103654_250000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.9
+    }
+  ],
+  "final": [
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T103654_500000_steps.zip",
+      "overall_success_rate": 0.26000000000000006,
+      "overall_crash_rate": 0.0,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.4,
+          "crash_rate": 0.0
+        },
+        "seed_123": {
+          "success_rate": 0.6,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.1,
+          "crash_rate": 0.0
+        },
+        "seed_0": {
+          "success_rate": 0.1,
+          "crash_rate": 0.0
+        },
+        "seed_99": {
+          "success_rate": 0.1,
+          "crash_rate": 0.0
+        }
+      }
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T103654_250000_steps.zip",
+      "overall_success_rate": 0.0,
+      "overall_crash_rate": 0.8800000000000001,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.0,
+          "crash_rate": 0.9
+        },
+        "seed_123": {
+          "success_rate": 0.0,
+          "crash_rate": 0.9
+        },
+        "seed_7": {
+          "success_rate": 0.0,
+          "crash_rate": 0.8
+        },
+        "seed_0": {
+          "success_rate": 0.0,
+          "crash_rate": 0.9
+        },
+        "seed_99": {
+          "success_rate": 0.0,
+          "crash_rate": 0.9
+        }
+      }
+    }
+  ],
+  "best": {
+    "checkpoint": "jsbsim_ppo_landing_v20260830T103654_500000_steps.zip",
+    "overall_success_rate": 0.26000000000000006,
+    "overall_crash_rate": 0.0,
+    "seed_results": {
+      "seed_42": {
+        "success_rate": 0.4,
+        "crash_rate": 0.0
+      },
+      "seed_123": {
+        "success_rate": 0.6,
+        "crash_rate": 0.0
+      },
+      "seed_7": {
+        "success_rate": 0.1,
+        "crash_rate": 0.0
+      },
+      "seed_0": {
+        "success_rate": 0.1,
+        "crash_rate": 0.0
+      },
+      "seed_99": {
+        "success_rate": 0.1,
+        "crash_rate": 0.0
+      }
+    }
+  },
+  "timestamp": "2026-08-30 10:51:16"
+}

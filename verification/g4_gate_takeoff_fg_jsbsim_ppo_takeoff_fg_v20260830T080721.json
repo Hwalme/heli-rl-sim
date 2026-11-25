@@ -1,0 +1,73 @@
+{
+  "file": "rl_train\\results\\jsbsim_ppo_takeoff_fg_v20260830T080721_trajectory.json",
+  "task": "takeoff_fg",
+  "verdict": "PASS",
+  "n_total": 15,
+  "n_success": 11,
+  "replayable": [
+    [
+      "seed_42",
+      0,
+      {
+        "net_drift_m": 13.1,
+        "path_len_m": 13.2,
+        "heading_drift_deg": 127.7,
+        "max_alt_m": 28.0,
+        "end_alt_m": 28.0,
+        "max_hs_mps": 5.53,
+        "end_vz_mps": 0.84,
+        "end_hs_mps": 5.53,
+        "duration_s": 5.3,
+        "position_source": "dead_reckoning"
+      }
+    ],
+    [
+      "seed_123",
+      0,
+      {
+        "net_drift_m": 12.1,
+        "path_len_m": 12.3,
+        "heading_drift_deg": 119.0,
+        "max_alt_m": 28.9,
+        "end_alt_m": 28.9,
+        "max_hs_mps": 5.23,
+        "end_vz_mps": 1.53,
+        "end_hs_mps": 5.23,
+        "duration_s": 5.2,
+        "position_source": "dead_reckoning"
+      }
+    ],
+    [
+      "seed_7",
+      0,
+      {
+        "net_drift_m": 6.0,
+        "path_len_m": 6.1,
+        "heading_drift_deg": 67.5,
+        "max_alt_m": 27.4,
+        "end_alt_m": 27.4,
+        "max_hs_mps": 2.64,
+        "end_vz_mps": 4.31,
+        "end_hs_mps": 2.59,
+        "duration_s": 4.4,
+        "position_source": "dead_reckoning"
+      }
+    ],
+    [
+      "seed_0",
+      0,
+      {
+        "net_drift_m": 4.7,
+        "path_len_m": 4.8,
+        "heading_drift_deg": 62.2,
+        "max_alt_m": 28.9,
+        "end_alt_m": 28.9,
+        "max_hs_mps": 2.51,
+        "end_vz_mps": 5.02,
+        "end_hs_mps": 2.51,
+        "duration_s": 4.2,
+        "position_source": "dead_reckoning"
+      }
+    ]
+  ]
+}

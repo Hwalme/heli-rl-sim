@@ -1,0 +1,38 @@
+{
+ "stamp": "20260830_174043",
+ "version": "helispike 0.2",
+ "forward_trim_points": [
+  {
+   "pitch_cmd_deg": -3.0,
+   "ve_kts": 9.5,
+   "theta_deg": -5.68,
+   "vs_fpm": 526.0,
+   "diverged": false
+  },
+  {
+   "pitch_cmd_deg": -6.0,
+   "ve_kts": 20.8,
+   "theta_deg": -10.57,
+   "vs_fpm": 546.0,
+   "diverged": true
+  }
+ ],
+ "descent_matrix": [
+  {
+   "coll": 0.7,
+   "vs_fpm": 180.0,
+   "climb_ft": 10.0,
+   "diverged": true
+  }
+ ],
+ "touchdown": {
+  "touched": true,
+  "td_vs_fpm": -110.0,
+  "td_roll_pitch": [
+   0.9,
+   -15.5
+  ],
+  "post_settle_stable": false,
+  "exploded": false
+ }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+  helispike turbine — synthetic turboshaft-class engine for the D2(b) FDM SPIKE.
+  Structure copied from Alouette-III artoust3b.xml (turboprop_engine type, proven
+  to load/run on this JSBSim build). Power scaled to R22 Beta II class (131 hp
+  derated; model 180 hp for margin). Engine shaft 33500 rpm -> main rotor 530 rpm
+  via gearratio 63.2, tail rotor 3200 rpm via gearratio 10.47.
+
+  R22 Beta II reference (from _fdm_src/R22/R22BetaII.xml header):
+    Gross 1370 lb / Empty 855 lb / 131 hp @ 2652 rpm / rotor 530 rpm, 2 blades,
+    rotor diameter 7.67 m, hover ceiling IGE 9400 ft @ 1370 lb.
+-->
+<turboprop_engine name="hs_turbine">
+  <milthrust unit="LBS">       650.0  </milthrust>
+  <idlen1>                      60.0  </idlen1>
+  <maxn1>                      100.0  </maxn1>
+  <maxpower unit="HP">         180.0  </maxpower>
+  <psfc unit="LBS/HR/HP">        0.75 </psfc>
+  <n1idle_max_delay>             1.0  </n1idle_max_delay>
+  <maxstartingtime>              3.0  </maxstartingtime>
+  <startern1>                   20.0  </startern1>
+  <ielumaxtorque unit="FT*LB"> 1600.0 </ielumaxtorque>
+  <itt_delay>                    0.05 </itt_delay>
+  <betarangeend>                64.0  </betarangeend>
+  <reversemaxpower>              0    </reversemaxpower>
+
+  <function name="EnginePowerVC">
+    <description> Engine power vs pressure and airspeed (static sea level = 1.0) </description>
+    <table>
+      <independentVar lookup="row">atmosphere/P-psf</independentVar>
+      <independentVar lookup="column">velocities/ve-kts</independentVar>
+      <tableData>
+                    0     50    100    150
+          503    0.357  0.380  0.400  0.425
+         1048    0.586  0.589  0.600  0.621
+         1328    0.707  0.721  0.731  0.757
+         1496    0.779  0.786  0.808  0.821
+         1684    0.850  0.857  0.874  0.900
+         1896    0.914  0.929  0.946  0.971
+         2117    1.000  1.011  1.029  1.043
+      </tableData>
+    </table>
+  </function>
+
+  <table name="EnginePowerRPM_N1" type="internal">
+    <description> Engine power [hp] vs shaft rpm and N1 (rows = shaft rpm) </description>
+    <tableData>
+                      00.00   05.00   60.00   86.00   94.00   96.00   98.00   100.00  102.00
+        -100          00.00   00.40   00.40   00.40   00.40   00.40   01.00   02.00   03.00
+        12000         00.00   00.03   01.00   02.00   03.00   04.00   05.00   06.00   07.00
+        24000         00.00   00.03   03.00   63.00  110.00  130.00  152.00  176.00  188.00
+        27000         00.00   00.084  05.21   66.00  121.00  141.00  164.00  190.00  202.00
+        33500         00.00   00.084  08.40   62.00  124.00  145.00  168.00  193.00  205.00
+        37000         00.00   00.084  08.40   56.00  121.00  142.00  166.00  191.00  203.00
+        40000         00.00   00.00   00.00   00.00   00.00   00.00   00.00   00.00   00.00
+      </tableData>
+  </table>
+
+  <table name="ITT_N1" type="internal">
+    <description> ITT [deg C] vs N1 and engine run </description>
+    <tableData>
+              0     1
+        0     0     0
+       15   100   100
+       60   180   460
+       96   270   620
+      100   280   670
+    </tableData>
+  </table>
+</turboprop_engine>

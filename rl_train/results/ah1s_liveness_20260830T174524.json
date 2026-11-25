@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-08-30 17:45:24",
+  "target": "ah1s @ default root (A 轨一代生产环境)",
+  "background": "B 轨 helispike 死属性发现 (INTERFACE_CONTRACT_v1 §3.2) 的交叉验证",
+  "protocol": "读初值 → 控制通道施加扰动 → 读末值; |Δ|>阈值判 ALIVE; 失败做反向复核",
+  "suites": {
+    "默认dt(1/120)": [
+      {
+        "property": "velocities/p-rad_sec",
+        "initial": -0.0348,
+        "final": 0.0059,
+        "delta": 0.0406,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "aileron +0.3 × 0.5s",
+        "recheck": -0.1587
+      },
+      {
+        "property": "velocities/q-rad_sec",
+        "initial": -0.331,
+        "final": -0.4765,
+        "delta": -0.1454,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "elevator +0.3 × 0.5s"
+      },
+      {
+        "property": "velocities/r-rad_sec",
+        "initial": 2.534,
+        "final": 2.4744,
+        "delta": -0.0596,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "rudder +0.35 × 0.5s"
+      },
+      {
+        "property": "position/h-agl-ft",
+        "initial": 34.635,
+        "final": 40.3361,
+        "delta": 5.7011,
+        "threshold": 1.0,
+        "alive": true,
+        "disturbance": "collective 0.80 × 3s (爬升)"
+      },
+      {
+        "property": "attitude/psi-rad",
+        "initial": 3.7219,
+        "final": 5.4112,
+        "delta": 1.6892,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "rudder +0.35 × 2s (航向)"
+      }
+    ],
+    "生产dt(set_dt 0.02)": [
+      {
+        "property": "velocities/p-rad_sec",
+        "initial": -0.0063,
+        "final": 0.0053,
+        "delta": 0.0117,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "aileron +0.3 × 0.5s",
+        "recheck": -0.175
+      },
+      {
+        "property": "velocities/q-rad_sec",
+        "initial": -0.3772,
+        "final": -0.6148,
+        "delta": -0.2377,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "elevator +0.3 × 0.5s"
+      },
+      {
+        "property": "velocities/r-rad_sec",
+        "initial": 2.8739,
+        "final": 2.6862,
+        "delta": -0.1877,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "rudder +0.35 × 0.5s"
+      },
+      {
+        "property": "position/h-agl-ft",
+        "initial": 41.6885,
+        "final": 45.1042,
+        "delta": 3.4158,
+        "threshold": 1.0,
+        "alive": true,
+        "disturbance": "collective 0.80 × 3s (爬升)"
+      },
+      {
+        "property": "attitude/psi-rad",
+        "initial": 2.9997,
+        "final": 0.2869,
+        "delta": -2.7128,
+        "threshold": 0.05,
+        "alive": true,
+        "disturbance": "rudder +0.35 × 2s (航向)"
+      }
+    ]
+  },
+  "n_alive": 10,
+  "n_total": 10,
+  "all_alive": true
+}

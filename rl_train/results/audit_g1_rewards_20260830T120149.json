@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-08-30 12:01:48",
+  "method": "scripted V(vertical) vs G(gliding) trajectories, no training",
+  "seed": 42,
+  "fail_rules": {
+    "R1_reward_equivalence": "G.success and (R_V - R_G) < 1.0  (奖励无法区分好坏行为, 甚至更奖励滑翔)",
+    "R2_success_passes_drift": "任一成功轨迹 净漂移 > 50m  (成功判据放行漂移/滑翔)",
+    "R3_spin_not_rewarded": "打转轨迹得分不得高于稳定航向轨迹 (v5.2 用户令: 滑橇机打转=损坏)"
+  },
+  "audits": {
+    "landing": {
+      "trajectories": [
+        {
+          "success": false,
+          "crashed": false,
+          "reward": -1382.47,
+          "steps": 1000,
+          "net_drift_m": 19.9,
+          "path_len_m": 106.0,
+          "max_groundspeed_mps": 8.24,
+          "terminal_info": {
+            "agl_m": 0.49,
+            "vz_mps": 0.003,
+            "net_drift_m": 19.884,
+            "max_heading_dev_deg": 179.946,
+            "max_near_vz_mps": 0.804,
+            "max_near_hs_mps": 8.0,
+            "crashed": false,
+            "landed": false,
+            "success": false,
+            "mean_err": 0.331
+          },
+          "label": "V=垂直下降"
+        },
+        {
+          "success": false,
+          "crashed": false,
+          "reward": -3526.94,
+          "steps": 1000,
+          "net_drift_m": 132.2,
+          "path_len_m": 298.0,
+          "max_groundspeed_mps": 24.67,
+          "terminal_info": {
+            "agl_m": 6.596,
+            "vz_mps": 0.35,
+            "net_drift_m": 132.188,
+            "max_heading_dev_deg": 179.98,
+            "max_near_vz_mps": 0.0,
+            "max_near_hs_mps": 0.0,
+            "crashed": false,
+            "landed": false,
+            "success": false,
+            "mean_err": 0.699
+          },
+          "label": "G=滑翔下降(前推杆0.45)"
+        },
+        {
+          "success": false,
+          "crashed": false,
+          "reward": -953.93,
+          "steps": 1000,
+          "net_drift_m": 15.5,
+          "path_len_m": 36.0,
+          "max_groundspeed_mps": 2.96,
+          "terminal_info": {
+            "agl_m": 0.587,
+            "vz_mps": -0.021,
+            "net_drift_m": 15.492,
+            "max_heading_dev_deg": 179.871,
+            "max_near_vz_mps": 0.824,
+            "max_near_hs_mps": 1.913,
+            "crashed": false,
+            "landed": false,
+            "success": false,
+            "mean_err": 0.306
+          },
+          "label": "S=打转意图(踩舵0.9)"
+        }
+      ],
+      "reward_delta_VG": 2144.47,
+      "verdict": "FAIL",
+      "reason": "+R3 (打转轨迹 R_S=-953.9 >= 稳定航向 R_V=-1382.5)"
+    }
+  },
+  "n_fail": 1,
+  "n_audited": 1
+}

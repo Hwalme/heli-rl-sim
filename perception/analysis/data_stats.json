@@ -1,0 +1,181 @@
+{
+ "dataset": "IPEC-COMMUNITY/OpenFly",
+ "endpoint": "hf-mirror.com",
+ "generated": "2026-08-28",
+ "total_samples": 103226,
+ "splits": [
+  {
+   "split": "train",
+   "n_samples": 100226,
+   "n_envs": 11,
+   "env_dist": {
+    "env_airsim_sh": 18842,
+    "env_ue_bigcity": 17128,
+    "env_airsim_gz": 9756,
+    "env_airsim_18": 9731,
+    "env_airsim_26": 9690,
+    "env_airsim_16": 9556,
+    "env_gs_nwpu02": 7548,
+    "env_gs_sjtu01": 7504,
+    "env_gs_nwpu01": 3541,
+    "env_gs_ecust": 3501,
+    "env_airsim_23": 3429
+   },
+   "scenario_dist": {
+    "env_airsim_sh/astar_data": 18842,
+    "env_ue_bigcity/astar_data": 17128,
+    "env_airsim_gz/astar_data": 9756,
+    "env_airsim_18/astar_data": 9731,
+    "env_airsim_26/astar_data": 9690,
+    "env_airsim_16/astar_data": 9556,
+    "env_gs_nwpu02/astar_data": 7548,
+    "env_gs_sjtu01/astar_data": 7504,
+    "env_gs_nwpu01/astar_data": 3541,
+    "env_gs_ecust/astar_data": 3501,
+    "env_airsim_23/astar_data": 3429
+   },
+   "action_dist": {
+    "-2": 115820,
+    "-1": 115575,
+    "0": 100226,
+    "1": 88272,
+    "2": 97207,
+    "3": 98163,
+    "4": 22488,
+    "5": 21599,
+    "8": 91044,
+    "9": 858125
+   },
+   "traj_steps": {
+    "mean": 16.048919442060942,
+    "p50": 14,
+    "min": 2,
+    "max": 181
+   },
+   "instr_words": {
+    "mean": 59.80952048370682,
+    "p50": 53,
+    "min": 1,
+    "max": 373
+   },
+   "height_span_m": {
+    "mean": 4.13174226248678
+   },
+   "euclid_start_goal_m": {
+    "mean": 74.1952280708791,
+    "max": 214.46805783965317
+   },
+   "sample_budget_1pct": 1002
+  },
+  {
+   "split": "seen",
+   "n_samples": 1800,
+   "n_envs": 11,
+   "env_dist": {
+    "env_airsim_18": 203,
+    "env_airsim_26": 202,
+    "env_airsim_16": 202,
+    "env_airsim_sh": 202,
+    "env_airsim_gz": 201,
+    "env_airsim_23": 200,
+    "env_ue_bigcity": 182,
+    "env_gs_nwpu02": 105,
+    "env_gs_sjtu01": 102,
+    "env_gs_nwpu01": 101,
+    "env_gs_ecust": 100
+   },
+   "scenario_dist": {
+    "env_airsim_18/astar_data": 203,
+    "env_airsim_26/astar_data": 202,
+    "env_airsim_16/astar_data": 202,
+    "env_airsim_sh/astar_data": 202,
+    "env_airsim_gz/astar_data": 201,
+    "env_airsim_23/astar_data": 200,
+    "env_ue_bigcity/astar_data": 182,
+    "env_gs_nwpu02/astar_data": 105,
+    "env_gs_sjtu01/astar_data": 102,
+    "env_gs_nwpu01/astar_data": 101,
+    "env_gs_ecust/astar_data": 100
+   },
+   "action_dist": {
+    "-2": 1839,
+    "-1": 1835,
+    "0": 1800,
+    "1": 1617,
+    "2": 1818,
+    "3": 1858,
+    "4": 408,
+    "5": 393,
+    "8": 1651,
+    "9": 15550
+   },
+   "traj_steps": {
+    "mean": 15.982777777777779,
+    "p50": 14,
+    "min": 2,
+    "max": 69
+   },
+   "instr_words": {
+    "mean": 65.95666666666666,
+    "p50": 58,
+    "min": 9,
+    "max": 285
+   },
+   "height_span_m": {
+    "mean": 3.74
+   },
+   "euclid_start_goal_m": {
+    "mean": 74.14375705219166,
+    "max": 207.68102889971868
+   },
+   "sample_budget_1pct": 18
+  },
+  {
+   "split": "unseen",
+   "n_samples": 1200,
+   "n_envs": 3,
+   "env_dist": {
+    "env_game_gtav": 406,
+    "env_ue_smallcity": 404,
+    "env_gs_sjtu02": 390
+   },
+   "scenario_dist": {
+    "env_game_gtav/low_average": 406,
+    "env_ue_smallcity/astar_data": 404,
+    "env_gs_sjtu02/astar_data": 390
+   },
+   "action_dist": {
+    "-2": 575,
+    "-1": 573,
+    "0": 1200,
+    "1": 1023,
+    "2": 1237,
+    "3": 1239,
+    "4": 136,
+    "5": 126,
+    "8": 1033,
+    "9": 10925
+   },
+   "traj_steps": {
+    "mean": 15.055833333333334,
+    "p50": 12,
+    "min": 2,
+    "max": 140
+   },
+   "instr_words": {
+    "mean": 51.4375,
+    "p50": 44,
+    "min": 11,
+    "max": 195
+   },
+   "height_span_m": {
+    "mean": 1.7725
+   },
+   "euclid_start_goal_m": {
+    "mean": 75.91875389308879,
+    "max": 1083.9715574450365
+   },
+   "sample_budget_1pct": 12
+  }
+ ]
+}

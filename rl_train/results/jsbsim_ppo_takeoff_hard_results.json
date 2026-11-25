@@ -1,0 +1,49 @@
+{
+  "engine": "jsbsim-1.3.1",
+  "aircraft": "ah1s",
+  "physics": "6-DoF rigid body + BET rotor + ground effect + aero tables",
+  "task": "takeoff_hard",
+  "task_metric": "mean_alt_err_m",
+  "mode": "direct",
+  "steps": 1000000,
+  "train_seconds": 510.7,
+  "steps_per_second": 1958.2,
+  "overall_success_rate": 1.0,
+  "overall_crash_rate": 0.0,
+  "overall_mean_alt_err_m": 0.0,
+  "procurement_acceptance_target": ">= 85% success, 0% crash",
+  "acceptance_passed": true,
+  "seed_results": {
+    "seed_42": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.0,
+      "episodes": 20
+    },
+    "seed_123": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.0,
+      "episodes": 20
+    },
+    "seed_7": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.0,
+      "episodes": 20
+    },
+    "seed_0": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.0,
+      "episodes": 20
+    },
+    "seed_99": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.0,
+      "episodes": 20
+    }
+  },
+  "verified_timestamp": "2026-08-29 12:09:40"
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+_fix/
+_parts*/
+prof*/
+_chk*
+_v*
+_commitmsg.txt

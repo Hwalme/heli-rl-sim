@@ -1,0 +1,30 @@
+{
+  "steps": 2000000,
+  "gate_note": "NEAR_GROUND_VZ 1.2 (profile-aligned recalibration)",
+  "overall_success_rate": 0.5,
+  "overall_crash_rate": 0.0,
+  "acceptance_passed": false,
+  "seed_results": {
+    "seed_42": {
+      "success_rate": 0.5,
+      "crash_rate": 0.0
+    },
+    "seed_123": {
+      "success_rate": 0.4,
+      "crash_rate": 0.0
+    },
+    "seed_7": {
+      "success_rate": 0.6,
+      "crash_rate": 0.0
+    },
+    "seed_0": {
+      "success_rate": 0.45,
+      "crash_rate": 0.0
+    },
+    "seed_99": {
+      "success_rate": 0.55,
+      "crash_rate": 0.0
+    }
+  },
+  "verified": "2026-08-30 E eval of 2M ckpt under 1.2 gate"
+}

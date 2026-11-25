@@ -1,0 +1,209 @@
+{
+  "model_path": "rl_train\\results\\jsbsim_ppo_forward.zip",
+  "conditions": {
+    "w_nominal__m_nominal__d_L0": {
+      "wind": "nominal",
+      "mass": "nominal",
+      "delay": "L0",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 36.810083576592525,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 36.810083576592525,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_nominal__d_L1": {
+      "wind": "nominal",
+      "mass": "nominal",
+      "delay": "L1",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 36.810083576592525,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 36.810083576592525,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_heavy15__d_L0": {
+      "wind": "nominal",
+      "mass": "heavy15",
+      "delay": "L0",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 40.05438936141669,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 40.05438936141669,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_nominal__m_heavy15__d_L1": {
+      "wind": "nominal",
+      "mass": "heavy15",
+      "delay": "L1",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 40.05438936141669,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 40.05438936141669,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_nominal__d_L0": {
+      "wind": "strong",
+      "mass": "nominal",
+      "delay": "L0",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 36.892489112721805,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 36.892489112721805,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_nominal__d_L1": {
+      "wind": "strong",
+      "mass": "nominal",
+      "delay": "L1",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 36.892489112721805,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 36.892489112721805,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_heavy15__d_L0": {
+      "wind": "strong",
+      "mass": "heavy15",
+      "delay": "L0",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 41.909500994936614,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 41.909500994936614,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_strong__m_heavy15__d_L1": {
+      "wind": "strong",
+      "mass": "heavy15",
+      "delay": "L1",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 41.909500994936614,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 41.909500994936614,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_nominal__d_L0": {
+      "wind": "gust",
+      "mass": "nominal",
+      "delay": "L0",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 37.59932518308349,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 37.59932518308349,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_nominal__d_L1": {
+      "wind": "gust",
+      "mass": "nominal",
+      "delay": "L1",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 37.59932518308349,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 37.59932518308349,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_heavy15__d_L0": {
+      "wind": "gust",
+      "mass": "heavy15",
+      "delay": "L0",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 37.37592374543722,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 37.37592374543722,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    },
+    "w_gust__m_heavy15__d_L1": {
+      "wind": "gust",
+      "mass": "heavy15",
+      "delay": "L1",
+      "success_rate": 0.0,
+      "crash_rate": 0.0,
+      "mean_err": 37.37592374543722,
+      "seed_results": [
+        {
+          "success_rate": 0.0,
+          "crash_rate": 0.0,
+          "mean_err": 37.37592374543722,
+          "mean_ep_length": 1000.0,
+          "episodes": 20
+        }
+      ]
+    }
+  }
+}

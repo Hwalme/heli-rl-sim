@@ -1,0 +1,6173 @@
+{
+ "meta": {
+  "n_episodes": 220,
+  "n_segments": 744,
+  "segments_per_intent": {
+   "FORWARD": 406,
+   "HOVER": 142,
+   "TURN_RIGHT": 104,
+   "TURN_LEFT": 90,
+   "CLIMB": 2
+  },
+  "segment_share": {
+   "FORWARD": 0.5457,
+   "HOVER": 0.1909,
+   "TURN_RIGHT": 0.1398,
+   "TURN_LEFT": 0.121,
+   "CLIMB": 0.0027
+  },
+  "seed": 42,
+  "budget": {
+   "seen": 100,
+   "unseen": 60,
+   "train": 60
+  },
+  "rules": {
+   "turn_deg": 30.0,
+   "climb_m": 1.5,
+   "hover_m": 0.5
+  }
+ },
+ "episodes": [
+  {
+   "id": "seen-000008",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/low_short/2024-12-28_1-43-50_1129566413",
+   "instruction": "Veer left toward a large , gray and black building characterized by tall , reflective windows . Move ahead to it . Go right to it . Keep going straight to encounter it . Slightly turn right to advance forward towards a large , brown building with an ornate facade . Slightly turn right again to go directly ahead towards yet another large , black building , exhibiting a grid - like window pattern . Finally , slightly turn left and move forward to approach a tall , multi - story modern office building with a dark blue and black glass facade .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000009",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/low_short/2024-12-16_20-24-38_35005211",
+   "instruction": "Proceed straight to a large brown building featuring fire escapes , then go right to another large building , light brown in color , which has windows with fire escape ladders . Finally , continue straight to a multi - story beige apartment building with a fire escape staircase .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000031",
+   "split": "seen",
+   "image_path": "env_gs_ecust/astar_data/long/2025-1-9_3-59-45_134591281",
+   "instruction": "Start by continuing straight towards a white , large U - shaped building . Then , turn right to approach a large , light gray building with a rooftop featuring utility equipment . Continue straight ahead to reach a medium - sized brown and gray rectangular structure with glass walls and an open area . Slightly veer left and proceed straight to a medium - sized brown rectangular building with a flat roof .",
+   "n_waypoints": 25,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000037",
+   "split": "seen",
+   "image_path": "env_gs_ecust/astar_data/long/2025-1-11_1-30-25_1220585472",
+   "instruction": "Move ahead towards a light gray , medium - sized , rectangular building with a flat roof . Then , turn right in the direction of a gray , large , rectangular building featuring multiple windows . Proceed forward to a large building in gray and white , marked by rectangular windows and rooftop access structures . Slightly turn left and continue straight to a light gray , medium - sized , rectangular structure with multiple floors .",
+   "n_waypoints": 17,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000111",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/high_short/2025-1-11_2-5-19_909448681",
+   "instruction": "Move ahead to the beige building featuring futuristic architecture with a spiral design , then slightly turn right and head straight . Based on the images provided , I have observed the target building located to the left of each image . Below is a JSON representation describing the characteristics of this landmark : ```json { \" color \" : \" white \" , \" feature \" : \" curved roof , linear accents , reflective surface \" , \" size \" : \" large \" , \" type \" : \" building \" } ```",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000112",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/high_short/2025-1-10_22-54-0_1138259617",
+   "instruction": "Start by walking straight toward a tall building characterized by a gray color with glass reflections , a reflective glass facade , and a grid - like window pattern . Next , turn left to approach a high - rise building with a silver - blue color and a glass facade featuring a modern linear design . Finally , proceed directly ahead toward it .",
+   "n_waypoints": 5,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000129",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/high_short/2025-1-11_5-53-12_2119434455",
+   "instruction": "Proceed directly towards the large building characterized by its light grey / white color and curved , modern architecture .",
+   "n_waypoints": 5,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000142",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/high_short/2025-1-9_23-48-11_101323875",
+   "instruction": "Proceed directly ahead towards a tall building characterized by a white and black grid - like pattern with windows . Then , veer left slightly to encounter it . Continue to walk straight , approaching another large building shaded in light beige , noted for its vertical window alignment . After a slight right turn , advance directly ahead to a tall skyscraper - like building displaying a beige hue with a grid pattern , featuring large blue - tinted windows and vertical and horizontal lines .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000160",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/high_short/2025-1-10_1-50-38_65120356",
+   "instruction": "Proceed directly toward a tall building characterized by its light gray color and numerous windows . Then , slightly veer to the left and move forward to approach it .",
+   "n_waypoints": 5,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000167",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/medium_short_updown/2025-1-14_3-26-7_155789224",
+   "instruction": "Move upwards towards the light gray apartment building characterized by glass balconies with a blue tint , medium height , occupying the center foreground . Proceed to the large gray skyscraper with a multi - story structure . Slightly turn left and go directly ahead to the large building with a modern architectural design featuring unique geometric shapes in blue and beige . Stop briefly , then go downwards to it .",
+   "n_waypoints": 42,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     17
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     18
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000182",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/medium_short/2025-1-9_15-36-2_929588156",
+   "instruction": "Advance forward to a light gray urban building characterized by large size , rectangular windows , and a flat roof . Slightly turn right slightly and proceed to it .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000201",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/high_average/2025-1-11_11-52-9_116903580",
+   "instruction": "Proceed towards the blue structure characterized by its vertical light stripes . It stands tall and is identified as a building .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000205",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/medium_average/2025-1-8_20-26-7_1081174232",
+   "instruction": "Walk directly towards a modern skyscraper that is large , painted white , and features square windows , then slightly turn left and continue straight to a medium - sized commercial building with a simple facade adorned with evenly spaced rectangular windows , also white in color .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000240",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/medium_short/2025-1-8_20-27-59_485560280",
+   "instruction": "Move forward to the dark gray , medium - sized façade section , which features rectangular windows with grid patterns , and is part of a brickwork building .",
+   "n_waypoints": 4,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000245",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/high_low/2025-1-11_17-58-3_745863593",
+   "instruction": "Continue straight towards a dark blue skyscraper with yellowish white illumination , characterized by a tall structure featuring a grid of lights resembling a pixelated pattern and being large in size . Then , slightly turn right and move forward to it .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000247",
+   "split": "seen",
+   "image_path": "env_gs_ecust/astar_data/short/2025-1-9_21-46-51_1476492728",
+   "instruction": "Proceed directly ahead to the large , red , rectangular building with visible rooftop equipment and windows .",
+   "n_waypoints": 3,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000292",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/high_long/2025-01-19_10-37-42_336192",
+   "instruction": "Proceed straight towards the gray , medium - sized office building featuring modern architecture with a flat rooftop and window patterns . Slightly turn left and continue ahead , then slightly incline upwards to another gray , medium - sized building rooftop with concrete tiles and shadows . Make a slight right and move forward to a dark gray building rooftop with mechanical structures and panels , then descend to the dark gray , large office building with a flat roof accommodating various structures such as HVAC units and vents , spanning multiple floors .",
+   "n_waypoints": 14,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000302",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/high_short/2025-1-4_6-3-42_1172063133",
+   "instruction": "Proceed directly to the commercial building characterized by its light grey and white color . This medium - sized structure stands out with its mid-rise design featuring flat roofs , square windows , and mechanical equipment on top , distinguishing it from the surrounding buildings .",
+   "n_waypoints": 3,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000312",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/low_average_updown/2025-1-14_7-28-52_1143195511",
+   "instruction": "Begin by climbing to a large , dark building characterized by its rectangular shape with numerous illuminated windows . Next , advance forward toward a sizeable skyscraper featuring blue and black grid windows with glowing lights . Then , slightly turn right and move forward to a vast building façade , yellow in color , with an illuminated grid - like surface . Make a left turn to approach a large , gray high - rise , multi - story building . Move ahead to reach another large , dark building , tall and rectangular , adorned with windows . Slightly turn left and advance forward to a large grey residential building exhibiting balconies . Slightly turn right and proceed straight toward a substantial building façade , gray in hue , showcasing multiple dark square windows . Finally , slightly stop and drop at a medium - sized , light brown residential building with rectangular windows .",
+   "n_waypoints": 28,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     14
+    ],
+    [
+     "HOVER",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000331",
+   "split": "seen",
+   "image_path": "env_gs_ecust/astar_data/short/2025-1-10_4-12-20_2049488897",
+   "instruction": "Proceed directly to the large grey building , which is rectangular with an open courtyard in the center .",
+   "n_waypoints": 5,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000332",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/high_short/2025-1-9_17-55-18_1291554098",
+   "instruction": "\" Advance forward to a building with a black - and - white color scheme featuring lit sections , characterized by a grid - like structure with evenly spaced lines resembling a solar panel or glass façade , large in size and covering a significant portion of the view . Slightly turn right and proceed straight to another building with dark glass and illuminated windows , also displaying a grid - like structure but adorned with distinct light patterns , tall and wide , spanning the image width . \"",
+   "n_waypoints": 6,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ]
+  },
+  {
+   "id": "seen-000352",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/high_average/2025-1-9_16-36-57_515530019",
+   "instruction": "Walk directly to a gray , medium - sized flat open surface with building materials , identified as the roof of a building . Then , slightly turn right and move forward to approach a large , dark grid - like facade with windows , which marks a building . Finally , slightly turn left and advance forward to reach it .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ]
+  },
+  {
+   "id": "seen-000374",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/medium_average/2025-01-19_03-54-10_935795",
+   "instruction": "Proceed directly to the large blue - gray commercial building with a rooftop equipped with ventilation systems , then gently ascend towards the large gray office building featuring grid - like windows , and finally descend to the medium - height light grey structure characterized by arched windows and a detailed façade , which could be a residential or office building .",
+   "n_waypoints": 17,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000402",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/low_long/2024-12-31_23-49-33_260401255",
+   "instruction": "itCitoitnittitiitnituiteit itsittitritaitiitgithittit ittitoitwitaitritditsit ittithiteit ithitiitsittitoitritiitcit itbituitiitlitditiitnitgit itditiitsittitiitnitgituitiitsithiteitdit itbityit itiittitsit itgitriteityit itcitoitlitoitrit it,it itoitritnitaittiteit itwitiitnitditoitwitsit it,it itaitnitdit itcitoitlituitmitnitsit it.it itIittit itiitsit itlitaitritgiteit itiitnit itsitiitziteit it.it itSitlitiitgithittitlityit itviteiteitrit itritiitgithittit it,it ittithiteitnit itcitoitnittitiitnituiteit itgitoitiitnitgit itsittitritaitiitgithittit it,it itaitnitdit itsitlitiitgithittitlityit ittituitritnit itliteitfittit it.it itPitritoitciteiteitdit itditiitriteitcittitlityit ittitoit ittithiteit itniteitxittit itlitoitcitaittitiitoitnit it,it itait itlitaitritgiteit itmituitlittitiit it-it itsittitoitrityit itbituitiitlitditiitnitgit itwitiittithit itlitiitgithittit itgitritaityit itcitoitlitoitrit it,it itfiteitaittituitritiitnitgit itoitritnitaitmiteitnittitaitlit itmitoitlitditiitnitgit itbiteittitwiteiteitnit itfitlitoitoitritsit itaitnitdit itlitaitritgiteit itgitritiitdit itwitiitnitditoitwitsit it.it itTithitiitsit itbituitiitlitditiitnitgit itsiteitritviteitsit itaitsit iteitiittithiteitrit itait itriteitsitiitditeitnittitiitaitlit itoitrit itcitoitmitmiteitritcitiitaitlit iteitsittitaitbitlitiitsithitmiteitnittit it.it",
+   "n_waypoints": 20,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     14
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000415",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/low_average/2025-1-5_7-19-18_576724902",
+   "instruction": "\" Walk straight to a modern building with a flat rooftop design , featuring a light gray color , a flat rooftop with rectangular structures and piping , and a medium height , spanning a prominent area in the center of the image . \"",
+   "n_waypoints": 2,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000455",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/low_average_updown/2025-1-14_15-12-35_1344247686",
+   "instruction": "Ascend towards a light grey building with a flat roof and large size , then proceed towards another large building that features gray color and large windows . Pause slightly , and finally descend to a large modern commercial building characterized by dark color and reflective glass panels .",
+   "n_waypoints": 33,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     9
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     12
+    ],
+    [
+     "HOVER",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000474",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/high_long/2025-01-19_02-22-09_20982",
+   "instruction": "Move forward to a gray high - rise building with rectangular windows and a flat roof , which is tall . Then , go slightly upward and turn right , walking straight to a grey - blue residential building with white accents , long rectangular structure , and uniform balconies , of medium - large size . Slightly turn right again and walk straight toward a tall and slender white building with multiple windows , which is large . Advance forward to it . Finally , follow by proceeding to it .",
+   "n_waypoints": 26,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     17
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000498",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/low_average/2025-1-2_2-1-19_380390179",
+   "instruction": "Proceed towards the white and black rectangular skyscraper , characterized by vertical building edges and numerous windows , which is a very tall , high - rise residential structure . Then , slightly turn left and move ahead to it .",
+   "n_waypoints": 14,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     13
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000512",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/low_long/2025-1-2_19-26-34_1573177440",
+   "instruction": "Here ’s the refined and combined sentence : \" Head straight to a beige residential building characterized by balconies and rectangular windows of medium size , then slightly turn right and head straight to a white residential building featuring a rectangular structure with multiple windows of a similar size , after which slightly turn left and move forward toward it, and finally , slightly turn left and walk straight toward a residential low - rise building with medium size compared to its surroundings , adorned with gabled red roofs and white accents accompanied by multiple windows . \"",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000541",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/medium_average/2025-1-8_21-25-46_1372261796",
+   "instruction": "Move forward to a large , light gray arched steel structure , identified as a bridge , then slightly turn right and proceed to a medium - sized pink building with a triangular roof , which serves either as a residential or institutional building .",
+   "n_waypoints": 14,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     13
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000574",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/low_average/2025-01-18_22-39-32_49163",
+   "instruction": "Proceed towards the brown building with a large rooftop area , then ascend slightly while continuing straight to the multi - story brown building with rectangular windows and intricate brickwork . Finally , descend to the dark brown commercial or office building characterized by its rectangular shape , evenly spaced windows on the upper portion , and large entrance - like structures below .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000616",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/high_average/2025-1-10_7-1-56_1636750614",
+   "instruction": "Move ahead to a large gray building characterized by a rectangular façade featuring numerous dark windows and a grid - like panel design . Slightly turn left , then advance forward to it .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000631",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/high_average/2025-1-10_6-4-8_1781485213",
+   "instruction": "Proceed to the large , beige building with tall , rectangular features and vertical window strips , then slightly turn left and move straight towards another identical building with vertical rectangular windows . Finally , slightly turn right and continue forward to a similar structure characterized by a series of vertical lines of windows and noticeable wall cracks .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000659",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/low_average_updown/2025-1-13_22-54-54_1059961393",
+   "instruction": "Starting at a medium - sized gray building characterized by multiple windows with intricate architectural details and a rooftop antenna , proceed straight toward another medium - sized gray building with rectangular windows and a rooftop antenna . Then , slightly turn right and advance toward a large gray structure distinguished by rectangular windows , an intricate façade , and a rooftop water tank . Next , make a left turn and head toward it . Continue straight to reach it . Finally , slightly stop at a medium - sized gray commercial building featuring an arched entrance with decorative design above the door , multiple tall windows with red curtains , and a bench with a planter nearby .",
+   "n_waypoints": 33,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     9
+    ],
+    [
+     "CLIMB",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "CLIMB",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000664",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/high_average/2025-1-9_20-50-49_1159126505",
+   "instruction": "Move forward to a large gray modern building characterized by its tall structure with a grid - like window pattern , then slightly turn right and proceed straight to it .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000702",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/high_long/2025-1-11_16-1-42_505185185",
+   "instruction": "Walk directly to a large , gray building characterized by a spacious open balcony supported by columns . Then , turn left towards a light yellow high - rise building featuring striking glowing glass panels . Continue straight to a modern high - rise , moderate in size , with a facade of blue and gray lit - up sections and visible interior lighting . Slightly turn right and continue straight to a tall , modern skyscraper with blue and gray glassy windows that are illuminated . Make a right slightly turn heading to it . Finally , move forward to a large high - rise commercial building with a curved facade and glass windows , colored gray and blue .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000704",
+   "split": "seen",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-16_5-7-8_861798817",
+   "instruction": "Proceed towards the circular structure characterized by a medium - sized , building - like dome with a gray / silver color .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000708",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/medium_short/2025-01-19_06-54-00_156295",
+   "instruction": "First , move forward to a large , dark gray building facade characterized by a brick - textured wall and rectangular windows . Then , elevate to a large , gray rooftop that appears flat and cracked , with patches of peeling material . Slightly turn left and continue straight toward a medium - sized commercial or office building with a brown and red brick facade , showcasing prominent vertical rectangular windows and a weathered rooftop . Next , slightly turn right , proceed forward , slightly turn left , and advance forward to it . Lower to it . Finally , walk straight to it .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "HOVER",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ]
+  },
+  {
+   "id": "seen-000713",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/low_long/2025-01-19_01-08-06_438584",
+   "instruction": "Proceed straight towards the gray building , featuring large arched windows with columns . Slightly ascend to encounter a carved stone sculpture resembling a crouching creature , likely a gargoyle . Then , slightly veer right to the large brown building adorned with arched windows . Next , slightly turn left heading straight towards another brown building , this time with large rectangular windows topped with a red section , identified as a brick building . Finally , descend to a large , multi - story commercial or office building characterized by numerous evenly spaced rectangular windows with arches at the top .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     21
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000722",
+   "split": "seen",
+   "image_path": "env_gs_nwpu02/astar_data/long/2025-1-17_5-48-33_343945053",
+   "instruction": "Proceed straight to the large gray and beige building featuring a flat roof with glass panels , then slightly turn right and walk straight towards it . Next , go left to it . After that , walk straight to it . Make a left turn to reach a large gray building with an attached cylindrical structure . Head straight to it . Slightly turn right and move forward to approach a medium - sized light gray building with a rectangular shape and uniform window patterns .",
+   "n_waypoints": 32,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "HOVER",
+     3
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000753",
+   "split": "seen",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-15_22-58-55_1833488263",
+   "instruction": "\" Proceed directly ahead to a large , white dome - shaped structure characterized by a grid - like pattern on its surface , commonly identified as a building such as a stadium or arena . Then , shift to the right slightly to encounter it . \"",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000761",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/high_long/2025-1-13_2-6-30_1736709428",
+   "instruction": "Begin by heading straight towards the blue building with illuminated windows and tall size . Slightly turn right and move forward to the gray building with white lighting , featuring multiplex residential buildings having rectangular , shared , and illuminated edges , which is medium in size . Then , slightly turn left and go directly ahead towards it . Finally , slightly turn left again and keep going straight to reach the blue building with illuminated windows and a large red emblem / logo on the facade , which is very tall , like a skyscraper .",
+   "n_waypoints": 22,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000774",
+   "split": "seen",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-16_4-32-8_987059619",
+   "instruction": "Proceed straight towards the medium - sized building characterized by its grey color and modern architecture , featuring a rectangular shape and a symmetrical facade .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000794",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/low_long/2025-1-8_19-2-30_1231192379",
+   "instruction": "Starting with a historical building characterized by a gray brick and panel facade featuring arched windows , medium in size , you advance forward . Then , after a slight left turn and moving directly ahead , you encounter a modern high - rise skyscraper with a dark exterior accented by reflective gold hues , large in size , and adorned with a grid - like window design made of reflective glass . Continuing with a slight right turn , you proceed straight , take itturn , and again move directly ahead to arrive at a modern skyscraper with a golden reflective exterior , featuring a glass facade with a grid - like structure , large in size . Finally , after a slight left turn and advancing forward , you reach a modern glass - covered high - rise building with reflective black and gold tones , a grid of rectangular windows , and a bright reflective glare at its center , occupying most of the frame both vertically and horizontally .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000835",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/medium_long/2025-1-7_4-3-15_1137990260",
+   "instruction": "Proceed to the structure characterized by its blue color , horizontal light stripes , and large size , identified as a building . Then , slightly veer right slightly towards it .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000852",
+   "split": "seen",
+   "image_path": "env_gs_sjtu01/astar_data/long/2025-1-6_15-6-17_1290127955",
+   "instruction": "Proceed towards a gray circular area with surrounding pavement , then turn left to a tall , white high - rise building with a distinctive rooftop structure . Finally , move straight to it .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000871",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/low_average/2025-1-6_2-13-22_1886873446",
+   "instruction": "Proceed towards the beige office building featuring horizontal window strips , which is mid-sized .",
+   "n_waypoints": 2,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000884",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/medium_average_updown/2025-1-14_12-54-35_352406219",
+   "instruction": "Ascend towards the large , gray office building characterized by a grid - like facade with windows . Proceed to the large , dark grey structure featuring a rectangular shape with numerous small windows , then slightly turn right and advance towards the skyscraper facade , which has a large dark blue color and displays a grid pattern of reflective glass panels . Finally , slightly pause and descend towards the tall and wide modern building with glass facade and cylindrical columns , which is dark grey in color .",
+   "n_waypoints": 44,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     14
+    ],
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     15
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000887",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/low_average/2025-1-5_2-23-48_1872285314",
+   "instruction": "Proceed straight towards the large , beige historical building with an ornate dome top , then slightly turn left and continue straight to the next large , beige building , featuring a dome - shaped top with spires , which is a historical government structure .",
+   "n_waypoints": 6,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000903",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/high_long/2025-1-10_0-37-53_530498338",
+   "instruction": "Proceed straight to the light beige building distinguished by a tall structure with vertical window grids , then slightly turn left and continue straight to it . Finally , slightly turn right and keep moving straight to it .",
+   "n_waypoints": 20,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000909",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/low_average_updown/2025-1-14_4-13-53_606199759",
+   "instruction": "Proceed to the ** beige skyscraper ** featuring ** tall rectangular windows **. From there , continue to itSlightly turn left , move a bit forward , and then slightly turn right to reach the ** beige rectangular structure ** with ** symmetric design and tall windows **. Next , slightly turn right and keep heading straight to itFinally , descend to the ** grey stone - textured building ** , which showcases ** arched windows with decorative trims , small balcony - like ledges , intricate moldings ** , and exhibits a ** classical architectural style ** , likely ** historic or ornately designed **.",
+   "n_waypoints": 39,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     9
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000924",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/high_short/2025-01-19_03-24-31_424990",
+   "instruction": "Proceed directly ahead to a modern building characterized by its light gray color , large size , and a roof equipped with square ventilation openings . Slightly ascend to a flat rooftop featuring smooth tiles with a grid pattern , adorned in grey and of medium size . Shift right into a narrow passage between tall , light grey buildings in an urban cluster . Continue straight to another building with a large rooftop housing HVAC systems and emergency exit structures , all in gray . Descend to an office building in light gray , tall and approximately equal in height to the neighboring structure , with rooftop ventilation units and a design of vertical slats .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-000985",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/high_long/2025-1-9_21-25-29_1255179497",
+   "instruction": "Proceed forward towards a large , gray building characterized by protruding horizontal elements . Slightly turn right and head straight to it . Then , slightly turn left and continue straight to another tall grey building , which features multiple horizontal slats in a repetitive pattern . Finally , slightly turn left again , heading straight to a large , multi - story grey building with horizontal flat layers supported by vertical beams .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     13
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-000997",
+   "split": "seen",
+   "image_path": "env_gs_nwpu01/astar_data/short/2025-1-14_18-53-3_1566288819",
+   "instruction": "Walk straight into a medium - sized park or garden characterized by green and brown colors and an open area with trees . Then , slightly turn right and move ahead to a medium - sized building with light grey and a hint of pink hues , which is rectangular and relatively low compared to other surrounding buildings . It is smaller than the high - rise buildings in the background but larger than nearby structures .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001030",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/medium_average/2025-1-9_15-22-35_1605539862",
+   "instruction": "Proceed onwards to a tall , beige rectangular building adorned with numerous windows . Slightly turn left and continue ahead to a beige office building characterized by arched windows and a communication tower on its roof , which is medium - large in size .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001049",
+   "split": "seen",
+   "image_path": "env_gs_nwpu01/astar_data/short/2025-1-14_20-54-15_1412277685",
+   "instruction": "Advance towards the red medium - sized clock tower building , then slightly veer left and proceed to the large gray rectangular open space adorned with a tile pattern .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001067",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/medium_short/2025-1-9_14-35-1_1487053959",
+   "instruction": "Proceed directly towards the beige skyscraper , which is large , tall with multiple tiers and large windows .",
+   "n_waypoints": 5,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001084",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/high_average/2025-1-4_3-40-7_1120048829",
+   "instruction": "Proceed directly to a large gray and black building distinguished by multiple stories with striped patterns and rooftop structures , slightly turn left to reach a medium grey building featuring water towers , and then gently turn right , heading straight to encounter a medium - sized grey square , marked by a rectangular pattern with a yellow border at a busy intersection .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001103",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/medium_short/2025-1-9_16-27-8_1857300821",
+   "instruction": "Walk straight to a medium - sized beige building , characterized by its multi -story structure with distinct rectangular windows . Slightly turn left and move ahead to it .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001109",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/low_long/2025-1-2_17-53-26_485560280",
+   "instruction": "Head straight to a small gray vent featuring a metallic - framed ventilation grille , then slightly turn right and proceed to a large gray structure with stacked horizontal grooves and smooth rectangular segments , described as part of a modern building exterior . Next , go left slightly to it . Keep going straight to reach it . Finally , slightly turn right and head straight to it .",
+   "n_waypoints": 18,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001115",
+   "split": "seen",
+   "image_path": "env_gs_nwpu01/astar_data/short/2025-1-14_18-44-50_2001229904",
+   "instruction": "Move ahead to the large , gray , multi - story rectangular building , then slightly turn left and proceed straight to the tall , beige rectangular structure with a flat roof and visible satellite dishes on top , which is large compared to the nearby buildings .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001123",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/high_average/2025-1-5_8-45-45_545343058",
+   "instruction": "Proceed straight towards a building characterized by a grey color , a flat roof with mechanical equipment , and a medium size . Then , slightly turn left and move forward to it .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001137",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/low_average/2024-12-31_22-51-28_76065818",
+   "instruction": "Proceed directly to a medium - sized building with a white color accented by dark brown , featuring a modern rectangular facade with multiple balconies having horizontal slats , possibly an apartment or office building . Then , slightly turn left and keep going straight to reach a multistory building in light beige with dark brown accents , characterized by a textured facade with dark horizontal railings and a stone pattern , likely a modern residential or apartment building .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001159",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/medium_short/2025-1-6_15-0-32_1038626924",
+   "instruction": "Walk straight towards a gray building characterized by tall , rectangular windows with vertical alignment , then slightly turn left and move forward to another gray structure featuring medium - height dimensions , square windows with frosted glass , and identified as either a residential or office building .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001163",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/low_long/2025-1-1_1-55-41_1586903190",
+   "instruction": "Move ahead to a gray building with rectangular windows that are medium - sized . Then , slightly turn right and proceed straight to a red and gray hotel featuring rounded corners with a decorative roof , which is medium - sized compared to surrounding buildings .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001176",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/medium_short/2025-1-6_14-19-8_1404196431",
+   "instruction": "Head straight toward a large white and brown residential apartment building characterized by multiple windows and balconies . Then , slightly turn left and proceed straight to it .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001233",
+   "split": "seen",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-15_22-8-49_525829204",
+   "instruction": "Move ahead towards a beige , large , multi - story building with rectangular windows , then slightly turn right to continue straight towards a gray , medium - large , rectangular building with multiple floors and solar panels on the roof .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001251",
+   "split": "seen",
+   "image_path": "env_airsim_sh/astar_data/medium_long/2025-1-6_16-43-34_1243439214",
+   "instruction": "\" Walk straight to a medium - sized , beige and brown , multi - story building featuring alternating vertical windows and panels , surrounded by greenery . The structure appears residential or mixed - use in purpose , especially when compared to the surrounding buildings . \"",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001255",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/high_long/2025-1-10_2-33-35_483689685",
+   "instruction": "Proceed towards the tall beige building with vertical parallel grooves , then slightly turn left and move forward . Next , slightly turn right and continue towards the tall grey and blue skyscraper with glass windows . Finally , slightly turn right and head straight to the large gray building with a grid - patterned roof and dark window panels .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001267",
+   "split": "seen",
+   "image_path": "env_airsim_26/astar_data/medium_long/2025-1-9_18-30-33_101323875",
+   "instruction": "Head straight towards a light beige skyscraper featuring a rectangular shape with a stepped top and vertical rows of windows . Then , go right to a gray building characterized by a tall rectangular structure with vertical lines and windows . Proceed straight towards a beige skyscraper that is tall and adorned with vertical stripes . Slightly turn right and continue straight to a beige concrete building marked by vertical window alignment and wall cracks , which is medium - sized .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     17
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001280",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/low_long/2025-1-2_16-31-40_1861853489",
+   "instruction": "Advance forward to a modern building characterized by a gray - and - beige color palette , a grid - like pattern of windows and vertical columns , and a tall and wide structure ; slightly turn left and move ahead to another modern high - rise building , which features a light - brown exterior with blue - tinted windows , a rectangular grid of repetitive illuminated glass windows , and a tall , multi - story design similar in height to surrounding buildings .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     14
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001290",
+   "split": "seen",
+   "image_path": "env_gs_sjtu01/astar_data/long/2025-1-6_15-8-28_1104627321",
+   "instruction": "Continue straight until you reach a white building with red rooftops , characterized as U - shaped and surrounded by greenery , medium to large in size . Then , slightly turn left and proceed straight to it .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001313",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/low_long/2025-1-1_22-59-23_1034514500",
+   "instruction": "Proceed forward to the dark grey skyscraper featuring a multistory structured facade with horizontal lines and large dimensions . Then , slightly turn left and continue straight towards the grey apartment building with multiple balconies , repetitive patterns , and window rows , which is also large . Finally , move ahead to it .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     13
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001346",
+   "split": "seen",
+   "image_path": "env_gs_sjtu01/astar_data/long/2025-1-6_13-25-16_501772890",
+   "instruction": "Continue heading straight until you see a medium to large grey residential building with solar panels on roofs , then slightly turn right slightly towards it .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001360",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/low_short/2025-1-1_21-55-32_991505661",
+   "instruction": "Proceed ahead to the gray , rectangular tower featuring horizontal stripes , characterized by its tall stature and classified as a building . Then , slightly veer right and continue onward to another gray structure , distinguished by seven vertical window - like indents on its left side . This tall and slender building , comparable in height to nearby structures , serves as a residential or office building .",
+   "n_waypoints": 4,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001369",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/low_average/2025-1-8_21-21-24_1500474762",
+   "instruction": "Proceed directly ahead towards a large brown building with windows , then slightly turn left and walk straight towards a taller brown brick commercial structure featuring multiple stories and a grid of square windows .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001375",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/low_long/2025-01-18_22-43-47_544239",
+   "instruction": "Proceed straight towards a gray building with multiple air conditioning units in large size , then slightly turn right and advance towards another gray building facade featuring rectangular walls with shadow cast , also large in size . Next , climb up to a grey medium - sized building with a concrete facade displaying visible window frames . Move forward to a large gray building with a rectangular structure having horizontal lines . Slightly turn left and go directly ahead towards a light gray building showcasing multi-storey flat windows . Again , slightly turn left going directly to another light gray building that includes a balcony with a railing and exposed frame structure . Finally , descend to a large beige modern building on the right having horizontal windows and a small vent on the left .",
+   "n_waypoints": 27,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-001380",
+   "split": "seen",
+   "image_path": "env_gs_sjtu01/astar_data/short/2025-1-4_6-48-50_184366026",
+   "instruction": "Turn to the right to a white building with glass windows , characterized by modern architecture with rectangular shapes and flat roofs , medium to large in size . Advance forward to it . Slightly turn left and continue straight to a white building with a red roof , featuring a rectangular structure with multiple floors and large windows , medium to large in size . Slightly turn left again and head straight toward a gray - white building with a green rooftop , distinguished by its square - shaped structure with a hollow central courtyard and rooftop vegetation , medium - large compared to nearby buildings .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001383",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/medium_average/2025-1-6_22-43-10_2026478004",
+   "instruction": "Proceed forward to the gray skyscraper , a large tall residential building with balconies . Then , slightly turn right and advance towards the beige residential high - rise , which is tall with balconies on each floor .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001384",
+   "split": "seen",
+   "image_path": "env_airsim_gz/astar_data/medium_average/2025-1-7_4-47-32_1648609",
+   "instruction": "Proceed straight to the modern building characterized by large blue horizontal lines .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001470",
+   "split": "seen",
+   "image_path": "env_airsim_18/astar_data/medium_average/2025-1-8_23-54-37_1116945487",
+   "instruction": "Proceed straight to the dark grey gothic building with a large size . Then slightly turn left and continue straight to it . This is a mid-century urban building .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001482",
+   "split": "seen",
+   "image_path": "env_gs_sjtu01/astar_data/short/2025-1-4_11-26-16_508975978",
+   "instruction": "Proceed directly to the Blue rectangular tennis courts with clear markings and surrounding fences , a medium - sized area , then slightly turn right and move forward towards the green building with a tiled roof , which is also medium - sized .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001487",
+   "split": "seen",
+   "image_path": "env_gs_sjtu01/astar_data/short/2025-1-3_10-54-36_213975407",
+   "instruction": "Proceed directly ahead to a medium - sized white and gray building characterized by a circular rooftop structure with a distinct outline , surrounded by trees and a parking lot . Then , slightly turn left slightly and go to it .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001508",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/medium_average/2025-1-9_13-6-22_1295166342",
+   "instruction": "Proceed straight towards a large gray building with a rectangular form featuring horizontal lines and windows , then make a slight left turn and advance forward to it . After another slight left turn , continue walking straight toward a modern high - rise building with a gray hue and rounded edges on the sides , which is large and wide .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001524",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/medium_average/2025-1-9_13-11-32_1065311705",
+   "instruction": "First , walk straight towards the large gray building characterized by its geometric , rectangular shape . Then , slightly turn right and head straight towards it . Finally , slightly turn left and advance forward to a medium - sized green modern skyscraper , distinguished by an angled roof with multiple slopes .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001527",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/medium_average/2025-1-9_13-19-48_1111783898",
+   "instruction": "Move forward to the gray - colored building , characterized by a distinctive grid pattern with evenly spaced horizontal lines . It has a moderate height and is a residential mid-rise .",
+   "n_waypoints": 3,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001532",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/medium_short/2025-1-9_14-6-56_672032919",
+   "instruction": "Continue heading straight toward the large gray building with a brick texture and arched windows . Slightly turn right , proceeding to the large dark building featuring rectangular windows and ornate detailing that covers most of the left side of the image . Then , slightly turn left , walking straight to the mid-sized building with a grey facade , arched windows with shutters , visible as a 3 - floor residential / apartment building .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001619",
+   "split": "seen",
+   "image_path": "env_gs_nwpu01/astar_data/long/2025-1-14_7-9-16_223712350",
+   "instruction": "Head straight towards the large grey building with a flat rooftop and vehicles parked in its courtyard . Then , slightly turn right and advance towards another large structure , this one white , rectangular , and multi-story with numerous windows . Next , turn right again to find a medium - sized building boasting grey with red brick accents and a central inner courtyard . Finally , move ahead towards it .",
+   "n_waypoints": 22,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001629",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/medium_short/2025-1-9_11-31-13_1911759956",
+   "instruction": "Proceed straight towards a large grey building with multiple identical windows , then make a right turn at a large grey skyscraper distinguished by its tall structure and a blue construction crane . Continue straight until you reach another large skyscraper , characterized by its gray color and curved side with vertical window slits . Slightly turn left and move forward to a medium - sized light gray building with darker accents and a curved facade , featuring rounded corners and multiple small protrusions on each floor , which is shorter compared to the buildings directly surrounding it and serves as a residential or office space .",
+   "n_waypoints": 14,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001634",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/medium_short/2025-1-9_11-55-28_2147469841",
+   "instruction": "Continue straight towards a large , green building characterized by its rectangular structure with distinctive paneling . Slightly veer right to proceed directly ahead towards a medium - sized green commercial structure featuring large rooftop ventilation systems .",
+   "n_waypoints": 6,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001639",
+   "split": "seen",
+   "image_path": "env_gs_nwpu01/astar_data/long/2025-1-14_6-59-55_1787897525",
+   "instruction": "Continue straight towards the gray rectangular glass structures of medium size , which are greenhouses . Then , turn right to the gray open area with patterned tiles , a spacious space categorized as square . Proceed straight to the gray geometric patterns of a large square area . Slightly turn left , heading straight toward the medium - sized gray building with a triangular roof .",
+   "n_waypoints": 24,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     5
+    ],
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001654",
+   "split": "seen",
+   "image_path": "env_gs_nwpu01/astar_data/long/2025-1-13_15-12-36_2112255763",
+   "instruction": "\" Move forward to a light pink , medium - sized rectangular building with a flat roof and rooftop structures , then take a right to medium - to - large - sized residential or mixed - use buildings with brown and gray colors , flat rooftops , and some solar panels ; next , head straight to a medium - to - large grey and white building featuring a long rectangular shape with solar panels on the roof . Slightly turn left and walk straight to another medium - sized grey - white building with a flat roof , rectangular layout , and situated in the low center . \"",
+   "n_waypoints": 17,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001708",
+   "split": "seen",
+   "image_path": "env_ue_bigcity/astar_data/medium_long_updown/2025-1-17_2-42-50_1704841123",
+   "instruction": "Starting at a landmark named \" Rise \" , which is a dark gray skyscraper characterized by a tall structure with a spire and a grid - like design on top , you advance forward to a similar dark gray skyscraper , this time featuring a tall cylindrical structure with an antenna . From there , after slightly turning left , you proceed to a gray medium - sized building with rectangular architecture and decorative elements . Finally , you slightly stop and lower attention at a gray tall , multi - story commercial office building adorned with a modern facade and large rectangular glass windows .",
+   "n_waypoints": 42,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     17
+    ],
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     18
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "seen-001719",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/low_short/2025-1-2_17-58-3_1781999754",
+   "instruction": "Proceed directly to the gray structure featuring horizontal slats with thin vertical lines , characterized by a large size and a modern building facade .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001758",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/high_average/2025-1-9_16-57-31_515530019",
+   "instruction": "Proceed directly to the grey urban rooftop featuring antennas and equipment on a medium - sized building , then slightly turn left and head straight towards it .",
+   "n_waypoints": 18,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     17
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001761",
+   "split": "seen",
+   "image_path": "env_gs_nwpu02/astar_data/long/2025-1-17_7-42-46_1723578341",
+   "instruction": "Starting at a medium to large rectangular building featuring a light brown color , a central open courtyard with visible vines or greenery , I advanced forward . Then , after slightly turning left , I reached a large sports court marked by red and green colors , surrounded by fences and featuring multiple rectangular court markings , likely for tennis . Continuing further by slightly turning left again and moving forward , I arrived at a medium - sized modern building with a curved glassy façade and an adjacent open space . I then moved ahead to reach a medium - sized square space characterized by gray and green colors , open areas with geometric pathways , and surrounding trees . Subsequently , slightly turning left and advancing forward , I encountered a gray rectangular building with a large blue sign above its entrance , surrounded by similar buildings and trees , representing a medium size compared to its surroundings .",
+   "n_waypoints": 36,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     14
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001764",
+   "split": "seen",
+   "image_path": "env_airsim_16/astar_data/high_average/2025-1-9_19-43-24_40610537",
+   "instruction": "Advance forward to the light brown skyscraper , characterized by a tall structure with multiple levels of windows . Slightly turn right and continue straight to it . Shift left to the gray office building , notable for its rectangular shape with multiple windows and medium size . Then keep going straight to the next light brown building , which is distinguished by arched windows and a tall , narrow profile .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001765",
+   "split": "seen",
+   "image_path": "env_airsim_23/astar_data/low_short/2025-1-2_16-54-57_1409959708",
+   "instruction": "Move forward towards a gray modern building facade with large , rectangular vertical panels . Then , turn to the right slightly to face it . Proceed straight to it . Finally , walk straight towards a gray structure with rectangular openings and external air conditioning units , indicative of a medium - sized modern residential or office building .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001777",
+   "split": "seen",
+   "image_path": "env_gs_ecust/astar_data/short/2025-1-9_16-34-18_396473730",
+   "instruction": "Proceed straight to the large , white square featuring a circular cross shape , then slightly turn left and proceed straight to the large , red building with a rectangular shape and multiple floors .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "seen-001785",
+   "split": "seen",
+   "image_path": "env_gs_ecust/astar_data/short/2025-1-10_0-34-24_1954784284",
+   "instruction": "Proceed directly to the large , gray , multi - story building adorned with rectangular glass panels , then slightly turn right and walk straight towards a large , white building featuring horizontal stripes .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000002",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-27-47_780821396",
+   "instruction": "Walk straight towards the large , white building characterized by many windows . Then , slightly turn left and move forward to reach the large , light beige high - rise building featuring rectangular windows with dark frames , potentially serving as a residential or commercial structure .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ]
+  },
+  {
+   "id": "unseen-000011",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-13-21_2084420925",
+   "instruction": "Proceed straight , then veer slightly to the left , and move ahead towards the medium - sized dark green cylindrical commercial building with a flat roof .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000061",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-15-31_1975960378",
+   "instruction": "Advance forward slightly , then turn left and proceed straight toward a large , gray , tall rectangular structure with multiple windows , which could be either a commercial or residential building .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000063",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-8_0-6-54_1330573317",
+   "instruction": "Advance to the large white dome - shaped building with a distinctive circular pattern , then go left towards the medium white building featuring rectangular windows . Slightly proceed straight to the large light grey and blue mid-rise residential structures with multiple units , then continue straight to the mid-rise white building with rectangular windows and a flat roof . Slightly turn left and go directly towards it .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000077",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_15-0-23_1664423428",
+   "instruction": "Walk straight to the gray skyscraper , a large and tall building with multiple floors . Then slightly turn left and head straight towards the red and gray structure , a medium - sized multi - story commercial or residential building characterized by vertical architectural lines .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000083",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-31-6_364686248",
+   "instruction": "Proceed directly ahead towards the light gray skyscraper characterized by its very tall structure and vertical lines , then slightly turn left and move forward to the dark gray commercial building featuring a large rectangular form with vertical columns .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000107",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-7_23-22-21_336465782",
+   "instruction": "Continue moving straight towards the large white building with a curved roof ; then slightly turn right and proceed straight again to it . Turn to the right towards a large building complex with similar characteristics . Keep going straight to the white multi - story apartment complex , and finally , slightly turn left and move forward to a white building with a blue - gray roof , which is a medium to large rectangular apartment building within a residential area .",
+   "n_waypoints": 24,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000117",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-8_6-25-10_2009726312",
+   "instruction": "Proceed forward towards a green setting characterized by trees lining a canal with a bridge , resembling a medium - sized park area . Slightly turn right and walk straight to a gray , large rectangular building . Shift left to encounter a beige , large , tall rectangular structure with multiple floors , also classified as a building . Move ahead to a large light gray high - rise residential building . Slightly turn left and walk straight to a medium - sized residential building with a gray color accented with blue , featuring a flat roof and balconies .",
+   "n_waypoints": 24,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "HOVER",
+     5
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000149",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_5-7-48_1604665417",
+   "instruction": "Proceed to the white , large rectangular building , then slightly veer to the right and go directly towards the gray , medium - sized building with a long rectangular shape and a flat roof .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000162",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_long/2025-1-6_6-42-58_1440934303",
+   "instruction": "Proceed to the medium - sized office building with a modern grid facade , characterized by its gray color .",
+   "n_waypoints": 2,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000191",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_5-42-50_912194650",
+   "instruction": "Continue walking straight towards the medium - sized , white building , which is rectangular with blue accents . Then , turn right to approach the large white buildings , recognized as large residential buildings . Finally , advance forward to a medium - sized structure , gray and white , featuring multiple rectangular sections .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000205",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_short/2025-1-4_0-2-42_1688323172",
+   "instruction": "Proceed towards the dark skyscraper , characterized by a tall structure and an antenna on its roof .",
+   "n_waypoints": 4,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000214",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_5-15-18_228217069",
+   "instruction": "Proceed towards a gray , medium - sized residential building with a flat roof , then slightly turn left and advance towards a white , medium - sized residential building that is long and narrow with a gabled roof .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000237",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_4-51-37_304505404",
+   "instruction": "Advance toward the structure characterized by red and white hues , featuring large , tall , vertical elements , then slightly turn right and proceed to the next building , which is grey with a symmetrical roof adorned with triangular peaks and has a medium size .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000244",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_short/2025-1-4_17-54-31_76387350",
+   "instruction": "Move ahead to None , then slightly turn right and move forward to the dark gray , large modern skyscraper .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000253",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_short/2025-1-4_3-56-27_1339388427",
+   "instruction": "Proceed straight towards the bluish - gray skyscraper with vertical lines , which is large in size , then slightly turn right and continue straight to the brown medium - sized office building with rectangular windows and a dome .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000284",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-24-20_620145550",
+   "instruction": "Move forward towards the green , grassy area with trees , which is a large golf course , then slightly turn right and proceed straight towards the gray , tall , rectangular building with balconies , which is a large skyscraper .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000296",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-34-48_1219407971",
+   "instruction": "Proceed straight to a medium - sized , multi - story gray building featuring balconies . Then veer right to a medium - sized , brown building with a brick exterior and arched windows . Finally , advance forward to it .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ]
+  },
+  {
+   "id": "unseen-000340",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-59-5_989241888",
+   "instruction": "Head directly ahead towards a large park or golf course characterized by greenery , trees , and grass . Shift left slightly to enter it . Continue straight towards a tall tree with branches and leaves , then slightly turn right . Finally , proceed straight to reach a large gray commercial building featuring modern , rectangular windows .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000347",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-36-36_1276673168",
+   "instruction": "Proceed directly to the large black building with glass curtain walls , then slightly turn left and move forward to the large gray modern commercial building featuring glass windows with balconies .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000353",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-22-11_933110197",
+   "instruction": "Move directly ahead until reaching a medium - sized , historical building featuring a clock tower with a green dome , which is white and brown in color . Then , slightly turn right and proceed forward towards it .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000384",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-41-59_1204462951",
+   "instruction": "Advance forward to a beige building with a large billboard on top and slightly turn left to head straight towards a beige and glass skyscraper featuring a tall , modern design . Then , go right to a brown and black billboard with a watch image advertisement . Move ahead slightly , turning left again to keep going straight towards it .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000427",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/high_long/2025-1-4_14-44-28_460686763",
+   "instruction": "Proceed directly towards the medium - sized gray building with rooftop water tanks , then slightly turn left to advance to the large gray and black building characterized by its tall and prominent stature . From there , veer right to navigate towards the large gray urban landscape featuring a grid of streets and buildings . Finally , head straight to reach the light brown building with grid - like windows of medium size .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000442",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-8_7-15-22_1336092622",
+   "instruction": "Proceed towards the large , white building with grid - like windows . Then , veer left slightly to approach it . Finally , continue forward towards a medium - sized gray building characterized by a flat rooftop with mechanical equipment .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "HOVER",
+     5
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000479",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_5-25-57_535286141",
+   "instruction": "Proceed forward to the multi - colored seating area with large letters , identified as a large stadium or sports arena . Then , slightly turn left and continue straight to the green and red open field with running tracks and goal posts , which is a large sports field .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000498",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-11-39_233665123",
+   "instruction": "Proceed straight ahead and veer slightly to the right towards a location that appears to be a medium - sized gray building . It is a single - story structure with a flat roof , likely residential or serving as a small office .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000522",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/high_short/2025-1-4_14-41-45_757950880",
+   "instruction": "Advance forward to a building characterized by gray and white colors , featuring vertical lines with a staggered pattern , and noted for being very tall .",
+   "n_waypoints": 4,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000595",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_long_updown/2025-1-15_11-25-55_337453826",
+   "instruction": "Proceed upwards to the tall commercial building characterized by its brown color and modern design . Then , advance forward to the large historic building that is grey and features ornate architecture with numerous windows and fire escapes ; slightly turn left . Next , head straight to the medium - sized grey water tower with a cylindrical shape and a conical roof . Pause briefly , then go downwards to the medium - sized commercial structure , dark grey in color , which has a fire escape on its facade .",
+   "n_waypoints": 27,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     7
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "HOVER",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "unseen-000609",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_short_updown/2025-1-15_13-38-43_124666328",
+   "instruction": "Elevate to the structure with gray color , rectangular windows , large size , and identified as a building , then proceed ahead , making a slight left turn towards the edifice characterized by brown color , arched windows , tall size , also designated as a building . Slightly halt and descend to the location with beige color , featuring fire escape ladders , large windows , tall and multi - story structure , which can be classified as either a residential or commercial building .",
+   "n_waypoints": 28,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     11
+    ],
+    [
+     "CLIMB",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "CLIMB",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "unseen-000628",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_short_updown/2025-1-15_9-5-54_1095966189",
+   "instruction": "Climb the dark gray skyscraper with large glass windows , then go directly ahead to another large gray skyscraper with rectangular windows , slightly turning left . Advance forward to the none position , slightly stopping , and drop at the large gray commercial building featuring a modern facade with large windows .",
+   "n_waypoints": 44,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     17
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "HOVER",
+     18
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "unseen-000633",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-46-27_1265122573",
+   "instruction": "Proceed to the office building , which has a medium size and features a vertical stripe pattern with multiple windows , characterized by its black and gray color .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000636",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_short_updown/2025-1-15_1-26-35_1329132133",
+   "instruction": "Elevate to the red building with brick walls featuring windows and a large size , then keep going straight to the medium - sized structure with a red brick façade and large windows . Slightly turn right and advance forward to the large historic building adorned with red brick façades and ornate detailing . Shift left slightly to it . Walk straight to the large building with a brick red decorative façade , showcased by columns and arches , then slightly stop . The journey concludes at the commercial building , which is tall , multi - story , with dark gray colors accentuated by red brick accents , featuring large windows and a fire escape ladder .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "unseen-000637",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/medium_average_updown/2025-1-15_15-58-59_773319847",
+   "instruction": "Elevate to none , proceed straight to a dark skyscraper with large , rectangular shapes resembling windows , slightly turn right , head straight , slightly turn left , advance forward to none , slightly stop and fall to a yellowish - brown apartment building with medium - sized fire escapes .",
+   "n_waypoints": 49,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     16
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     17
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "unseen-000665",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-32-3_1415505363",
+   "instruction": "Move forward to the gray , large building featuring a tall tower with arched openings , then veer left towards the white , large building characterized by a tall structure with a rooftop sign . Head straight to the beige , large building with a sign on the roof , slightly turning right . Finally , proceed straight to the beige and white , large hotel building with arched windows and decorative trim .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000676",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/high_average/2025-1-6_4-48-48_1993077304",
+   "instruction": "Proceed towards the large brown building with a rectangular roof .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000726",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-7_18-15-37_706043324",
+   "instruction": "Proceed toward a light gray , multi - story residential building of large size , then shift right to a white building with a dome - shaped roof , also large in scale . Afterward , advance forward to a grey , elevated structure that is a large bridge , slightly turning left , and continue straight toward a large , white , elongated building .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "HOVER",
+     4
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000749",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-38-34_309198987",
+   "instruction": "Advance forward to a dark , grid - like facade of a large building , then slightly turn right . Proceed straight to a gray structure with a satellite dish , maintaining a large size , and slightly turn left . Keep going straight to a gray commercial building with a medium to large satellite dish on the roof .",
+   "n_waypoints": 14,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000777",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-23-11_396473730",
+   "instruction": "Walk straight to the large green park featuring trees and grass , then make a right turn to the large gray clubhouse building adorned with flags on the roof . Continue forward to the same gray building and slightly turn left . Move ahead again to the same structure , then slightly turn left once more . Go directly ahead to the large gray urban structure characterized by tall buildings . Finally , advance forward to a medium - sized dark gray commercial building with a striped horizontal design .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000784",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-54-37_476152433",
+   "instruction": "Proceed directly to the brown commercial building featuring medium - sized arched windows .",
+   "n_waypoints": 4,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000785",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-33-45_1498617647",
+   "instruction": "First , go directly ahead to a dark gray building with a large , curved façade featuring vertical lines of windows . Next , proceed right slightly toward it . Then , walk straight to a gray , large circular modern building with glass windows , followed by a slight left turn . Finally , move forward to a gray , large cylindrical structure with a glass façade , identified as a commercial building .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000799",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-8_7-43-2_1338299904",
+   "instruction": "Begin by moving forward towards a large university campus or complex characterized by red and gray hues , featuring multiple buildings with a central square and pathways . Slightly veer right , then walk straight to a large orange building with a rectangular design , windows , and vertical stripes . Turn left to reach a large building adorned with red and white , ornate brickwork , three connected sections , and a symmetrical design . Proceed ahead to a large multi - story edifice in red and gray , marked by a patterned facade . Slightly turn right and advance to a large building of red with white accents , showcasing arched windows and decorative roof details .",
+   "n_waypoints": 22,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     4
+    ],
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000806",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-8_7-54-0_845563291",
+   "instruction": "Proceed straight to the large white building with rectangular windows and multiple floors , then slightly turn right and advance forward to the medium - sized white and gray residential buildings . Next , go left to the large red and white building with a tall , tiered design , then go directly ahead to another large red and white building , which features horizontal stripes . Finally , slightly turn left , advance forward , and you will reach the medium - sized gray building with a rectangular shape and a flat roof .",
+   "n_waypoints": 20,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000808",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-7_20-43-21_2416949",
+   "instruction": "Advance forward to the brownish - red , medium - sized rectangular residential building . Slightly turn right and keep going straight to the large , white structure comprising multiple residential buildings with red roofs . Then , slightly turn left and continue onwards to the tall and distinct red and white building with a remarkable design . Finally , walk straight to it .",
+   "n_waypoints": 22,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000843",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-7_18-9-32_2112255763",
+   "instruction": "Walk straight towards a light grey rectangular residential complex . Slightly turn left and continue walking towards large beige tall residential buildings with blue accents . Go right to reach a large white dome building . Keep going straight towards a modern structure with red and white rectangular shapes . Slightly turn left and keep going straight to arrive at a medium - sized gray building with rectangular shapes featuring windows .",
+   "n_waypoints": 27,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "HOVER",
+     6
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000850",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/high_short/2025-1-3_20-57-55_241909610",
+   "instruction": "Proceed along the path until you reach a gray , medium - sized building with a rectangular shape and a flat roof . Then , make a right turn towards another grey building , this time larger , characterized by a flat rooftop . Finally , continue straight to a light gray , medium - sized commercial building with a flat roof featuring visible HVAC units .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000855",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_average/2025-1-4_11-56-22_1855843024",
+   "instruction": "Proceed directly towards the tall , rectangular skyscraper with a gray color and large size . Then , slightly turn left and continue towards the medium - sized office building with brown color and illuminated windows .",
+   "n_waypoints": 14,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     13
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000879",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_average/2025-1-6_1-42-9_473431429",
+   "instruction": "Move forward to the large green building with a dome , then slightly turn left and move ahead to the large dark skyscraper with a tall , rectangular shape featuring vertical lines .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000880",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_5-22-2_13798878",
+   "instruction": "Proceed directly to the area characterized by red and beige residential buildings with prominent rooftops and facades of a large size . Then , slightly turn left and continue straight to reach it .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000884",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_average/2025-1-4_13-56-28_1435001171",
+   "instruction": "Proceed directly ahead to the large building with a dark , reflective glass facade . Slightly turn right and keep going straight until you reach the large office building with a black , grid - patterned facade .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000898",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_average/2025-1-6_2-23-3_291789062",
+   "instruction": "Continue straight until reaching a point where you should slightly turn left and proceed directly ahead towards a large , dark building characterized by its tall , rectangular structure . Then , slightly turn right and continue straight again towards a tall skyscraper with vertical stripes .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000913",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_5-37-22_78417603",
+   "instruction": "Proceed forward to the large gray building featuring a rectangular shape with a flat roof , then turn to the left towards the large green athletic football field . Finally , go directly ahead to the medium - sized gray building with a rectangular roof .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-000929",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_4-43-41_625843881",
+   "instruction": "Proceed straight towards the large sports complex characterized by its blue and green hues and multiple sports courts . Then , veer slightly to the right and move forward to the medium - sized residential or institutional building , distinguished by its white and red roof and rectangular structure with multiple floors and a uniform design .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ]
+  },
+  {
+   "id": "unseen-000979",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_4-55-29_573556837",
+   "instruction": "Proceed to the red and white medium - sized building with a rooftop , then slightly turn right slightly and advance toward it .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-001003",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/short/2025-1-3_5-5-22_1211721386",
+   "instruction": "Walk straight towards the large red - brown building with a vertical ribbed facade , then go right to a large white building with red accents and a sloped roof . Finally , proceed directly ahead to a medium - sized white and brick building with a rectangular shape and a triangular section .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-001014",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_long/2025-1-4_7-4-55_1605539862",
+   "instruction": "Proceed directly to a building characterized by a light beige color , large rectangular windows , and a significant size . Then , slightly turn left and continue straight to it .",
+   "n_waypoints": 17,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     14
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-001076",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/high_average/2025-1-5_9-10-8_939882271",
+   "instruction": "Proceed straight ahead to the black high - rise building with reflective windows , slightly bear left to another large gray building with rectangular windows , then continue straight towards a gray building characterized by both rectangular windows and a triangular roof section . Take a right at the yellow and white painted crosswalk leading to a medium - sized square road area , and then go directly ahead to the gray building featuring a grid pattern . Finally , slightly turn left and walk straight to a tall gray building with rectangular windows .",
+   "n_waypoints": 24,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-001090",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-28-47_846942590",
+   "instruction": "Proceed forward and then slightly turn left towards a location characterized by a dark red color with black trim , featuring rooftop structures and a detailed cornice . It is a medium - height building comparable to surrounding structures , which may serve either commercial or residential purposes .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-001091",
+   "split": "unseen",
+   "image_path": "env_game_gtav/low_average/2025-1-16_14-16-31_1063958031",
+   "instruction": "Walk straight to the large gray mechanical equipment , which is a large HVAC unit , then slightly turn right and move forward to the medium - sized gray hotel with a visible sign labeled \" EMPLAR HOTEL \" on the roof .",
+   "n_waypoints": 6,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-001175",
+   "split": "unseen",
+   "image_path": "env_gs_sjtu02/astar_data/long/2025-1-8_3-2-37_1911165193",
+   "instruction": "Walk straight towards a large , white apartment complex characterized by its rectangular buildings with balconies . Then , make a left turn and head to a large , red building with a distinctive brick facade . Continue walking straight to it . Slightly turn left and proceed straight to a large white and gray building with a long rectangular shape featuring multiple windows .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "unseen-001176",
+   "split": "unseen",
+   "image_path": "env_ue_smallcity/astar_data/low_long/2025-1-4_19-27-54_1450238957",
+   "instruction": "Proceed directly to the red - brown historic building with an ornate roofline , then slightly turn right and continue straight to the tall beige tower with a clock face . Afterward , slightly turn right again and proceed straight to it .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     20
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-000307",
+   "split": "train",
+   "image_path": "env_gs_sjtu01/astar_data/short/2025-1-4_10-25-18_541639838",
+   "instruction": "Walk directly toward the large , red and white , multi - story building featuring geometric architecture , then turn slightly to the left and proceed to the medium - sized , white building with a red roof .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-003388",
+   "split": "train",
+   "image_path": "env_airsim_16/astar_data/low_average/2025-1-1_2-18-35_550245196",
+   "instruction": "Move forward to a large building with a beige color and brick texture featuring windows . Slightly turn right and walk straight towards a large gray building characterized by a multi - story structure with rectangular windows and rooftop structures . Slightly turn left slightly and advance to it . Make another slight left turn , move ahead to a medium brown building with a brick exterior and fire escapes . Then , turn to the right towards it . Finally , move forward to a tall blue - gray modern high - rise building featuring satellite dishes on the rooftop , dominating the right side of the image .",
+   "n_waypoints": 22,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-004292",
+   "split": "train",
+   "image_path": "env_airsim_16/astar_data/low_short/2024-12-31_22-11-26_2001229904",
+   "instruction": "Proceed straight towards the brown building , characterized by multiple windows and fire escape stairs , which is of medium size . Then , slightly turn right and proceed straight towards the light gray residential structure featuring fire escapes on the right side , with a medium height , approximately four to five stories .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-004811",
+   "split": "train",
+   "image_path": "env_airsim_gz/astar_data/low_long_updown/2025-1-14_20-24-56_251836754",
+   "instruction": "Move upward to a pink , slim , and tall tower with an illuminated design . Then , advance forward to a beige , multi - story commercial or office building with horizontal bands . Slightly turn left and keep going straight to a beige building with blue - tinted windows , featuring horizontal windows and vertical neon lights . Next , slightly turn right and move ahead to it . Again , slightly turn right and advance forward to a large , gray building with rectangular windows . Finally , slightly stop and fall to a medium - sized , beige office building with horizontal blue - tinted glass windows .",
+   "n_waypoints": 37,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     7
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-005945",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/high_short/2025-1-10_23-10-2_434457257",
+   "instruction": "Proceed towards the medium - sized , grey building with a dome - like structure on its rooftop . Slightly turn left and continue walking straight to it .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ]
+  },
+  {
+   "id": "train-007025",
+   "split": "train",
+   "image_path": "env_airsim_gz/astar_data/high_long/2025-1-13_5-14-8_1375189497",
+   "instruction": "Proceed directly towards the large , tall blue building , then slightly turn left and walk straight to the large art installation characterized by a white illuminated geometric pattern . After this , slightly turn right and continue straight to reach the very large dark blue building identified by its tall structure with windows and bright light reflections . Finally , slightly turn right again and move forward toward the tall gray building , distinguished by its cylindrical shape with vertical light strips .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-008907",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/low_long_updown/2025-1-14_8-3-44_1186452551",
+   "instruction": "Move upward to a beige skyscraper with large rectangular windows featuring a grid pattern , then continue forward to it . Slightly turn right and keep going straight until you reach a beige building of medium size , designed with a cubic architecture and a red dome on top . Slightly turn left and head straight to a black and white building with vertical striped façades , large in scale . Slightly turn left again and move forward to it . Finally , stop and lower your view to observe it .",
+   "n_waypoints": 52,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     15
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "HOVER",
+     16
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-018706",
+   "split": "train",
+   "image_path": "env_gs_sjtu01/astar_data/long/2025-1-6_12-34-55_1034949299",
+   "instruction": "Proceed directly to the medium - sized , multi - story building characterized by its light gray color with blue accents , featuring a roof equipped with solar panels . This building serves as an educational or residential structure .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-020283",
+   "split": "train",
+   "image_path": "env_gs_sjtu01/astar_data/short/2025-1-4_11-43-35_825060319",
+   "instruction": "Proceed straight to the large , white multistory building with a rectangular layout and a rooftop area . Then , turn left slightly to reach it . Finally , continue straight to the small white building featuring a pagoda - style roof , which is a pavilion or structure .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-024901",
+   "split": "train",
+   "image_path": "env_airsim_26/astar_data/low_short_updown/2025-1-14_0-48-44_1330573317",
+   "instruction": "Elevate towards the gray office building , which is tall with many windows , then advance to the beige office building with similar features . Slightly turn right and move forward to the gray building facade characterized by vertical concrete panels with windows . Stop slightly , then move down to it .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     6
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-025635",
+   "split": "train",
+   "image_path": "env_airsim_26/astar_data/medium_long/2025-1-9_14-36-57_11614769",
+   "instruction": "Proceed straight towards the tall building with brown rectangular windows , then slightly turn left and head straight to the large high - rise building characterized by its reddish - brown brick facade and vertical black windows .",
+   "n_waypoints": 17,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     16
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-027083",
+   "split": "train",
+   "image_path": "env_airsim_26/astar_data/medium_long/2025-1-9_13-3-30_387346491",
+   "instruction": "Proceed straight towards a large gray skyscraper with rectangular windows , then slightly turn right and advance forward to it . Next , make a slight left and walk straight to a tall grey skyscraper with red brick sections . After that , take a right to approach a large beige high - rise building with vertical stripes . Move ahead and slightly turn right again , heading directly towards a tall gray building facade featuring vertical windows and cracks on the wall .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-027124",
+   "split": "train",
+   "image_path": "env_airsim_26/astar_data/high_average/2025-1-10_5-33-51_1631596366",
+   "instruction": "Move forward to the large brown building that is tall and rectangular , slightly turn right , then proceed straight to the large grey building with a flat rooftop and marble pattern .",
+   "n_waypoints": 14,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     13
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-028483",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/low_average/2025-1-3_16-22-56_1911759956",
+   "instruction": "Proceed towards the gray office building , characterized by its medium size and large glass windows .",
+   "n_waypoints": 2,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-028646",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/high_short/2025-1-3_22-16-1_2040332871",
+   "instruction": "Proceed to the office building characterized by its hexagonal - shaped roof with mechanical equipment , which features a light gray and dark brown color scheme and is a large structure .",
+   "n_waypoints": 3,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-029547",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/high_short/2025-1-4_20-30-56_408671759",
+   "instruction": "Proceed straight , making a slight right , and continue moving forward towards a tall , large rectangular building with a brown color . This structure features multiple windows , intricate architectural detailing at its base , and serves as a significant landmark . Then , slightly turn left and advance forward towards another large building characterized by a red - brown color , a curved façade with large rectangular windows , a symmetrical modern architectural design , and a notable height that extends across multiple floors , towering above the surrounding structures .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-031225",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/low_average/2025-1-3_23-51-56_470591100",
+   "instruction": "Proceed directly to the tall , brown skyscraper with a narrow rectangular shape . Slightly turn right towards the large beige building with an ornate roof design featuring pointed ends . Make a left turn towards the large black modern building with a glass structure . Finally , head straight to the medium - sized dark brown office with a dark reflective glass exterior .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ]
+  },
+  {
+   "id": "train-034080",
+   "split": "train",
+   "image_path": "env_gs_nwpu01/astar_data/long/2025-1-14_14-32-22_365862802",
+   "instruction": "Proceed directly ahead to a medium - to - large school playground or recreational area with green and red colors , featuring a sports field hosting running tracks and a basketball court . Slightly turn right and walk straight to it . Then , go right to a large sports stadium or athletic field characterized by green and reddish - brown colors , a rectangular shape with a running track encircling it , and proceed straight to a large sports field with green and red shades , featuring a football field surrounded by a running track . Turn left toward a white building with a distinctive reflective or metallic roof , large in size , and continue straight to it . Slightly turn right and head directly ahead to a medium - sized blue building with a rectangular reflective roof situated between a sports field and other nearby buildings , where it is smaller than the adjacent sports field but larger than smaller surrounding buildings .",
+   "n_waypoints": 25,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "HOVER",
+     3
+    ],
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-034304",
+   "split": "train",
+   "image_path": "env_gs_nwpu02/astar_data/long/2025-1-17_4-22-3_1909850543",
+   "instruction": "Proceed straight towards a large gray building with a polygonal roof , then slightly turn left . Continue straight to a medium to large gray aircraft with triangular shapes , long wings , and jet engine exhausts , then veer left to approach a large white airplane featuring swept wings and twin engines . Move ahead to a large white military aircraft with red markings , slightly turn right , and head straight towards a medium green building resembling an aircraft fuselage , cylindrical with a rounded top .",
+   "n_waypoints": 27,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-035830",
+   "split": "train",
+   "image_path": "env_gs_nwpu01/astar_data/long/2025-1-14_5-53-30_1089653714",
+   "instruction": "Begin by moving ahead to the gray building with a curved façade . Slightly turn left slightly and continue past it . Take a left at it . Go directly ahead to a large gray structure featuring a long , detailed roof with elements like vents . Slightly turn right and proceed to it . Slightly turn left , then walk straight towards it .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-038115",
+   "split": "train",
+   "image_path": "env_airsim_16/astar_data/high_average/2025-1-10_0-31-28_2132688302",
+   "instruction": "Proceed directly towards the large grey skyscraper featuring a billboard , then slightly veer right and continue straight to the tall gray building adorned with rectangular windows and a sizable advertisement depicting a bottle .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-038690",
+   "split": "train",
+   "image_path": "env_airsim_16/astar_data/high_average/2025-1-9_19-7-36_1411328205",
+   "instruction": "Proceed directly forward to the gray building , a high - rise characterized by its grid - like window pattern and towering size , extending beyond the frame .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-039230",
+   "split": "train",
+   "image_path": "env_airsim_16/astar_data/high_average/2025-1-9_20-10-3_672032919",
+   "instruction": "Proceed straight ahead towards a large gray building characterized by tall rectangular windows , then slightly veer left towards a high - rise office building that is gray with red - tinted windows and features tall vertical window panels .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-041211",
+   "split": "train",
+   "image_path": "env_airsim_16/astar_data/medium_short/2025-1-9_15-35-33_769304465",
+   "instruction": "Proceed straight towards a beige building featuring grid - like windows , then shift left to face a gray urban skyscraper characterized by tall structures with antennas . After that , move forward to a gray billboard , a large advertising structure . Finally , slightly turn right and move ahead towards a light gray skyscraper , which is very tall and narrow with decorative elements at the top .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-045232",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/medium_short_updown/2025-1-16_1-8-36_2079611790",
+   "instruction": "Ascend a tall , gray building with many windows , advance forward to a modern office structure featuring a gray glass facade with visible interiors , and slightly stop to lower at a medium - sized commercial building with glass windows showcasing interior lighting .",
+   "n_waypoints": 29,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     11
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-046206",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/high_long/2025-1-10_20-7-42_114760235",
+   "instruction": "Proceed straight towards a medium - sized , blue fountain or small pond with a circular shape . Then , turn slightly right and continue straight towards a large , white building , characterized as a tall structure with multiple windows . Afterward , turn slightly left and keep going straight until reaching a tall , beige modern high - rise building with vertical windows featuring reflective glass and multiple stories .",
+   "n_waypoints": 20,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     9
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-048153",
+   "split": "train",
+   "image_path": "env_airsim_18/astar_data/high_average/2025-1-10_0-45-59_1750621862",
+   "instruction": "Proceed straight toward the white , large building with rectangular windows , then slightly turn left and advance forward toward the white , multi - story building featuring multiple rectangular windows .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ]
+  },
+  {
+   "id": "train-048362",
+   "split": "train",
+   "image_path": "env_airsim_18/astar_data/high_average/2025-1-9_23-48-40_1693485026",
+   "instruction": "Proceed directly ahead to the dark brown building that is tall with windows and large in size . Then , slightly turn right and advance forward to the brown and purple structure featuring vertical panel details on the facade , characterized as a tall , multi - story building type of skyscraper .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     12
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-051337",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/low_short_updown/2025-01-19_11-54-22_609476",
+   "instruction": "Begin by ascending to the medium - sized white building adorned with arched windows , then continue straight to reach the large white edifice crowned with a cylindrical tower . Gradually , ascend towards the large white structure featuring a blend of arched patterns and grid - like windows . Shift to the left to encounter the large beige building embellished with arched window patterns . Proceed straight until you navigate slightly right , then proceed gently straight before stopping at the modern medium - sized light gray building , characterized by a grid pattern with arch designs .",
+   "n_waypoints": 21,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "HOVER",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-052377",
+   "split": "train",
+   "image_path": "env_airsim_26/astar_data/low_long/2025-01-18_23-19-18_116337",
+   "instruction": "Proceed directly to the light blue building with large rectangular windows , then slightly turn left . Continue straight towards the large gray building with the same feature , rise to it , and keep moving ahead . Slightly turn right and proceed straight to another large gray building with a grid of windows , and finally , go downwards to a large light grey commercial building with multiple rectangular windows .",
+   "n_waypoints": 26,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     11
+    ],
+    [
+     "HOVER",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-053636",
+   "split": "train",
+   "image_path": "env_airsim_26/astar_data/high_long/2025-01-19_01-13-30_14606",
+   "instruction": "Proceed directly towards the tall , rectangular brown building with many windows ; then , make a left turn towards the tall beige building with vertical windows . After that , head straight to the brown skyscraper with numerous windows , slightly turning right . Continue moving towards it . Again , move ahead to it . Lastly , proceed toward it .",
+   "n_waypoints": 26,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ]
+  },
+  {
+   "id": "train-055869",
+   "split": "train",
+   "image_path": "env_airsim_23/astar_data/low_average/2025-01-18_22-03-53_505304",
+   "instruction": "Proceed to the blue construction crane with a lattice structure and large size , then veer left toward the gray large building with rectangular windows . Continue forward to the same building , turn right to face the gray large building with windows , and go directly ahead to the grey large building under construction with multiple floors and cranes . Slightly ascend , then go directly forward , slightly turn left , and proceed forward . Finally , move downward to the dark space with illuminated signs , featuring horizontal light strips and nearby cranes , leading to a medium - sized commercial building .",
+   "n_waypoints": 17,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     7
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-056329",
+   "split": "train",
+   "image_path": "env_gs_sjtu01/astar_data/short/2025-1-3_21-18-52_1337434154",
+   "instruction": "The journey begins by heading straight to a sports facility featuring green and white hues , consisting of outdoor sports courts beneath a white arched roof that partially covers the area . This venue is surrounded by greenery , spans a medium to large size , and occupies a significant portion of the lower center of the image . After slightly turning left , proceed forward toward a medium - sized building characterized by pinkish - red tones with white accents . This rectangular structure has a flat roof and distinct geometric lines .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-059950",
+   "split": "train",
+   "image_path": "env_airsim_18/astar_data/low_short/2025-1-8_22-13-30_86086317",
+   "instruction": "Proceed toward the brown building characterized by large rectangular windows , then slightly turn left , continue straight , and again slightly turn left slightly to approach it .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     2
+    ],
+    [
+     "FORWARD",
+     2
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-061370",
+   "split": "train",
+   "image_path": "env_airsim_18/astar_data/low_average/2025-1-8_18-24-40_150122846",
+   "instruction": "Proceed towards the gray building with large square windows , then slightly turn left and continue straight towards it .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-061916",
+   "split": "train",
+   "image_path": "env_airsim_18/astar_data/high_long/2025-1-9_21-40-22_628974580",
+   "instruction": "Walk straight to the light beige building with large rectangular windows , then slightly turn left and proceed straight to the large , dark building characterized by its tall , rectangular shape . Next , slightly turn right and advance forward to the medium - sized square area with green and grey tones , featuring trees and pathways . Finally , slightly turn right again and keep going straight to the large , dark grey building with multiple windows .",
+   "n_waypoints": 23,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-062966",
+   "split": "train",
+   "image_path": "env_airsim_18/astar_data/low_short/2025-1-8_17-52-38_269455306",
+   "instruction": "Proceed towards the white building with rectangular windows of medium size , then slightly turn right and continue heading straight to the gray modern structure featuring large windows , also of medium size .",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     10
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-064809",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/high_average/2025-1-11_1-2-54_233233021",
+   "instruction": "Proceed directly to the large white building with a rooftop , then slightly turn left and continue straight towards the large white building featuring a prominent rectangular shape with a curved section in the foreground .",
+   "n_waypoints": 7,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-067851",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/medium_average/2025-1-8_17-35-21_1315634022",
+   "instruction": "Move forward to the large white building , characterized by its rectangular shape with windows . Then , slightly turn left and continue moving ahead to the tall black skyscraper , notable for its horizontal white lines .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     11
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-069535",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/medium_short/2025-01-19_12-35-37_17500",
+   "instruction": "First , veer right towards a large white building characterized by horizontal lines . Then , advance forward slightly and turn left as you head for the huge skyscraper distinguished by its tall , rectangular design . Proceed forward again towards the tan skyscraper , notable for its height , numerous windows , and unique curved top . Finally , move down towards the very tall pink skyscraper with arched windows .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "HOVER",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "HOVER",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ]
+  },
+  {
+   "id": "train-072416",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/high_long/2025-1-5_20-13-13_377108003",
+   "instruction": "Continue straight towards the red - brown high - rise building featuring rectangular windows and a stepped design ; it 's a large commercial office building . Slightly turn right and keep going straight towards it .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-073145",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/high_long/2025-1-4_20-46-42_674402557",
+   "instruction": "Proceed to the grey building featuring decorative roof structures of medium size , then move forward to another grey building distinguished by its grid - like facade with vertical white stripes , a medium - sized office building . Slightly turn right and go directly ahead to it . Finally , slightly turn right and proceed straight to it .",
+   "n_waypoints": 22,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     17
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-075215",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/low_long/2025-1-2_5-56-46_1998994314",
+   "instruction": "First , head straight to the large pink and black residential high - rise building characterized by its curved architecture and glass balconies . Then , slightly turn right and move ahead to another destination , a tall pink residential apartment building , notable for its repetitive window patterns and rectangular shape .",
+   "n_waypoints": 15,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     14
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-075320",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/low_long/2025-1-1_21-19-34_1244316437",
+   "instruction": "Proceed directly towards the medium - sized white and pink building with a striped design and multiple balconies , and slightly veer right to continue directly towards the medium red - brick residential building featuring white - framed windows and a blue roof . Then , slightly turn left slightly and advance towards it . It is medium - sized compared to the surrounding buildings .",
+   "n_waypoints": 16,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     15
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-078822",
+   "split": "train",
+   "image_path": "env_airsim_gz/astar_data/low_short/2025-1-2_4-3-33_956774406",
+   "instruction": "Walk straight towards the blue skyscraper with large horizontal blinds , then slightly turn left to go directly ahead .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-079791",
+   "split": "train",
+   "image_path": "env_airsim_gz/astar_data/high_long/2025-1-10_19-50-26_2147469841",
+   "instruction": "Proceed straight towards the tall , light grey , rectangular structure with dark accents and many windows emitting light . This large building features slightly turning left to a very tall and slender blue building with many windows and illuminated interior lights . Next , slightly turn right and head straight to the tall gray skyscraper with illuminated windows . Finally , slightly turn right and keep going straight to it .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     7
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-082097",
+   "split": "train",
+   "image_path": "env_airsim_gz/astar_data/low_short/2025-1-1_23-35-59_2094258726",
+   "instruction": "Move ahead to the gray building with large rectangular windows featuring vertical green lines . Then , slightly turn left and head straight to it .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-084542",
+   "split": "train",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-15_13-32-24_201305624",
+   "instruction": "Proceed straight ahead to a gray building with an arched roof ; then turn left slightly towards it . Advance forward to it . Slightly turn right and go directly to a gray building with a flat roof and a distinct border , which is small compared to surrounding structures .",
+   "n_waypoints": 13,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-084591",
+   "split": "train",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-15_20-50-16_1280321648",
+   "instruction": "Walk directly towards the large , blue - gray building characterized by a distinctive , wavy pattern , then slightly turn right and advance to the medium , pink - tinted building notable for its distinct solar panels on the rooftop .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-086876",
+   "split": "train",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-16_2-58-38_1197182313",
+   "instruction": "Starting your journey , ** go directly ahead ** to a ** large green tennis court ** , described as a ** rectangular sports field with marked lines **. Then , ** slightly turn right ** and ** continue straight ** towards a ** medium - sized beige and black building ** , characterized by a ** curved structure with a rooftop and windows , resembling a stadium or sports facility building **. Next , ** slightly turn left ** and ** head straight ** to reach a ** medium - sized white and black building ** , featuring an ** arc - shaped roof with a rectangular structure **.",
+   "n_waypoints": 11,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-090436",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/high_average/2025-1-5_22-43-3_1186241694",
+   "instruction": "Proceed towards the gray , multi - story building with a flat roof , then slightly turn left and continue straight to the grey commercial building with a flat rooftop and mechanical structures .",
+   "n_waypoints": 5,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-090733",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/high_average/2025-1-5_13-24-35_1655224149",
+   "instruction": "To simplify and smoothen your given data into a comprehensible sentence , here 's the accurate transformation : \" Proceed straight toward a large black building characterized by a reflective facade with a grid - like window pattern and the shadow of a water tower . \" This rephrasing consolidates the landmarks and actions into a fluent and grammatically correct sentence .",
+   "n_waypoints": 5,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-091116",
+   "split": "train",
+   "image_path": "env_ue_bigcity/astar_data/high_average/2025-1-4_12-57-7_1907895021",
+   "instruction": "Proceed directly to the light brown or grey structure characterized by a rectangular block shape with multiple floors and a simple flat roof , designed in a medium size compared to the surrounding buildings . It serves as a commercial or office building .",
+   "n_waypoints": 2,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-092235",
+   "split": "train",
+   "image_path": "env_airsim_23/astar_data/medium_average/2025-1-9_11-37-44_1129566413",
+   "instruction": "Continue straight towards the gray building featuring large rectangular windows with open interior sections . Slightly turn left and move ahead to it . Continue slightly turning right and moving ahead until you reach the large green building displaying vertical white stripes . Slightly turn right again and move forward to the large beige industrial door with rectangular windows and shadows . Lastly , make another slight right turn , walk straight to the beige apartment building with medium - sized rectangular windows framed .",
+   "n_waypoints": 19,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     10
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ]
+  },
+  {
+   "id": "train-093089",
+   "split": "train",
+   "image_path": "env_gs_nwpu02/astar_data/short/2025-1-16_7-11-38_298965069",
+   "instruction": "Proceed directly ahead to a large gray building with a rectangular layout featuring a courtyard . Then slightly turn right and continue straight to another gray building , medium in size , characterized by modern architecture with a glass facade .",
+   "n_waypoints": 9,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-094732",
+   "split": "train",
+   "image_path": "env_airsim_gz/astar_data/high_average/2025-1-10_21-17-19_1985433483",
+   "instruction": "Proceed to the modern skyscraper with a large , illuminated roof featuring pyramid shapes , characterized by its blue color .",
+   "n_waypoints": 10,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     9
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-095892",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/high_short/2025-1-10_18-9-7_198628789",
+   "instruction": "Walk directly towards the tall white building with rectangular windows featuring an arched design at the top , then slightly turn right and head straight towards the large light gray building characterized by its distinctive architectural design and logo at the top .",
+   "n_waypoints": 8,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     5
+    ],
+    [
+     "HOVER",
+     1
+    ],
+    [
+     "FORWARD",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-097688",
+   "split": "train",
+   "image_path": "env_gs_ecust/astar_data/long/2025-1-10_12-1-42_1303455736",
+   "instruction": "Begin by proceeding directly towards a large , gray , multi - story building characterized by its rectangular windows . Then , slightly turn left and continue moving forward until you reach a medium - sized building , light gray in color , identified as a mid-rise apartment . Next , veer right and approach a medium - sized , white building with a rectangular shape and windows . Finally , proceed ahead towards another structure of medium size , light gray in color , featuring a rectangular form with windows .",
+   "n_waypoints": 18,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     4
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     6
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  },
+  {
+   "id": "train-097909",
+   "split": "train",
+   "image_path": "env_airsim_sh/astar_data/low_long/2025-1-2_20-21-28_167793078",
+   "instruction": "Move ahead to a multi - color high - rise residential complex with large dimensions , slightly turn right to a large building featuring white and brown colors , encompassing rectangular windows and multiple stories , and subsequently move forward to a medium - sized modern residential building characterized by a white facade and a modern design with rectangular windows .",
+   "n_waypoints": 12,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     8
+    ],
+    [
+     "HOVER",
+     2
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ]
+  },
+  {
+   "id": "train-098251",
+   "split": "train",
+   "image_path": "env_gs_ecust/astar_data/long/2025-1-10_20-28-5_1534230297",
+   "instruction": "Walk straight to the large red building with a brick exterior , then slightly turn left and advance forward towards it . Turn to the left to face it . Lastly , move ahead to it .",
+   "n_waypoints": 20,
+   "gt_intent_segments": [
+    [
+     "FORWARD",
+     6
+    ],
+    [
+     "TURN_LEFT",
+     1
+    ],
+    [
+     "FORWARD",
+     3
+    ],
+    [
+     "HOVER",
+     3
+    ],
+    [
+     "TURN_RIGHT",
+     1
+    ],
+    [
+     "FORWARD",
+     5
+    ]
+   ],
+   "gt_intent_seq": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ]
+  }
+ ]
+}

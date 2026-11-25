@@ -1,0 +1,25 @@
+{
+ "stamp": "20260830_160727",
+ "roll_sign": -1.0,
+ "pitch_sign": 1.0,
+ "hdg_sign": -1.0,
+ "ff_sign": -1,
+ "sign_T": -1,
+ "sign_S": -1,
+ "probeA": {
+  "peak_yawr_dps": 0.0,
+  "hdg_drift_deg": 133.37,
+  "pass": false
+ },
+ "probeB": {
+  "flip": false,
+  "alt_gain_ft": 0.0,
+  "pass": false
+ },
+ "probeC": {
+  "peak_yawr_dps": 0.0,
+  "diverged": false,
+  "pass": true
+ },
+ "spike_pass": false
+}

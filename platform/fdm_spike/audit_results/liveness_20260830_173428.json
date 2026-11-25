@@ -1,0 +1,433 @@
+{
+ "stamp": "20260830_173428",
+ "rows": [
+  {
+   "prop": "position/altitude-ft",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "position/agl-ft",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "position/h-agl-ft",
+   "verdict": "ALIVE",
+   "range": 256.3469,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "position/lat-gc-deg",
+   "verdict": "ALIVE",
+   "range": 0.003,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "position/long-gc-deg",
+   "verdict": "ALIVE",
+   "range": 0.0041,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/u-fps",
+   "verdict": "ALIVE",
+   "range": 219.7807,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/v-fps",
+   "verdict": "ALIVE",
+   "range": 123.8767,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/w-fps",
+   "verdict": "ALIVE",
+   "range": 108.8569,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/v-north-fps",
+   "verdict": "ALIVE",
+   "range": 252.6025,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/v-east-fps",
+   "verdict": "ALIVE",
+   "range": 138.4399,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/v-down-fps",
+   "verdict": "ALIVE",
+   "range": 180.7785,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/h-dot-fps",
+   "verdict": "ALIVE",
+   "range": 180.7785,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/vc-fps",
+   "verdict": "ALIVE",
+   "range": 150.2744,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/groundspeed-kt",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/ve-kts",
+   "verdict": "ALIVE",
+   "range": 89.0177,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/airspeed-fps",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/p-radps",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/q-radps",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "velocities/r-radps",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "accelerations/pdot-radpssec",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "accelerations/qdot-radpssec",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "accelerations/rdot-radpssec",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "attitude/phi-deg",
+   "verdict": "ALIVE",
+   "range": 249.0552,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "attitude/theta-deg",
+   "verdict": "ALIVE",
+   "range": 154.6274,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "attitude/psi-deg",
+   "verdict": "ALIVE",
+   "range": 358.0461,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "attitude/phi-rad",
+   "verdict": "ALIVE",
+   "range": 4.3468,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "attitude/theta-rad",
+   "verdict": "ALIVE",
+   "range": 2.6988,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "attitude/psi-rad",
+   "verdict": "ALIVE",
+   "range": 6.2491,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "accelerations/n-pilot-xnorm",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "accelerations/n-pilot-ynorm",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "accelerations/n-pilot-znorm",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "aero/qbar-psf",
+   "verdict": "ALIVE",
+   "range": 26.8276,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "atmosphere/rho-slugs-ft3",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "atmosphere/P-psf",
+   "verdict": "ALIVE",
+   "range": 18.2693,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[0]/n1",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[0]/rotor-rpm",
+   "verdict": "ALIVE",
+   "range": 337.7987,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[0]/thruster-rpm",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[0]/thrust-lbs",
+   "verdict": "ALIVE",
+   "range": 22500.1952,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[0]/power-hp",
+   "verdict": "ALIVE",
+   "range": 1499.9998,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[1]/rotor-rpm",
+   "verdict": "ALIVE",
+   "range": 1730.6671,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[1]/thruster-rpm",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine[1]/antitorque-ctrl-rad",
+   "verdict": "ALIVE",
+   "range": 0.0896,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine/collective-ctrl-rad",
+   "verdict": "ALIVE",
+   "range": 0.2615,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine/longitudinal-ctrl-rad",
+   "verdict": "ALIVE",
+   "range": 0.0196,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "propulsion/engine/lateral-ctrl-rad",
+   "verdict": "ALIVE",
+   "range": 0.0169,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "fcs/throttle-cmd-norm[0]",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "fcs/collective-cmd-norm",
+   "verdict": "ALIVE",
+   "range": 0.74,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "fcs/elevator-cmd-norm",
+   "verdict": "ALIVE",
+   "range": 0.1,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "fcs/aileron-cmd-norm",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "fcs/rudder-cmd-norm",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "gear/unit[0]/compressed-ft",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "gear/unit[0]/WOW",
+   "verdict": "ALIVE",
+   "range": 1.0,
+   "n": 791,
+   "missing": 0
+  },
+  {
+   "prop": "inertia/weight-lbs",
+   "verdict": "DEAD(constant)",
+   "range": 0.0,
+   "n": 791,
+   "missing": 0
+  }
+ ],
+ "alive": [
+  "position/h-agl-ft",
+  "position/lat-gc-deg",
+  "position/long-gc-deg",
+  "velocities/u-fps",
+  "velocities/v-fps",
+  "velocities/w-fps",
+  "velocities/v-north-fps",
+  "velocities/v-east-fps",
+  "velocities/v-down-fps",
+  "velocities/h-dot-fps",
+  "velocities/vc-fps",
+  "velocities/ve-kts",
+  "attitude/phi-deg",
+  "attitude/theta-deg",
+  "attitude/psi-deg",
+  "attitude/phi-rad",
+  "attitude/theta-rad",
+  "attitude/psi-rad",
+  "aero/qbar-psf",
+  "atmosphere/P-psf",
+  "propulsion/engine[0]/rotor-rpm",
+  "propulsion/engine[0]/thrust-lbs",
+  "propulsion/engine[0]/power-hp",
+  "propulsion/engine[1]/rotor-rpm",
+  "propulsion/engine[1]/antitorque-ctrl-rad",
+  "propulsion/engine/collective-ctrl-rad",
+  "propulsion/engine/longitudinal-ctrl-rad",
+  "propulsion/engine/lateral-ctrl-rad",
+  "fcs/collective-cmd-norm",
+  "fcs/elevator-cmd-norm",
+  "gear/unit[0]/WOW"
+ ],
+ "dead": [
+  "position/altitude-ft",
+  "position/agl-ft",
+  "velocities/groundspeed-kt",
+  "velocities/airspeed-fps",
+  "velocities/p-radps",
+  "velocities/q-radps",
+  "velocities/r-radps",
+  "accelerations/pdot-radpssec",
+  "accelerations/qdot-radpssec",
+  "accelerations/rdot-radpssec",
+  "accelerations/n-pilot-xnorm",
+  "accelerations/n-pilot-ynorm",
+  "accelerations/n-pilot-znorm",
+  "atmosphere/rho-slugs-ft3",
+  "propulsion/engine[0]/n1",
+  "propulsion/engine[0]/thruster-rpm",
+  "propulsion/engine[1]/thruster-rpm",
+  "fcs/throttle-cmd-norm[0]",
+  "fcs/aileron-cmd-norm",
+  "fcs/rudder-cmd-norm",
+  "gear/unit[0]/compressed-ft",
+  "inertia/weight-lbs"
+ ]
+}

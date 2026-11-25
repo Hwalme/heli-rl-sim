@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!--
+  hs_afcs — the SPIKE's core innovation: built-in trim/AFCS that the toy
+  models (AH-1S etc.) lack (root cause of JSBSim issue #1139 symptoms).
+
+  Channels:
+  1. collective : collective-cmd-norm -> main rotor collective-ctrl-rad
+                  (0..1 -> 0..0.30 rad blade pitch; hover expected near 0.70)
+  2. yaw_afcs   : antitorque-ctrl-rad =
+                    FF_TABLE(collective-cmd-norm)      <- static torque trim
+                  + yaw-rate damper (-2.87/s * r)      <- dynamic
+                  + pilot pedal (rudder-cmd-norm * 0.35)
+  3. pitch_afcs : longitudinal-ctrl-rad =
+                    PITCH_TRIM_TABLE(collective, airspeed)  [hover: ~0]
+                  + pitch-rate damper (-2.5/s * q)
+  4. roll_afcs  : lateral-ctrl-rad =
+                    ROLL_TRIM_TABLE(collective, airspeed)   [hover: ~0]
+                  + roll-rate damper (-2.5/s * p)
+
+  All outputs in radians (FGRotor convention, cf. Alouette rotor-flight_ctrl).
+  FF table initial values are engineering estimates calibrated for
+  ff_sign=+1; the probe harness auto-calibrates the sign/gain against the
+  measured hover yaw drift and reports the final table.
+-->
+<system name="hs_afcs">
+
+  <property value="1.0"> fcs/hs/ff-sign </property>
+  <property value="1.0"> fcs/hs/afcs-enable </property>
+  <property value="0.0"> fcs/collective-cmd-norm </property>
+
+  <channel name="collective">
+    <fcs_function name="fcs/hs/collective-ctrl">
+      <function>
+        <table>
+          <independentVar>fcs/collective-cmd-norm</independentVar>
+          <tableData>
+            0.0   0.0
+            1.0   0.30
+          </tableData>
+        </table>
+      </function>
+      <output> propulsion/engine/collective-ctrl-rad </output>
+    </fcs_function>
+  </channel>
+
+  <channel name="yaw_afcs">
+    <fcs_function name="fcs/hs/antitorque-ff">
+      <function>
+        <product>
+          <property> fcs/hs/ff-sign </property>
+          <property> fcs/hs/afcs-enable </property>
+          <table>
+            <independentVar>fcs/collective-cmd-norm</independentVar>
+            <tableData>
+              0.0    0.00
+              0.3    0.06
+              0.5    0.16
+              0.7    0.26
+              0.85   0.33
+              1.0    0.40
+            </tableData>
+          </table>
+        </product>
+      </function>
+    </fcs_function>
+
+    <pure_gain name="fcs/hs/yaw-damp">
+      <input> velocities/r-radps </input>
+      <gain> -2.87 </gain>
+    </pure_gain>
+
+    <pure_gain name="fcs/hs/pedal-gain">
+      <input> fcs/rudder-cmd-norm </input>
+      <gain> 0.35 </gain>
+    </pure_gain>
+
+    <summer name="fcs/hs/antitorque-sum">
+      <input> fcs/hs/antitorque-ff </input>
+      <input> fcs/hs/yaw-damp </input>
+      <input> fcs/hs/pedal-gain </input>
+      <clipto>
+        <min> -0.70 </min>
+        <max>  0.70 </max>
+      </clipto>
+      <output> propulsion/engine[1]/antitorque-ctrl-rad </output>
+    </summer>
+  </channel>
+
+  <channel name="pitch_afcs">
+    <fcs_function name="fcs/hs/pitch-trim">
+      <function>
+        <product>
+          <property> fcs/hs/afcs-enable </property>
+          <table>
+            <independentVar lookup="row">fcs/collective-cmd-norm</independentVar>
+            <independentVar lookup="column">velocities/ve-kts</independentVar>
+            <tableData>
+                     0     15    30    60
+              0.0    0     0     0     0
+              0.7    0    -0.02 -0.05 -0.08
+              1.0    0    -0.03 -0.06 -0.10
+            </tableData>
+          </table>
+        </product>
+      </function>
+    </fcs_function>
+
+    <pure_gain name="fcs/hs/pitch-damp">
+      <input> velocities/q-radps </input>
+      <gain> -2.5 </gain>
+    </pure_gain>
+
+    <summer name="fcs/hs/longitudinal-sum">
+      <input> fcs/hs/pitch-trim </input>
+      <input> fcs/hs/pitch-damp </input>
+      <input> fcs/elevator-cmd-norm </input>
+      <clipto>
+        <min> -0.30 </min>
+        <max>  0.30 </max>
+      </clipto>
+      <output> propulsion/engine/longitudinal-ctrl-rad </output>
+    </summer>
+  </channel>
+
+  <channel name="roll_afcs">
+    <fcs_function name="fcs/hs/roll-trim">
+      <function>
+        <product>
+          <property> fcs/hs/afcs-enable </property>
+          <table>
+            <independentVar lookup="row">fcs/collective-cmd-norm</independentVar>
+            <independentVar lookup="column">velocities/ve-kts</independentVar>
+            <tableData>
+                     0     15    30    60
+              0.0    0     0     0     0
+              0.7    0     0.01  0.02  0.03
+              1.0    0     0.02  0.03  0.04
+            </tableData>
+          </table>
+        </product>
+      </function>
+    </fcs_function>
+
+    <pure_gain name="fcs/hs/roll-damp">
+      <input> velocities/p-radps </input>
+      <gain> -2.5 </gain>
+    </pure_gain>
+
+    <summer name="fcs/hs/lateral-sum">
+      <input> fcs/hs/roll-trim </input>
+      <input> fcs/hs/roll-damp </input>
+      <input> fcs/aileron-cmd-norm </input>
+      <clipto>
+        <min> -0.30 </min>
+        <max>  0.30 </max>
+      </clipto>
+      <output> propulsion/engine/lateral-ctrl-rad </output>
+    </summer>
+  </channel>
+
+</system>

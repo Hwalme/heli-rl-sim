@@ -1,0 +1,24 @@
+{
+ "stamp": "20260830_154733",
+ "dt": 0.005,
+ "hover_collective": 0.555,
+ "ff_sign": 1.0,
+ "probeA": {
+  "peak_yawr_dps": 0.0,
+  "hdg_drift_deg": 93.24,
+  "agl_ft_end": 0.0,
+  "pass": false
+ },
+ "probeB": {
+  "flip_or_crash": true,
+  "alt_gain_ft": 0.0,
+  "pass": false
+ },
+ "probeC": {
+  "peak_yawr_dps": 0.0,
+  "diverged": true,
+  "pass": false
+ },
+ "probeA_frames": 72,
+ "spike_pass": false
+}

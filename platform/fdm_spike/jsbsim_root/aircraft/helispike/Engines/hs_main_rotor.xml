@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+  helispike main rotor — FGRotor, R22 Beta II class.
+
+  R22 reference values:
+    rotor diameter 7.67 m (25.2 ft), 2 blades, chord 0.183 m, 530 rpm,
+    NACA 63-015 airfoil (lift curve slope ~5.76/rad), twist -8 deg,
+    teetering hinge (hinge offset ~ 0).
+
+  Design intent: hover blade-pitch lands near collective-cmd 0.70 through the
+  FCS mapping (0..1 -> 0..0.30 rad). Shaft 33500 rpm / gearratio 63.2 = 530 rpm.
+-->
+<rotor name="hs_main_rotor">
+
+  <diameter unit="M">    7.67  </diameter>
+  <numblades>            2     </numblades>
+  <sense>               -1.0   </sense>
+  <gearratio>            63.208 </gearratio>
+  <nominalrpm>           530.0 </nominalrpm>
+  <minrpm>               0     </minrpm>
+  <maxrpm>               600   </maxrpm>
+  <chord unit="M">       0.183 </chord>
+  <liftcurveslope>       5.75  </liftcurveslope>
+  <flappingmoment unit="SLUG*FT2">  40.0  </flappingmoment>
+  <twist>               -0.14  </twist>
+  <massmoment>           15.0  </massmoment>
+  <tiplossfactor>        0.97  </tiplossfactor>
+  <inflowlag>            0.08  </inflowlag>
+  <hingeoffset unit="M"> 0.00  </hingeoffset>
+
+  <maxbrakepower unit="HP"> 3 </maxbrakepower>
+
+  <groundeffectexp>      0.06  </groundeffectexp>
+  <groundeffectshift unit="M"> 1.0 </groundeffectshift>
+  <gearloss unit="HP">   1.0   </gearloss>
+
+</rotor>

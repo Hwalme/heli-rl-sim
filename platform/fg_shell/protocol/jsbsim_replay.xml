@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <comment>
+    B-Shell display shell: generic UDP input protocol for JSBSim 6-DoF trajectory replay.
+
+    FG is a pure display shell (fdm=null). The physics authority is JSBSim:
+    trajectories come from rl_train/results/jsbsim_ppo_*_trajectory.json and are
+    streamed by platform/fg_shell/playback.py.
+
+    Packet = 8 comma separated floats, newline terminated:
+      latitude_deg, longitude_deg, altitude_ft, roll_deg, pitch_deg, heading_deg,
+      groundspeed_kt, rotor_rpm
+
+    Usage:
+      --generic=socket,in,30,127.0.0.1,5500,udp,jsbsim_replay
+
+    NOTE: rendered model is bo105 as a VISUAL STAND-IN; the simulated physics is
+    AH-1S (repaired). Every public output of this pipeline must disclose this.
+  </comment>
+
+  <generic>
+
+    <input>
+      <line_separator>newline</line_separator>
+      <var_separator>,</var_separator>
+
+      <chunk>
+        <name>latitude</name>
+        <type>float</type>
+        <node>/position/latitude-deg</node>
+      </chunk>
+
+      <chunk>
+        <name>longitude</name>
+        <type>float</type>
+        <node>/position/longitude-deg</node>
+      </chunk>
+
+      <chunk>
+        <name>altitude MSL</name>
+        <type>float</type>
+        <node>/position/altitude-ft</node>
+      </chunk>
+
+      <chunk>
+        <name>roll</name>
+        <type>float</type>
+        <node>/orientation/roll-deg</node>
+      </chunk>
+
+      <chunk>
+        <name>pitch</name>
+        <type>float</type>
+        <node>/orientation/pitch-deg</node>
+      </chunk>
+
+      <chunk>
+        <name>heading</name>
+        <type>float</type>
+        <node>/orientation/heading-deg</node>
+      </chunk>
+
+      <chunk>
+        <name>groundspeed</name>
+        <type>float</type>
+        <node>/velocities/groundspeed-kt</node>
+      </chunk>
+
+      <chunk>
+        <name>main rotor rpm (visual only, recorded or nominal 428)</name>
+        <type>float</type>
+        <node>/rotors/main/rpm</node>
+      </chunk>
+
+    </input>
+
+  </generic>
+
+</PropertyList>

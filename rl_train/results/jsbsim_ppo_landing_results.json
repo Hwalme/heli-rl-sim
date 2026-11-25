@@ -1,0 +1,49 @@
+{
+  "engine": "jsbsim-1.3.1",
+  "aircraft": "ah1s",
+  "physics": "6-DoF rigid body + BET rotor + ground effect + aero tables",
+  "task": "landing",
+  "task_metric": "mean_descent_profile_err_mps",
+  "mode": "direct",
+  "steps": 500000,
+  "train_seconds": 225.4,
+  "steps_per_second": 2218.0,
+  "overall_success_rate": 1.0,
+  "overall_crash_rate": 0.0,
+  "overall_mean_alt_err_m": 0.09,
+  "procurement_acceptance_target": ">= 85% success, 0% crash",
+  "acceptance_passed": true,
+  "seed_results": {
+    "seed_42": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.08493895599028194,
+      "episodes": 20
+    },
+    "seed_123": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.09552168263621633,
+      "episodes": 20
+    },
+    "seed_7": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.09699711899792893,
+      "episodes": 20
+    },
+    "seed_0": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.08484084864445698,
+      "episodes": 20
+    },
+    "seed_99": {
+      "success_rate": 1.0,
+      "crash_rate": 0.0,
+      "mean_alt_err_m": 0.0915678343128828,
+      "episodes": 20
+    }
+  },
+  "verified_timestamp": "2026-08-28 15:01:43"
+}

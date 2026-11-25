@@ -1,0 +1,1345 @@
+
+
+     JSBSim Flight Dynamics Model v1.3.1 [GitHub build 1837/commit 3b25f25e49b42d0489c04ac805674fc1450ca579] May 17 2026 14:28:34
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+Reading Aircraft Configuration File: ah1s-jsbsim
+                            Version: 2.0
+
+
+This aircraft model is an ALPHA release!!!
+
+This aircraft model may not even properly load, and probably will not fly as expected.
+
+Use this model for development purposes ONLY!!!
+
+  Description:   Models a Bell209/AH1S helicopter.
+  Model Author:  Thomas Kreitler
+  Creation Date: 2010-10-07
+  Version:       $Revision: 1.5 $
+
+  Aircraft Metrics:
+    WingArea: 16.600000
+    WingSpan: 10.750000
+    Incidence: 0.148353
+    Chord: 1.540000
+    H. Tail Area: 12.000000
+    H. Tail Arm: 16.500000
+    V. Tail Area: 17.850000
+    V. Tail Arm: 25.000000
+    Eyepoint (x, y, z): 121.000000 , 0.000000 , 86.000000
+    Ref Pt (x, y, z): 176.000000 , 0.000000 , 55.000000
+    Visual Ref Pt (x, y, z): 0.000000 , 0.000000 , 0.000000
+
+  Mass and Balance:
+    baseIxx: 2593.000000 slug-ft2
+    baseIyy: 14320.000000 slug-ft2
+    baseIzz: 12330.000000 slug-ft2
+    baseIxy: -0.000000 slug-ft2
+    baseIxz: 0.000000 slug-ft2
+    baseIyz: -0.000000 slug-ft2
+    Empty Weight: 8500.000000 lbm
+    CG (x, y, z): 172.000000 , 0.000000 , 75.000000
+
+  Ground Reactions: 
+    BOGEY skid_front_left
+      Location: 115.900000 , -42.000000 , -4.000000
+      Spring Constant:  6375.000000
+      Damping Constant: 1275.000000 (linear)
+      Rebound Damping Constant: 1275.000000 (linear)
+      Dynamic Friction: 0.650000
+      Static Friction:  0.850000
+      Rolling Friction: 0.650000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_front_right
+      Location: 115.900000 , 42.000000 , -4.000000
+      Spring Constant:  6375.000000
+      Damping Constant: 1275.000000 (linear)
+      Rebound Damping Constant: 1275.000000 (linear)
+      Dynamic Friction: 0.650000
+      Static Friction:  0.850000
+      Rolling Friction: 0.650000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_rear_left
+      Location: 235.000000 , -42.000000 , -5.000000
+      Spring Constant:  6375.000000
+      Damping Constant: 1275.000000 (linear)
+      Rebound Damping Constant: 1275.000000 (linear)
+      Dynamic Friction: 0.650000
+      Static Friction:  0.850000
+      Rolling Friction: 0.650000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_rear_right
+      Location: 235.000000 , 42.000000 , -5.000000
+      Spring Constant:  6375.000000
+      Damping Constant: 1275.000000 (linear)
+      Rebound Damping Constant: 1275.000000 (linear)
+      Dynamic Friction: 0.650000
+      Static Friction:  0.850000
+      Rolling Friction: 0.650000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    STRUCTURE bumper_rear
+      Location: 490.000000 , 0.000000 , 40.000000
+      Spring Constant:  6000.000000
+      Damping Constant: 2000.000000 (linear)
+      Rebound Damping Constant: 2000.000000 (linear)
+      Dynamic Friction: 0.650000
+      Static Friction:  0.850000
+
+  Propulsion:
+       (FUEL) tank holds 890 lbs. FUEL
+      currently at 0% of maximum capacity
+      Tank location (X, Y, Z): 146, 0, 38
+      Effective radius: 0 inches
+      Initial temperature: -9999 Fahrenheit
+      Priority: 1
+       (FUEL) tank holds 890 lbs. FUEL
+      currently at 0% of maximum capacity
+      Tank location (X, Y, Z): 206, 0, 38
+      Effective radius: 0 inches
+      Initial temperature: -9999 Fahrenheit
+      Priority: 1
+
+    Rotor Name: ah1s_rotor
+      Diameter = 44 ft.
+      Number of Blades = 2
+      Gear Ratio = 20.37
+      Sense = 1
+      Nominal RPM = 324
+      Minimal RPM = 1
+      Maximal RPM = 648
+      Blade Chord = 2.25
+      Lift Curve Slope = 6
+      Blade Twist = -0.175
+      Hinge Offset = 3.3
+      Blade Flapping Moment = 1382
+      Blade Mass Moment = 85
+      Polar Moment = 2900
+      Inflow Lag = 0.09
+      Tip Loss = 1
+      Lock Number = 5.39128 (SL)
+      Solidity = 0.0651088
+      Max Brake Power = 36.3 HP
+      Gear Loss = 2.7225 HP
+      Gear Moment = 290
+      Control Mapping = Main Rotor
+      X = 176
+      Y = 0
+      Z = 153
+      Pitch = 90 degrees
+      Yaw = 0 degrees
+
+      Engine Name: turbine_substitute
+      Power Watts: 1.11855e+06
+
+    Rotor Name: ah1s_tail_rotor
+      Diameter = 8.5 ft.
+      Number of Blades = 2
+      Gear Ratio = 3.9759
+      Sense = 1
+      Nominal RPM = 1660
+      Minimal RPM = 1
+      Maximal RPM = 3320
+      RPM source set to thruster 0
+      Blade Chord = 0.7
+      Lift Curve Slope = 6
+      Blade Twist = 0
+      Hinge Offset = 0.015
+      Blade Flapping Moment = 1.45
+      Blade Mass Moment = 0.46
+      Polar Moment = 3.19
+      Inflow Lag = 0.09
+      Tip Loss = 1
+      Lock Number = 2.22645 (SL)
+      Solidity = 0.104855
+      Max Brake Power = 0.421458 HP
+      Gear Loss = 0 HP
+      Gear Moment = 0
+      Control Mapping = Tail Rotor
+      X = 496.67
+      Y = 16
+      Z = 119
+      Pitch = 0 degrees
+      Yaw = 90 degrees
+
+      Engine Name: transmission
+      Power Watts: 745.7
+
+    Declared properties
+
+      fcs/rpm-governor-active-norm (initial value: 0)
+
+      fcs/nominal-rpm (initial value: 324)
+
+
+  System: RPM Governor (AH1S)
+
+    Channel RPM-Governor
+
+    Loading Component "fcs/rpm-governor-pid-inhibit" of type: SWITCH
+        rpm-governor-active-norm GT constant value 0.000000      if all of the following are true: {
+
+      }      Switch default value is: constant value -1.000000
+      Switch takes test 1 value (constant value 0.000000)
+
+      OUTPUT: rpm-governor-pid-inhibit
+
+    Loading Component "fcs/rpm-delta" of type: FCS_FUNCTION
+      Minimum limit: constant value -50.000000
+      Maximum limit: constant value 50.000000
+      OUTPUT: rpm-delta
+
+    Loading Component "fcs/throttle-pid" of type: PID
+      Minimum limit: constant value 0.000000
+      Maximum limit: constant value 1.000000
+      INPUT: rpm-delta
+      OUTPUT: throttle-pos-norm
+      OUTPUT: throttle-pid
+
+    Declared properties
+
+      fcs/collective-cmd-norm (initial value: 0)
+
+      fcs/collective-trim-cmd-norm (initial value: 0)
+
+      fcs/adj/collective-profile (initial value: 1)
+
+      fcs/adj/center-sensitivity (initial value: 1.5)
+
+      fcs/adj/collective-gain (initial value: 0.22)
+
+      fcs/adj/collective-bias (initial value: 0.14)
+
+      fcs/adj/longitudinal-gain (initial value: 0.125)
+
+      fcs/adj/longitudinal-bias (initial value: 0.02)
+
+      fcs/adj/lateral-gain (initial value: 0.05)
+
+      fcs/adj/lateral-bias (initial value: 0)
+
+      fcs/adj/lateral-col-mix-infl (initial value: 1)
+
+      fcs/adj/lateral-col-mix-gain (initial value: -0.1)
+
+      fcs/adj/lateral-col-mix-bias (initial value: 0.01)
+
+      fcs/adj/pedal-gain (initial value: 0.18)
+
+      fcs/adj/pedal-bias (initial value: 0)
+
+      fcs/adj/pedal-col-mix-infl (initial value: 1)
+
+      fcs/adj/pedal-col-mix-gain (initial value: 0.65)
+
+      fcs/adj/pedal-col-mix-bias (initial value: -0.1)
+
+
+  System: rotor control
+
+    Channel collective control profile
+
+    Loading Component "fcs/misc/collective-cmd-norm-polymod" of type: FCS_FUNCTION
+    1 dimensional table with 21 rows.
+	0	0	
+	0.05	0.1274	
+	0.1	0.2181	
+	0.15	0.283	
+	0.2	0.3306	
+	0.25	0.3672	
+	0.3	0.3974	
+	0.35	0.4244	
+	0.4	0.4499	
+	0.45	0.475	
+	0.5	0.5	
+	0.55	0.525	
+	0.6	0.5501	
+	0.65	0.5756	
+	0.7	0.6026	
+	0.75	0.6328	
+	0.8	0.6694	
+	0.85	0.717	
+	0.9	0.7819	
+	0.95	0.8726	
+	1	1	
+      OUTPUT: collective-cmd-norm-polymod
+
+    Channel collective
+
+    Loading Component "fcs/collective-cmd-norm-variant" of type: FCS_FUNCTION
+      OUTPUT: collective-cmd-norm-variant
+
+    Loading Component "fcs/collective-cmd-trim-sum" of type: SUMMER
+      Minimum limit: constant value -1.000000
+      Maximum limit: constant value 1.000000
+      INPUTS: 
+       collective-cmd-norm-variant
+       collective-trim-cmd-norm
+      OUTPUT: collective-cmd-trim-sum
+
+    Loading Component "fcs/collective-gain" of type: PURE_GAIN
+      INPUT: collective-cmd-trim-sum
+      GAIN: collective-gain
+      OUTPUT: collective-gain
+
+    Loading Component "fcs/collective-ctrl-rad" of type: SUMMER
+      INPUTS: 
+       collective-gain
+       ap/collective-cmd
+       collective-bias
+      OUTPUT: collective-ctrl-rad
+      OUTPUT: collective-ctrl-rad
+
+    Loading Component "fcs/collective-ctrl-rad-lag" of type: LAG_FILTER
+      Minimum limit: constant value 0.000000
+      Maximum limit: constant value 0.700000
+      INPUT: collective-ctrl-rad
+      C[1]: constant value 10.000000
+      OUTPUT: collective-ctrl-rad
+      OUTPUT: collective-ctrl-rad-lag
+
+    Channel longitudinal
+
+    Loading Component "fcs/elevator-cmd-norm-exmod" of type: FCS_FUNCTION
+      OUTPUT: elevator-cmd-norm-exmod
+
+    Loading Component "fcs/longitudinal-cmd-trim-sum" of type: SUMMER
+      Minimum limit: constant value -1.000000
+      Maximum limit: constant value 1.000000
+      INPUTS: 
+       elevator-cmd-norm-exmod
+       pitch-trim-cmd-norm
+      OUTPUT: longitudinal-cmd-trim-sum
+
+    Loading Component "fcs/longitudinal-gain" of type: PURE_GAIN
+      INPUT: longitudinal-cmd-trim-sum
+      GAIN: longitudinal-gain
+      OUTPUT: longitudinal-gain
+
+    Loading Component "fcs/longitudinal-ctrl-rad" of type: SUMMER
+      Minimum limit: constant value -0.700000
+      Maximum limit: constant value 0.700000
+      INPUTS: 
+       longitudinal-gain
+       longitudinal-bias
+       ap/elevator-cmd
+      OUTPUT: longitudinal-ctrl-rad
+
+    Loading Component "fcs/longitudinal-ctrl-rad-lag" of type: LAG_FILTER
+      INPUT: longitudinal-ctrl-rad
+      C[1]: constant value 20.000000
+      OUTPUT: longitudinal-ctrl-rad
+      OUTPUT: longitudinal-ctrl-rad-lag
+
+    Channel lateral
+
+    Loading Component "fcs/aileron-cmd-norm-exmod" of type: FCS_FUNCTION
+      OUTPUT: aileron-cmd-norm-exmod
+
+    Loading Component "fcs/lateral-cmd-trim-sum" of type: SUMMER
+      Minimum limit: constant value -1.000000
+      Maximum limit: constant value 1.000000
+      INPUTS: 
+       aileron-cmd-norm-exmod
+       roll-trim-cmd-norm
+      OUTPUT: lateral-cmd-trim-sum
+
+    Loading Component "fcs/lateral-gain" of type: PURE_GAIN
+      INPUT: lateral-cmd-trim-sum
+      GAIN: lateral-gain
+      OUTPUT: lateral-gain
+
+    Loading Component "fcs/lateral-sum" of type: SUMMER
+      Minimum limit: constant value -0.700000
+      Maximum limit: constant value 0.700000
+      INPUTS: 
+       lateral-gain
+       ap/aileron-cmd
+       lateral-bias
+      OUTPUT: lateral-sum
+
+    Loading Component "fcs/lateral-ctrl-rad" of type: FCS_FUNCTION
+      OUTPUT: lateral-ctrl-rad
+
+    Loading Component "fcs/lateral-ctrl-rad-lag" of type: LAG_FILTER
+      INPUT: lateral-ctrl-rad
+      C[1]: constant value 20.000000
+      OUTPUT: lateral-ctrl-rad
+      OUTPUT: lateral-ctrl-rad-lag
+
+    Channel pedal
+
+    Loading Component "fcs/rudder-cmd-norm-exmod" of type: FCS_FUNCTION
+      OUTPUT: rudder-cmd-norm-exmod
+
+    Loading Component "fcs/pedal-cmd-trim-sum" of type: SUMMER
+      Minimum limit: constant value -1.000000
+      Maximum limit: constant value 1.000000
+      INPUTS: 
+       rudder-cmd-norm-exmod
+       yaw-trim-cmd-norm
+      OUTPUT: pedal-cmd-trim-sum
+
+    Loading Component "fcs/pedal-gain" of type: PURE_GAIN
+      INPUT: pedal-cmd-trim-sum
+      GAIN: pedal-gain
+      OUTPUT: pedal-gain
+
+    Loading Component "fcs/pedal-sum" of type: SUMMER
+      INPUTS: 
+       pedal-gain
+       pedal-bias
+       ap/rudder-cmd
+      OUTPUT: pedal-sum
+
+    Loading Component "fcs/pedal-ctrl-rad" of type: FCS_FUNCTION
+      OUTPUT: pedal-ctrl-rad
+
+    Loading Component "fcs/pedal-ctrl-rad-lag" of type: LAG_FILTER
+      INPUT: pedal-ctrl-rad
+      C[1]: constant value 20.000000
+      OUTPUT: antitorque-ctrl-rad
+      OUTPUT: pedal-ctrl-rad-lag
+
+    Declared properties
+
+      ap/rudder-cmd (initial value: 0)
+
+      ap/aileron-cmd (initial value: 0)
+
+      ap/elevator-cmd (initial value: 0)
+
+      ap/collective-cmd (initial value: 0)
+
+      ap/afcs/roll-channel-active-norm (initial value: 0)
+
+      ap/afcs/phi-trim-rad (initial value: 0)
+
+      ap/afcs/lateral-trim (initial value: 0)
+
+      ap/afcs/adj/lateral-ctrl-gain (initial value: 0.33)
+
+      ap/afcs/adj/roll-err-ctrl-gain (initial value: -0.133)
+
+      ap/afcs/adj/roll-rate-ctrl-gain (initial value: -0.096)
+
+      ap/afcs/pitch-channel-active-norm (initial value: 0)
+
+      ap/afcs/theta-trim-rad (initial value: 0)
+
+      ap/afcs/longitudinal-trim (initial value: 0)
+
+      ap/afcs/adj/longitudinal-ctrl-gain (initial value: 0.475)
+
+      ap/afcs/adj/pitch-err-ctrl-gain (initial value: 0.281)
+
+      ap/afcs/adj/pitch-rate-ctrl-gain (initial value: 0.727)
+
+      ap/afcs/yaw-channel-active-norm (initial value: 0)
+
+      ap/afcs/psi-trim-rad (initial value: 0)
+
+      ap/afcs/heading-hold-enable (initial value: 1)
+
+      ap/afcs/adj/yaw-rate-ctrl-gain (initial value: 0)
+
+      ap/afcs/altitude-channel-active-norm (initial value: 0)
+
+      ap/afcs/altitude-trim-ft (initial value: 50)
+
+      ap/afcs/h-agl-mode (initial value: 1)
+
+      ap/afcs/adj/altitude-error-ctrl-gain (initial value: -0.00035)
+
+      ap/afcs/adj/altitude-rate-ctrl-gain (initial value: 0)
+
+
+  System: automated flight control
+
+    Channel afcs-roll
+
+    Loading Component "ap/afcs/lateral-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.200000
+      Maximum limit: constant value 0.200000
+      OUTPUT: lateral-ctrl
+
+    Loading Component "ap/afcs/roll-err-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.200000
+      Maximum limit: constant value 0.200000
+      OUTPUT: roll-err-ctrl
+
+    Loading Component "ap/afcs/roll-rate-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.200000
+      Maximum limit: constant value 0.200000
+      OUTPUT: roll-rate-ctrl
+
+    Loading Component "ap/afcs/roll-cmd-sum" of type: FCS_FUNCTION
+      OUTPUT: aileron-cmd
+      OUTPUT: roll-cmd-sum
+
+    Channel afcs-pitch
+
+    Loading Component "ap/afcs/longitudinal-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.200000
+      Maximum limit: constant value 0.200000
+      OUTPUT: longitudinal-ctrl
+
+    Loading Component "ap/afcs/pitch-err-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.200000
+      Maximum limit: constant value 0.200000
+      OUTPUT: pitch-err-ctrl
+
+    Loading Component "ap/afcs/pitch-rate-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.200000
+      Maximum limit: constant value 0.200000
+      OUTPUT: pitch-rate-ctrl
+
+    Loading Component "ap/afcs/pitch-cmd-sum" of type: FCS_FUNCTION
+      OUTPUT: elevator-cmd
+      OUTPUT: pitch-cmd-sum
+
+    Channel afcs-yaw
+
+    Loading Component "ap/afcs/psi-trim-deg" of type: FCS_FUNCTION
+      OUTPUT: psi-trim-deg
+
+    Loading Component "ap/afcs/yaw-err-pid-inhibit" of type: SWITCH
+        yaw-channel-active-norm GT constant value 0.999000      if all of the following are true: {
+
+      }      Switch default value is: constant value -1.000000
+      Switch takes test 1 value (constant value 0.000000)
+
+      OUTPUT: yaw-err-pid-inhibit
+
+    Loading Component "ap/afcs/psi-error-rad" of type: FCS_FUNCTION
+      OUTPUT: psi-error-rad
+
+    Loading Component "ap/afcs/yaw-err-pid" of type: PID
+      Minimum limit: constant value -0.250000
+      Maximum limit: constant value 0.250000
+      INPUT: psi-error-rad
+      OUTPUT: yaw-err-pid
+
+    Loading Component "ap/afcs/yaw-rate-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.200000
+      Maximum limit: constant value 0.200000
+      OUTPUT: yaw-rate-ctrl
+
+    Loading Component "ap/afcs/yaw-cmd-sum" of type: FCS_FUNCTION
+      OUTPUT: rudder-cmd
+      OUTPUT: yaw-cmd-sum
+
+    Channel afcs-altitude
+
+    Loading Component "position/h-agl-ft-lag" of type: LAG_FILTER
+      INPUT: h-agl-ft
+      C[1]: constant value 1.000000
+      OUTPUT: h-agl-ft-lag
+
+    Loading Component "ap/afcs/altitude-input" of type: SWITCH
+        h-agl-mode == constant value 1.000000      if all of the following are true: {
+
+      }      Switch default value is: h-sl-ft
+      Switch takes test 1 value (h-agl-ft-lag)
+
+      OUTPUT: altitude-input
+
+    Loading Component "ap/afcs/altitude-error-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.400000
+      Maximum limit: constant value 0.400000
+      OUTPUT: altitude-error-ctrl
+
+    Loading Component "ap/afcs/altitude-rate-ctrl" of type: FCS_FUNCTION
+      Minimum limit: constant value -0.400000
+      Maximum limit: constant value 0.400000
+      OUTPUT: altitude-rate-ctrl
+
+    Loading Component "ap/afcs/collective-cmd-sum" of type: FCS_FUNCTION
+      OUTPUT: collective-cmd
+      OUTPUT: collective-cmd-sum
+
+  System: steady flight data
+
+    Channel trim tests
+
+    Loading Component "fcs/SFD/trim/v_dir_kts" of type: FCS_FUNCTION
+      OUTPUT: v_dir_kts
+
+    Loading Component "fcs/SFD/trim/collective-ctrl-rad" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	0.2325	0.2328	0.2329	0.2331	0.2334	0.2342	0.2357	0.2387	0.2483	0.2695	0.3189	
+	-20	0.2498	0.2518	0.2523	0.2525	0.2528	0.2537	0.2553	0.2585	0.2687	0.288	0.3379	
+	0	0.254	0.2632	0.2654	0.2655	0.2658	0.2667	0.2682	0.2712	0.281	0.2995	0.3477	
+	20	0.2497	0.2517	0.2522	0.2524	0.2527	0.2536	0.2551	0.2583	0.2686	0.2879	0.3378	
+	40	0.2311	0.2314	0.2315	0.2317	0.232	0.2328	0.2343	0.2373	0.2477	0.2676	0.3178	
+	60	0.224	0.2241	0.2241	0.2243	0.2245	0.2253	0.2266	0.2293	0.2381	0.2552	0.3016	
+	80	0.2246	0.2246	0.2247	0.2248	0.225	0.2258	0.227	0.2294	0.2376	0.2536	0.2978	
+	100	0.2315	0.2316	0.2316	0.2317	0.2319	0.2326	0.2337	0.2359	0.2433	0.2583	0.301	
+	120	0.2452	0.2452	0.2452	0.2453	0.2455	0.246	0.247	0.2489	0.2555	0.2693	0.3104	
+	140	0.2666	0.2666	0.2667	0.2667	0.2669	0.2673	0.268	0.2696	0.2751	0.2874	0.3267	
+      OUTPUT: collective-trim-ctrl-rad
+      OUTPUT: collective-ctrl-rad
+
+    Loading Component "fcs/SFD/trim/longitudinal-ctrl-rad" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	-0.02865	-0.02869	-0.02872	-0.02874	-0.0288	-0.02898	-0.02928	-0.02989	-0.03187	-0.03628	-0.04633	
+	-20	-0.01906	-0.01921	-0.01924	-0.01926	-0.01929	-0.01938	-0.01954	-0.01986	-0.0209	-0.02288	-0.02812	
+	0	-0.007809	-0.007841	-0.007848	-0.007849	-0.007849	-0.00785	-0.007852	-0.007856	-0.00787	-0.007904	-0.008025	
+	20	0.007379	0.007585	0.007629	0.00764	0.007663	0.007732	0.007849	0.008092	0.008888	0.01047	0.01488	
+	40	0.01604	0.01611	0.01614	0.01617	0.01623	0.01641	0.01672	0.01735	0.01963	0.02386	0.03442	
+	60	0.0211	0.02111	0.02114	0.02117	0.02125	0.02148	0.02186	0.02267	0.02562	0.03174	0.0481	
+	80	0.03123	0.03124	0.03127	0.03131	0.0314	0.03167	0.03212	0.03306	0.0362	0.04253	0.06053	
+	100	0.044	0.04401	0.04404	0.04408	0.04417	0.04445	0.04492	0.04591	0.04929	0.05643	0.07772	
+	120	0.0609	0.0609	0.06093	0.06097	0.06105	0.06129	0.06172	0.06263	0.06592	0.07336	0.09723	
+	140	0.0836	0.08361	0.08363	0.08365	0.08371	0.08388	0.0842	0.0849	0.0877	0.09484	0.1204	
+      OUTPUT: longitudinal-trim-ctrl-rad
+      OUTPUT: longitudinal-ctrl-rad
+
+    Loading Component "fcs/SFD/trim/lateral-ctrl-rad" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	0.001685	0.001677	0.001676	0.001676	0.001677	0.001679	0.001683	0.001687	0.001682	0.001644	0.00125	
+	-20	-0.001234	-0.001309	-0.001323	-0.001324	-0.001326	-0.00133	-0.001339	-0.001357	-0.001427	-0.001591	-0.002109	
+	0	-0.003916	-0.004327	-0.00442	-0.004421	-0.004423	-0.004428	-0.004436	-0.004455	-0.004524	-0.004679	-0.005161	
+	20	-0.006194	-0.006301	-0.006321	-0.006323	-0.006326	-0.006334	-0.006349	-0.006379	-0.00648	-0.006686	-0.007257	
+	40	-0.007465	-0.00748	-0.007484	-0.007485	-0.007488	-0.007497	-0.007513	-0.007545	-0.007716	-0.008019	-0.008673	
+	60	-0.009149	-0.009151	-0.009152	-0.009153	-0.009155	-0.009162	-0.009174	-0.0092	-0.009286	-0.009466	-0.009993	
+	80	-0.01117	-0.01117	-0.01117	-0.01117	-0.01117	-0.01117	-0.01118	-0.01119	-0.01125	-0.01138	-0.0118	
+	100	-0.01356	-0.01356	-0.01356	-0.01356	-0.01356	-0.01356	-0.01355	-0.01354	-0.01354	-0.01358	-0.01386	
+	120	-0.01654	-0.01654	-0.01653	-0.01653	-0.01652	-0.0165	-0.01648	-0.01642	-0.01629	-0.01615	-0.01618	
+	140	-0.02043	-0.02043	-0.02042	-0.02042	-0.0204	-0.02036	-0.02028	-0.02014	-0.01976	-0.0193	-0.01887	
+      OUTPUT: lateral-trim-ctrl-rad
+      OUTPUT: lateral-ctrl-rad
+
+    Loading Component "fcs/SFD/trim/antitorque-ctrl-rad" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	0.0715	0.07179	0.07191	0.07202	0.07225	0.07295	0.07413	0.07662	0.08504	0.1057	0.1638	
+	-20	0.1124	0.1147	0.1153	0.1154	0.1158	0.1168	0.1185	0.122	0.1336	0.1571	0.2252	
+	0	0.1309	0.1405	0.1427	0.1429	0.1432	0.1442	0.1459	0.1495	0.1612	0.1846	0.2531	
+	20	0.1125	0.1148	0.1153	0.1155	0.1158	0.1168	0.1185	0.122	0.1337	0.1572	0.2255	
+	40	0.07055	0.07084	0.07096	0.07107	0.0713	0.07199	0.07317	0.07565	0.08471	0.1039	0.1629	
+	60	0.05327	0.0533	0.05335	0.05342	0.05357	0.054	0.05475	0.05632	0.0617	0.07345	0.1134	
+	80	0.04818	0.04819	0.04822	0.04827	0.04838	0.04869	0.04922	0.05035	0.05421	0.06269	0.092	
+	100	0.04912	0.04913	0.04915	0.04919	0.04927	0.04952	0.04994	0.05082	0.05386	0.06053	0.0837	
+	120	0.05412	0.05412	0.05414	0.05418	0.05425	0.05445	0.0548	0.05555	0.05809	0.06369	0.08312	
+	140	0.0625	0.06251	0.06253	0.06256	0.06262	0.0628	0.06311	0.06377	0.06601	0.07093	0.08801	
+      OUTPUT: antitorque-trim-ctrl-rad
+      OUTPUT: antitorque-ctrl-rad
+
+    Loading Component "ap/afcs/automatic/phi-trim-rad" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	-0.03439	-0.03451	-0.03453	-0.03454	-0.03455	-0.03459	-0.03465	-0.03481	-0.03542	-0.03799	-0.04352	
+	-20	-0.04192	-0.0429	-0.04309	-0.0431	-0.04313	-0.04321	-0.04334	-0.04362	-0.0446	-0.04671	-0.05287	
+	0	-0.04362	-0.04821	-0.04924	-0.04925	-0.04927	-0.04933	-0.04942	-0.04963	-0.0504	-0.05212	-0.0575	
+	20	-0.04087	-0.04192	-0.04212	-0.04213	-0.04215	-0.04223	-0.04235	-0.04261	-0.04354	-0.04555	-0.05153	
+	40	-0.03074	-0.03087	-0.0309	-0.0309	-0.03091	-0.03095	-0.03101	-0.03114	-0.03193	-0.0338	-0.03947	
+	60	-0.0262	-0.02621	-0.02621	-0.0262	-0.0262	-0.02617	-0.02613	-0.02607	-0.02605	-0.02656	-0.0299	
+	80	-0.02566	-0.02566	-0.02565	-0.02564	-0.02561	-0.02552	-0.02539	-0.02514	-0.02454	-0.02409	-0.02545	
+	100	-0.02841	-0.0284	-0.02839	-0.02836	-0.02831	-0.02816	-0.02791	-0.02743	-0.02617	-0.02466	-0.02402	
+	120	-0.03456	-0.03456	-0.03453	-0.03449	-0.03441	-0.03416	-0.03376	-0.03298	-0.03085	-0.02802	-0.02506	
+	140	-0.04479	-0.04478	-0.04474	-0.04467	-0.04455	-0.04417	-0.04355	-0.04234	-0.03902	-0.0344	-0.02853	
+      OUTPUT: phi-trim-rad
+
+    Loading Component "ap/afcs/automatic/theta-trim-rad" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	0.00056	0.000558	0.000551	0.000538	0.000512	0.000436	0.000311	6.7e-05	-0.000624	-0.002539	-0.004343	
+	-20	-0.007484	-0.007615	-0.007641	-0.007644	-0.00765	-0.007669	-0.0077	-0.007759	-0.007916	-0.00811	-0.008216	
+	0	-0.006811	-0.006503	-0.006428	-0.006428	-0.006428	-0.006429	-0.006431	-0.006434	-0.006449	-0.006483	-0.006603	
+	20	9e-06	0.000322	0.000377	0.000374	0.000366	0.000343	0.000303	0.000223	-3.5e-05	-0.000522	-0.001772	
+	40	-0.01145	-0.01142	-0.01141	-0.0114	-0.01137	-0.01131	-0.0112	-0.01098	-0.008614	-0.005574	-0.002553	
+	60	-0.02385	-0.02385	-0.02383	-0.02381	-0.02377	-0.02365	-0.02344	-0.02304	-0.02156	-0.01889	-0.01413	
+	80	-0.03565	-0.03564	-0.03562	-0.03558	-0.03551	-0.03531	-0.03496	-0.03427	-0.03231	-0.02932	-0.02446	
+	100	-0.05013	-0.05012	-0.05009	-0.05004	-0.04994	-0.04963	-0.04913	-0.04813	-0.04526	-0.04084	-0.03342	
+	120	-0.06688	-0.06686	-0.06682	-0.06676	-0.06662	-0.06622	-0.06556	-0.06425	-0.06044	-0.05452	-0.04436	
+	140	-0.08556	-0.08554	-0.0855	-0.08541	-0.08525	-0.08476	-0.08395	-0.08234	-0.07763	-0.07022	-0.05728	
+      OUTPUT: theta-trim-rad
+
+    Loading Component "fcs/automatic/collective-trim-cmd-norm" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	0.4206	0.4219	0.4225	0.4231	0.4244	0.4283	0.4349	0.4485	0.4922	0.5886	0.8133	
+	-20	0.4991	0.5084	0.5105	0.5112	0.5126	0.5168	0.5239	0.5385	0.5849	0.6728	0.8995	
+	0	0.5183	0.5601	0.5699	0.5706	0.5719	0.5759	0.5827	0.5966	0.6409	0.7252	0.9441	
+	20	0.4986	0.5079	0.51	0.5107	0.5121	0.5163	0.5234	0.5379	0.5844	0.6723	0.8989	
+	40	0.4142	0.4155	0.4161	0.4167	0.418	0.422	0.4286	0.4422	0.4897	0.5799	0.8084	
+	60	0.3818	0.3821	0.3825	0.383	0.3842	0.3877	0.3937	0.4061	0.446	0.5238	0.7347	
+	80	0.3845	0.3846	0.385	0.3855	0.3866	0.3898	0.3952	0.4065	0.4434	0.5162	0.7174	
+	100	0.4161	0.4162	0.4165	0.4169	0.4179	0.4208	0.4257	0.4359	0.4697	0.5378	0.7318	
+	120	0.478	0.4781	0.4783	0.4787	0.4795	0.482	0.4862	0.4951	0.525	0.5877	0.7747	
+	140	0.5755	0.5755	0.5757	0.576	0.5767	0.5786	0.5819	0.589	0.614	0.6698	0.8485	
+      OUTPUT: collective-trim-cmd-norm
+
+    Loading Component "fcs/automatic/pitch-trim-cmd-norm" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	-0.3892	-0.3895	-0.3897	-0.39	-0.3904	-0.3918	-0.3942	-0.3992	-0.415	-0.4502	-0.5306	
+	-20	-0.3125	-0.3137	-0.3139	-0.3141	-0.3143	-0.3151	-0.3163	-0.3189	-0.3272	-0.3431	-0.385	
+	0	-0.2225	-0.2227	-0.2228	-0.2228	-0.2228	-0.2228	-0.2228	-0.2228	-0.223	-0.2232	-0.2242	
+	20	-0.101	-0.09932	-0.09897	-0.09888	-0.0987	-0.09814	-0.09721	-0.09527	-0.0889	-0.07623	-0.04099	
+	40	-0.03169	-0.0311	-0.03086	-0.03062	-0.03014	-0.02869	-0.02625	-0.02123	-0.003002	0.03088	0.1153	
+	60	0.008793	0.008893	0.00908	0.009381	0.009986	0.01182	0.01492	0.02132	0.04496	0.09392	0.2248	
+	80	0.08985	0.08993	0.09014	0.09049	0.09119	0.09333	0.09696	0.1045	0.1296	0.1803	0.3243	
+	100	0.192	0.1921	0.1923	0.1927	0.1934	0.1956	0.1994	0.2073	0.2344	0.2915	0.4617	
+	120	0.3272	0.3272	0.3274	0.3277	0.3284	0.3303	0.3337	0.3411	0.3674	0.4269	0.6179	
+	140	0.5088	0.5089	0.509	0.5092	0.5097	0.5111	0.5136	0.5192	0.5416	0.5987	0.8035	
+      OUTPUT: pitch-trim-cmd-norm
+
+    Loading Component "fcs/automatic/roll-trim-cmd-norm" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	0.2987	0.2992	0.2994	0.2997	0.3003	0.302	0.305	0.3111	0.3302	0.3719	0.4629	
+	-20	0.2749	0.2775	0.2782	0.2784	0.279	0.2808	0.2837	0.2898	0.3088	0.3442	0.4336	
+	0	0.2297	0.2399	0.2423	0.2426	0.2432	0.2448	0.2477	0.2534	0.2715	0.3055	0.3922	
+	20	0.1755	0.1775	0.178	0.1782	0.1788	0.1805	0.1833	0.1891	0.2075	0.2421	0.3304	
+	40	0.113	0.1132	0.1134	0.1137	0.1142	0.1157	0.1183	0.1237	0.1412	0.1748	0.2622	
+	60	0.06503	0.0651	0.06524	0.06548	0.06594	0.06736	0.06975	0.07467	0.09053	0.1212	0.2034	
+	80	0.02587	0.02592	0.02605	0.02627	0.02671	0.02806	0.03033	0.035	0.05012	0.07953	0.1596	
+	100	-0.008189	-0.008144	-0.008012	-0.007791	-0.007347	-0.006008	-0.003745	0.000904	0.01591	0.04507	0.1248	
+	120	-0.0404	-0.04035	-0.04021	-0.03997	-0.03948	-0.03803	-0.03559	-0.0306	-0.01471	0.01561	0.0973	
+	140	-0.0754	-0.07534	-0.07516	-0.07487	-0.07428	-0.07251	-0.06955	-0.06357	-0.04504	-0.0112	0.07591	
+      OUTPUT: roll-trim-cmd-norm
+
+    Loading Component "fcs/automatic/yaw-trim-cmd-norm" of type: FCS_FUNCTION
+    2 dimensional table with 10 rows, 11 columns.
+		10	20	50	100	200	500	1000	2000	5000	1e+04	2e+04	
+	-40	0.1131	0.1137	0.1139	0.114	0.1142	0.115	0.1163	0.1194	0.1314	0.1694	0.3136	
+	-20	0.2782	0.2836	0.2848	0.2851	0.2859	0.2881	0.2919	0.3	0.3277	0.3881	0.5863	
+	0	0.3657	0.3855	0.3901	0.3905	0.3913	0.3937	0.3978	0.4065	0.4361	0.4997	0.7059	
+	20	0.2787	0.2841	0.2853	0.2857	0.2864	0.2887	0.2925	0.3006	0.3285	0.3891	0.5885	
+	40	0.1129	0.1135	0.1136	0.1138	0.114	0.1147	0.116	0.119	0.1316	0.1666	0.3126	
+	60	0.04257	0.04259	0.04256	0.04249	0.04236	0.04198	0.04138	0.04032	0.03848	0.04191	0.09658	
+	80	0.01218	0.01215	0.01207	0.01193	0.01166	0.01083	0.009466	0.006749	-0.001083	-0.01183	-0.008863	
+	100	-0.007662	-0.007693	-0.007785	-0.007939	-0.008248	-0.009179	-0.01075	-0.01394	-0.0239	-0.04098	-0.06636	
+	120	-0.02908	-0.02911	-0.02919	-0.02932	-0.02959	-0.0304	-0.03179	-0.0347	-0.04435	-0.06311	-0.1037	
+	140	-0.05994	-0.05996	-0.06001	-0.06009	-0.06026	-0.06077	-0.06168	-0.06368	-0.07109	-0.08806	-0.1351	
+      OUTPUT: yaw-trim-cmd-norm
+
+    Declared properties
+
+      fcs/automatic/steady-flight-data-enable (initial value: 0)
+
+      fcs/manual/collective-trim-cmd-norm (initial value: 0)
+
+      fcs/manual/pitch-trim-cmd-norm (initial value: 0)
+
+      fcs/manual/roll-trim-cmd-norm (initial value: 0)
+
+      fcs/manual/yaw-trim-cmd-norm (initial value: 0)
+
+      ap/afcs/manual/phi-trim-rad (initial value: 0)
+
+      ap/afcs/manual/theta-trim-rad (initial value: 0)
+
+
+  System: trim control
+
+    Channel control_wiring
+
+    Loading Component "fcs/automatic/collective-trim-cmd-norm-func" of type: FCS_FUNCTION
+      OUTPUT: collective-trim-cmd-norm
+      OUTPUT: collective-trim-cmd-norm-func
+
+    Loading Component "fcs/automatic/pitch-trim-cmd-norm-func" of type: FCS_FUNCTION
+      OUTPUT: pitch-trim-cmd-norm
+      OUTPUT: pitch-trim-cmd-norm-func
+
+    Loading Component "fcs/automatic/roll-trim-cmd-norm-func" of type: FCS_FUNCTION
+      OUTPUT: roll-trim-cmd-norm
+      OUTPUT: roll-trim-cmd-norm-func
+
+    Loading Component "fcs/automatic/yaw-trim-cmd-norm-func" of type: FCS_FUNCTION
+      OUTPUT: yaw-trim-cmd-norm
+      OUTPUT: yaw-trim-cmd-norm-func
+
+    Loading Component "ap/afcs/phi-trim-rad-func" of type: FCS_FUNCTION
+      OUTPUT: phi-trim-rad
+      OUTPUT: phi-trim-rad-func
+
+    Loading Component "ap/afcs/theta-trim-rad-func" of type: FCS_FUNCTION
+      OUTPUT: theta-trim-rad
+      OUTPUT: theta-trim-rad-func
+
+  System: misc support
+
+    Channel climb/approach angle
+
+    Loading Component "attitude/pitch-deg" of type: FCS_FUNCTION
+      OUTPUT: pitch-deg
+
+    Loading Component "attitude/approach-angle-deg" of type: FCS_FUNCTION
+      OUTPUT: approach-angle-deg
+
+    Channel bell instruments
+
+    Loading Component "propulsion/engine/bell-torque-sensor-psi" of type: FCS_FUNCTION
+      OUTPUT: torque-sensor-psi
+      OUTPUT: bell-torque-sensor-psi
+
+  FCS: ah1s fcs
+
+    Channel tailplane
+
+    Loading Component "fcs/var-incidence-ht-rad" of type: FCS_FUNCTION
+    1 dimensional table with 6 rows.
+	-0.04	0.21	
+	-0.01	0	
+	0	-0.01	
+	0.02	-0.01	
+	0.09	0.06	
+	0.15	0.12	
+      OUTPUT: var-incidence-ht-rad
+
+    Channel downwash-delay
+
+    Loading Component "aero/theta-downwash-delayed-rad" of type: LAG_FILTER
+      INPUT: theta-downwash-rad
+      C[1]: constant value 10.000000
+      OUTPUT: theta-downwash-delayed-rad
+
+    Loading Component "aero/phi-downwash-delayed-rad" of type: LAG_FILTER
+      INPUT: phi-downwash-rad
+      C[1]: constant value 10.000000
+      OUTPUT: phi-downwash-delayed-rad
+
+    Channel groundeffect-scale
+
+    Loading Component "aero/groundeffect-scale" of type: FCS_FUNCTION
+      OUTPUT: groundeffect-scale-norm
+      OUTPUT: groundeffect-scale
+
+    Declared properties
+
+      aero/setup/Nr_limiter (initial value: 0.05)
+
+      aero/setup/downwash-enable (initial value: 1)
+
+      metrics/rotor/R-ft (initial value: 22)
+
+      metrics/rotor/Area-ft2 (initial value: 1520.53)
+
+      metrics/rotor/solidity (initial value: 0.06511)
+
+      aero/ref/area-ft2 (initial value: 99)
+
+      aero/ref/volume-ft3 (initial value: 2178)
+
+      aero/ref/vtip-fps (initial value: 746.44)
+
+      aero/coefficient/CD0_fus (initial value: 0.105)
+
+      aero/coefficient/CDa90_fus (initial value: 0.6)
+
+      aero/coefficient/CDb90_fus (initial value: 1.826)
+
+    Function: aero/HIhat-ps
+    Function: aero/HWhat-psft
+    Function: aero/mu
+    Function: aero/raw-alpha-iw-rad
+    Function: aero/alpha-iw-rad
+    Function: aero/raw-alpha-iht-rad
+    Function: aero/alpha-iht-rad
+    1 dimensional table with 4 rows.
+	-1.3	0	
+	-1.26	1	
+	1.26	1	
+	1.3	0	
+    1 dimensional table with 7 rows.
+	-1.37	0	
+	-1.2	0.5	
+	-1.1	1	
+	0	1	
+	1.1	1	
+	1.2	0.5	
+	1.37	0	
+    Function: aero/downwash-window-wing
+    Function: aero/downwash-window-wing-value
+    Function: aero/downwash-window-wing-compl
+    1 dimensional table with 4 rows.
+	-1.42	0	
+	-1.36	1	
+	0.63	1	
+	0.69	0	
+    1 dimensional table with 7 rows.
+	-1.37	0	
+	-1.2	0.5	
+	-1.1	1	
+	0	1	
+	1.1	1	
+	1.2	0.5	
+	1.37	0	
+    Function: aero/downwash-window-ht
+    Function: aero/downwash-window-ht-value
+    Function: aero/downwash-window-ht-compl
+    Function: aero/alpha-downwash-rad
+    Function: aero/alpha-dw-diff-rad
+    Function: aero/raw-alpha-dw-iw-rad
+    Function: aero/alpha-dw-iw-rad
+    Function: aero/raw-alpha-dw-iht-rad
+    Function: aero/alpha-dw-iht-rad
+    Function: aero/downwash-qbar-psf
+    1 dimensional table with 2 rows.
+	0	0	
+	0.45	-0.07	
+    Function: aero/coefficient/CMw_ht
+    1 dimensional table with 2 rows.
+	0	0	
+	0.45	-0.09	
+    Function: aero/coefficient/CMq_ht
+    1 dimensional table with 2 rows.
+	0	0	
+	0.45	0.07	
+    Function: aero/coefficient/CNv_vt
+    1 dimensional table with 2 rows.
+	0	0	
+	0.45	-0.09	
+    Function: aero/coefficient/CNr_vt
+    1 dimensional table with 19 rows.
+	-3.49	-1.92	
+	-3.14	0	
+	-2.79	1.92	
+	-2.74	1.92	
+	-1.83	0.96	
+	-1.57	0	
+	-1.31	-0.96	
+	-0.4	-1.92	
+	-0.35	-1.92	
+	0	0	
+	0.35	1.92	
+	0.4	1.92	
+	1.31	0.96	
+	1.57	0	
+	1.83	-0.96	
+	2.74	-1.92	
+	2.79	-1.92	
+	3.14	0	
+	3.49	1.92	
+    Function: aero/coefficient/CLa_wing
+    1 dimensional table with 19 rows.
+	-3.67	-1.83	
+	-3.14	0	
+	-2.62	1.83	
+	-2.57	1.83	
+	-1.83	0.92	
+	-1.57	0	
+	-1.31	-0.92	
+	-0.58	-1.83	
+	-0.52	-1.83	
+	0	0	
+	0.52	1.83	
+	0.58	1.83	
+	1.31	0.92	
+	1.57	0	
+	1.83	-0.92	
+	2.57	-1.83	
+	2.62	-1.83	
+	3.14	0	
+	3.67	1.83	
+    Function: aero/coefficient/CLa_ht
+    1 dimensional table with 9 rows.
+	-1.57	0	
+	-1.31	-0.92	
+	-0.58	-1.83	
+	-0.52	-1.83	
+	0	0	
+	0.52	1.83	
+	0.58	1.83	
+	1.31	0.92	
+	1.57	0	
+    Function: aero/coefficient/CNb_vt
+    1 dimensional table with 7 rows.
+	-3.14	0.03	
+	-1.57	1.5	
+	-0.26	0.031	
+	0	0.024	
+	0.26	0.031	
+	1.57	1.5	
+	3.14	0.03	
+    Function: aero/coefficient/CD0a_wing
+    1 dimensional table with 19 rows.
+	-3.49	-1.92	
+	-3.14	0	
+	-2.79	1.92	
+	-2.74	1.92	
+	-1.83	0.96	
+	-1.57	0	
+	-1.31	-0.96	
+	-0.4	-1.92	
+	-0.35	-1.92	
+	0	0	
+	0.35	1.92	
+	0.4	1.92	
+	1.31	0.96	
+	1.57	0	
+	1.83	-0.96	
+	2.74	-1.92	
+	2.79	-1.92	
+	3.14	0	
+	3.49	1.92	
+    Function: aero/coefficient/CLa_wing_dw
+    1 dimensional table with 7 rows.
+	-3.14	0.03	
+	-1.57	1.5	
+	-0.26	0.031	
+	0	0.024	
+	0.26	0.031	
+	1.57	1.5	
+	3.14	0.03	
+    Function: aero/coefficient/CD0a_wing_dw
+    1 dimensional table with 19 rows.
+	-3.67	-1.83	
+	-3.14	0	
+	-2.62	1.83	
+	-2.57	1.83	
+	-1.83	0.92	
+	-1.57	0	
+	-1.31	-0.92	
+	-0.58	-1.83	
+	-0.52	-1.83	
+	0	0	
+	0.52	1.83	
+	0.58	1.83	
+	1.31	0.92	
+	1.57	0	
+	1.83	-0.92	
+	2.57	-1.83	
+	2.62	-1.83	
+	3.14	0	
+	3.67	1.83	
+    Function: aero/coefficient/CLa_ht_dw
+
+  Aerodynamics (Lift|Side|Drag axes):
+
+    Function: aero/force/La_wing
+    Function: aero/force/L0_fus
+    Function: aero/force/La_fus
+    Function: aero/force/Lc_La_wing_dw
+    Function: aero/force/Lc_D0_wing
+    Function: aero/force/Lc_Di_wing
+    Function: aero/force/D0_wing
+    Function: aero/force/Di_wing
+    Function: aero/force/D0_fus
+    Function: aero/force/Da_fus
+    Function: aero/force/Db_fus
+    Function: aero/force/Dc_La_wing_dw
+    Function: aero/force/Dc_D0_wing
+    Function: aero/force/Dc_Di_wing
+    Function: aero/force/Yb_wing
+    Function: aero/force/Yb_fus
+    Function: aero/moment/Ma_ht
+    Function: aero/moment/Ma_ht_dw
+    Function: aero/moment/Mw_ht
+    Function: aero/moment/Mq_ht
+    Function: aero/moment/Nb_vt
+    Function: aero/moment/Nv_vt
+    Function: aero/moment/Nr_vt
+    1 dimensional table with 3 rows.
+	0	1	
+	0.08	0.9	
+	0.15	0	
+    Function: aero/moment/Nr_limiter
+GEAR_CONTACT: 0.000000 seconds: skid_front_left 1
+GEAR_CONTACT: 0.000000 seconds: skid_front_right 1
+GEAR_CONTACT: 0.000000 seconds: skid_rear_left 1
+GEAR_CONTACT: 0.000000 seconds: skid_rear_right 1
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                        8500.0   172.0     0.0    75.0      2593.0     14320.0     12330.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m           0     146       0      38           0           0           0
+[1m1   Fuel                          [22m           0     206       0      38           0           0           0
+                                                                                                                                            
+    Total:                            8500.0   172.0     0.0    75.0      2593.0     14320.0     12330.0         0.0         0.0         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+
+Touchdown report for skid_front_left (WOW at time: 0.745000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000000 knots,  0.000000 mps
+  Maximum contact force: 2486.417333 lbs,    11059.584296 Newtons
+  Maximum strut travel:  4.572064 inches, 11.613043 cm
+  Distance traveled:     0.112698 ft,     0.034350 meters
+
+Touchdown report for skid_front_right (WOW at time: 0.745000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000000 knots,  0.000000 mps
+  Maximum contact force: 2442.892879 lbs,    10865.987525 Newtons
+  Maximum strut travel:  4.503434 inches, 11.438722 cm
+  Distance traveled:     0.112698 ft,     0.034350 meters
+
+Touchdown report for skid_rear_left (WOW at time: 0.745000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000000 knots,  0.000000 mps
+  Maximum contact force: 2337.493895 lbs,    10397.172845 Newtons
+  Maximum strut travel:  4.399989 inches, 11.175971 cm
+  Distance traveled:     0.112698 ft,     0.034350 meters
+
+Touchdown report for skid_rear_right (WOW at time: 0.745000 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000000 knots,  0.000000 mps
+  Maximum contact force: 2337.493895 lbs,    10397.172845 Newtons
+  Maximum strut travel:  4.399989 inches, 11.175971 cm
+  Distance traveled:     0.112698 ft,     0.034350 meters
+GEAR_CONTACT: 30.210000 seconds: skid_rear_right 0
+GEAR_CONTACT: 30.255000 seconds: skid_rear_left 0
+GEAR_CONTACT: 30.330000 seconds: skid_front_right 0
+GEAR_CONTACT: 30.455000 seconds: skid_front_left 0
+GEAR_CONTACT: 33.775000 seconds: skid_rear_left 1
+GEAR_CONTACT: 34.775000 seconds: skid_rear_left 0
+GEAR_CONTACT: 34.815000 seconds: skid_rear_left 1
+GEAR_CONTACT: 34.825000 seconds: skid_rear_left 0
+GEAR_CONTACT: 35.170000 seconds: bumper_rear 1
+GEAR_CONTACT: 35.220000 seconds: skid_rear_left 1
+GEAR_CONTACT: 35.275000 seconds: skid_front_left 1
+GEAR_CONTACT: 35.535000 seconds: skid_front_right 1
+GEAR_CONTACT: 35.600000 seconds: skid_rear_right 1
+*CRASH DETECTED* 36.365000 seconds: skid_front_left
+*CRASH DETECTED* 36.365000 seconds: skid_front_right
+*CRASH DETECTED* 36.365000 seconds: skid_rear_left
+*CRASH DETECTED* 36.365000 seconds: skid_rear_right
+*CRASH DETECTED* 36.370000 seconds: skid_front_left
+*CRASH DETECTED* 36.370000 seconds: skid_front_right
+*CRASH DETECTED* 36.370000 seconds: skid_rear_left
+*CRASH DETECTED* 36.370000 seconds: skid_rear_right
+*CRASH DETECTED* 36.375000 seconds: skid_front_left
+*CRASH DETECTED* 36.375000 seconds: skid_front_right
+*CRASH DETECTED* 36.375000 seconds: skid_rear_left
+*CRASH DETECTED* 36.375000 seconds: skid_rear_right
+*CRASH DETECTED* 36.380000 seconds: skid_front_left
+*CRASH DETECTED* 36.380000 seconds: skid_front_right
+*CRASH DETECTED* 36.380000 seconds: skid_rear_left
+*CRASH DETECTED* 36.380000 seconds: skid_rear_right
+*CRASH DETECTED* 36.385000 seconds: skid_front_left
+*CRASH DETECTED* 36.385000 seconds: skid_front_right
+*CRASH DETECTED* 36.385000 seconds: skid_rear_left
+*CRASH DETECTED* 36.385000 seconds: skid_rear_right
+*CRASH DETECTED* 36.390000 seconds: skid_front_left
+*CRASH DETECTED* 36.390000 seconds: skid_front_right
+*CRASH DETECTED* 36.390000 seconds: skid_rear_left
+*CRASH DETECTED* 36.390000 seconds: skid_rear_right
+*CRASH DETECTED* 36.395000 seconds: skid_front_left
+*CRASH DETECTED* 36.395000 seconds: skid_front_right
+*CRASH DETECTED* 36.395000 seconds: skid_rear_left
+*CRASH DETECTED* 36.395000 seconds: skid_rear_right
+*CRASH DETECTED* 36.400000 seconds: skid_front_left
+*CRASH DETECTED* 36.400000 seconds: skid_front_right
+*CRASH DETECTED* 36.400000 seconds: skid_rear_left
+*CRASH DETECTED* 36.400000 seconds: skid_rear_right
+*CRASH DETECTED* 36.405000 seconds: skid_front_left
+*CRASH DETECTED* 36.405000 seconds: skid_front_right
+*CRASH DETECTED* 36.405000 seconds: skid_rear_left
+*CRASH DETECTED* 36.410000 seconds: skid_front_left
+*CRASH DETECTED* 36.410000 seconds: skid_front_right
+*CRASH DETECTED* 36.415000 seconds: skid_front_left
+*CRASH DETECTED* 36.415000 seconds: skid_front_right
+*CRASH DETECTED* 36.420000 seconds: skid_front_left
+GEAR_CONTACT: 37.035000 seconds: skid_front_left 0
+GEAR_CONTACT: 37.035000 seconds: skid_front_right 0
+GEAR_CONTACT: 37.055000 seconds: skid_rear_right 0
+GEAR_CONTACT: 37.060000 seconds: skid_rear_left 0
+GEAR_CONTACT: 37.065000 seconds: bumper_rear 0
+
+Takeoff report for skid_front_right (Liftoff at time: 37.670000 seconds)
+  Distance traveled:                74.193980 ft,     22.614325 meters
+  Distance traveled (over 50'):     227.868622 ft,     69.454356 meters
+  [Altitude (ASL): 2333.352974 ft. / 711.205986 m  | Temperature: 50.679821 F / 10.377678 C]
+  [Velocity (KCAS): 45.101202]
+
+Takeoff report for skid_front_left (Liftoff at time: 37.715000 seconds)
+  Distance traveled:                85.180343 ft,     25.962969 meters
+  Distance traveled (over 50'):     229.802592 ft,     70.043830 meters
+  [Altitude (ASL): 2336.299584 ft. / 712.104113 m  | Temperature: 50.669315 F / 10.371842 C]
+  [Velocity (KCAS): 44.603433]
+
+Takeoff report for skid_rear_right (Liftoff at time: 37.765000 seconds)
+  Distance traveled:                72.276263 ft,     22.029805 meters
+  Distance traveled (over 50'):     231.902876 ft,     70.683997 meters
+  [Altitude (ASL): 2339.550033 ft. / 713.094850 m  | Temperature: 50.657726 F / 10.365403 C]
+  [Velocity (KCAS): 44.038001]
+
+Takeoff report for skid_rear_left (Liftoff at time: 37.815000 seconds)
+  Distance traveled:                125.076936 ft,     38.123450 meters
+  Distance traveled (over 50'):     233.951591 ft,     71.308445 meters
+  [Altitude (ASL): 2342.774527 ft. / 714.077676 m  | Temperature: 50.646230 F / 10.359016 C]
+  [Velocity (KCAS): 43.461873]
+GEAR_CONTACT: 62.850000 seconds: skid_front_left 1
+GEAR_CONTACT: 63.040000 seconds: skid_front_left 0
+GEAR_CONTACT: 63.620000 seconds: bumper_rear 1
+GEAR_CONTACT: 63.915000 seconds: skid_rear_right 1
+GEAR_CONTACT: 63.955000 seconds: skid_front_right 1
+GEAR_CONTACT: 64.175000 seconds: skid_front_left 1
+GEAR_CONTACT: 64.235000 seconds: skid_rear_left 1
+*CRASH DETECTED* 64.810000 seconds: skid_front_left
+*CRASH DETECTED* 64.810000 seconds: skid_front_right
+*CRASH DETECTED* 64.810000 seconds: skid_rear_left
+*CRASH DETECTED* 64.810000 seconds: skid_rear_right
+*CRASH DETECTED* 64.815000 seconds: skid_front_left
+*CRASH DETECTED* 64.815000 seconds: skid_front_right
+*CRASH DETECTED* 64.815000 seconds: skid_rear_left
+*CRASH DETECTED* 64.815000 seconds: skid_rear_right
+*CRASH DETECTED* 64.820000 seconds: skid_front_left
+*CRASH DETECTED* 64.820000 seconds: skid_front_right
+*CRASH DETECTED* 64.820000 seconds: skid_rear_left
+*CRASH DETECTED* 64.820000 seconds: skid_rear_right
+*CRASH DETECTED* 64.825000 seconds: skid_front_left
+*CRASH DETECTED* 64.825000 seconds: skid_front_right
+*CRASH DETECTED* 64.825000 seconds: skid_rear_left
+*CRASH DETECTED* 64.825000 seconds: skid_rear_right
+*CRASH DETECTED* 64.830000 seconds: skid_front_left
+*CRASH DETECTED* 64.830000 seconds: skid_front_right
+*CRASH DETECTED* 64.835000 seconds: skid_front_left
+*CRASH DETECTED* 64.835000 seconds: skid_front_right
+*CRASH DETECTED* 64.840000 seconds: skid_front_right
+GEAR_CONTACT: 65.415000 seconds: skid_front_right 0
+GEAR_CONTACT: 65.430000 seconds: skid_rear_right 0
+GEAR_CONTACT: 65.450000 seconds: skid_front_left 0
+GEAR_CONTACT: 65.480000 seconds: skid_rear_left 0
+GEAR_CONTACT: 65.515000 seconds: bumper_rear 0
+
+Takeoff report for skid_front_right (Liftoff at time: 65.960000 seconds)
+  Distance traveled:                74.193980 ft,     22.614325 meters
+  Distance traveled (over 50'):     1694.525403 ft,     516.491343 meters
+  [Altitude (ASL): 2332.404426 ft. / 710.916869 m  | Temperature: 50.683203 F / 10.379557 C]
+  [Velocity (KCAS): 55.963957]
+
+Takeoff report for skid_front_left (Liftoff at time: 65.965000 seconds)
+  Distance traveled:                85.180343 ft,     25.962969 meters
+  Distance traveled (over 50'):     1694.525403 ft,     516.491343 meters
+  [Altitude (ASL): 2332.803036 ft. / 711.038365 m  | Temperature: 50.681782 F / 10.378768 C]
+  [Velocity (KCAS): 55.893834]
+
+Takeoff report for skid_rear_left (Liftoff at time: 66.070000 seconds)
+  Distance traveled:                125.076936 ft,     38.123450 meters
+  Distance traveled (over 50'):     1694.525403 ft,     516.491343 meters
+  [Altitude (ASL): 2341.084283 ft. / 713.562489 m  | Temperature: 50.652256 F / 10.362364 C]
+  [Velocity (KCAS): 54.361140]
+
+Takeoff report for skid_rear_right (Liftoff at time: 66.075000 seconds)
+  Distance traveled:                72.276263 ft,     22.029805 meters
+  Distance traveled (over 50'):     1694.525403 ft,     516.491343 meters
+  [Altitude (ASL): 2341.474148 ft. / 713.681320 m  | Temperature: 50.650866 F / 10.361592 C]
+  [Velocity (KCAS): 54.285662]
+GEAR_CONTACT: 73.285000 seconds: skid_front_left 1
+GEAR_CONTACT: 73.470000 seconds: skid_front_left 0
+GEAR_CONTACT: 73.970000 seconds: bumper_rear 1
+GEAR_CONTACT: 74.605000 seconds: skid_rear_right 1
+GEAR_CONTACT: 74.645000 seconds: skid_front_right 1
+GEAR_CONTACT: 74.855000 seconds: skid_front_left 1
+GEAR_CONTACT: 74.910000 seconds: skid_rear_left 1
+*CRASH DETECTED* 75.450000 seconds: skid_front_left
+*CRASH DETECTED* 75.450000 seconds: skid_front_right
+*CRASH DETECTED* 75.450000 seconds: skid_rear_left
+*CRASH DETECTED* 75.450000 seconds: skid_rear_right
+*CRASH DETECTED* 75.455000 seconds: skid_front_left
+*CRASH DETECTED* 75.455000 seconds: skid_front_right
+*CRASH DETECTED* 75.455000 seconds: skid_rear_left
+*CRASH DETECTED* 75.455000 seconds: skid_rear_right
+*CRASH DETECTED* 75.460000 seconds: skid_front_left
+*CRASH DETECTED* 75.460000 seconds: skid_front_right
+*CRASH DETECTED* 75.460000 seconds: skid_rear_left
+*CRASH DETECTED* 75.460000 seconds: skid_rear_right
+*CRASH DETECTED* 75.465000 seconds: skid_front_left
+*CRASH DETECTED* 75.465000 seconds: skid_front_right
+*CRASH DETECTED* 75.465000 seconds: skid_rear_left
+*CRASH DETECTED* 75.465000 seconds: skid_rear_right
+*CRASH DETECTED* 75.470000 seconds: skid_front_left
+*CRASH DETECTED* 75.470000 seconds: skid_front_right
+*CRASH DETECTED* 75.470000 seconds: skid_rear_left
+*CRASH DETECTED* 75.470000 seconds: skid_rear_right
+*CRASH DETECTED* 75.475000 seconds: skid_front_left
+*CRASH DETECTED* 75.475000 seconds: skid_front_right
+*CRASH DETECTED* 75.475000 seconds: skid_rear_left
+*CRASH DETECTED* 75.475000 seconds: skid_rear_right
+*CRASH DETECTED* 75.480000 seconds: skid_front_left
+*CRASH DETECTED* 75.480000 seconds: skid_front_right
+*CRASH DETECTED* 75.480000 seconds: skid_rear_right
+*CRASH DETECTED* 75.485000 seconds: skid_front_left
+*CRASH DETECTED* 75.485000 seconds: skid_front_right
+*CRASH DETECTED* 75.490000 seconds: skid_front_left
+*CRASH DETECTED* 75.490000 seconds: skid_front_right
+*CRASH DETECTED* 75.495000 seconds: skid_front_right
+GEAR_CONTACT: 76.035000 seconds: skid_front_right 0
+GEAR_CONTACT: 76.055000 seconds: skid_rear_right 0
+GEAR_CONTACT: 76.070000 seconds: skid_front_left 0
+GEAR_CONTACT: 76.100000 seconds: skid_rear_left 0
+GEAR_CONTACT: 76.145000 seconds: bumper_rear 0
+========================================================================================
+property                                             verdict                 max-min      n   miss
+----------------------------------------------------------------------------------------
+position/altitude-ft                                 DEAD(constant)           0.0000    791      0
+position/agl-ft                                      DEAD(constant)           0.0000    791      0
+position/h-agl-ft                                    ALIVE                  256.3469    791      0
+position/lat-gc-deg                                  ALIVE                    0.0030    791      0
+position/long-gc-deg                                 ALIVE                    0.0041    791      0
+velocities/u-fps                                     ALIVE                  219.7807    791      0
+velocities/v-fps                                     ALIVE                  123.8767    791      0
+velocities/w-fps                                     ALIVE                  108.8569    791      0
+velocities/v-north-fps                               ALIVE                  252.6025    791      0
+velocities/v-east-fps                                ALIVE                  138.4399    791      0
+velocities/v-down-fps                                ALIVE                  180.7785    791      0
+velocities/h-dot-fps                                 ALIVE                  180.7785    791      0
+velocities/vc-fps                                    ALIVE                  150.2744    791      0
+velocities/groundspeed-kt                            DEAD(constant)           0.0000    791      0
+velocities/ve-kts                                    ALIVE                   89.0177    791      0
+velocities/airspeed-fps                              DEAD(constant)           0.0000    791      0
+velocities/p-radps                                   DEAD(constant)           0.0000    791      0
+velocities/q-radps                                   DEAD(constant)           0.0000    791      0
+velocities/r-radps                                   DEAD(constant)           0.0000    791      0
+accelerations/pdot-radpssec                          DEAD(constant)           0.0000    791      0
+accelerations/qdot-radpssec                          DEAD(constant)           0.0000    791      0
+accelerations/rdot-radpssec                          DEAD(constant)           0.0000    791      0
+attitude/phi-deg                                     ALIVE                  249.0552    791      0
+attitude/theta-deg                                   ALIVE                  154.6274    791      0
+attitude/psi-deg                                     ALIVE                  358.0461    791      0
+attitude/phi-rad                                     ALIVE                    4.3468    791      0
+attitude/theta-rad                                   ALIVE                    2.6988    791      0
+attitude/psi-rad                                     ALIVE                    6.2491    791      0
+accelerations/n-pilot-xnorm                          DEAD(constant)           0.0000    791      0
+accelerations/n-pilot-ynorm                          DEAD(constant)           0.0000    791      0
+accelerations/n-pilot-znorm                          DEAD(constant)           0.0000    791      0
+aero/qbar-psf                                        ALIVE                   26.8276    791      0
+atmosphere/rho-slugs-ft3                             DEAD(constant)           0.0000    791      0
+atmosphere/P-psf                                     ALIVE                   18.2693    791      0
+propulsion/engine[0]/n1                              DEAD(constant)           0.0000    791      0
+propulsion/engine[0]/rotor-rpm                       ALIVE                  337.7987    791      0
+propulsion/engine[0]/thruster-rpm                    DEAD(constant)           0.0000    791      0
+propulsion/engine[0]/thrust-lbs                      ALIVE                22500.1952    791      0
+propulsion/engine[0]/power-hp                        ALIVE                 1499.9998    791      0
+propulsion/engine[1]/rotor-rpm                       ALIVE                 1730.6671    791      0
+propulsion/engine[1]/thruster-rpm                    DEAD(constant)           0.0000    791      0
+propulsion/engine[1]/antitorque-ctrl-rad             ALIVE                    0.0896    791      0
+propulsion/engine/collective-ctrl-rad                ALIVE                    0.2615    791      0
+propulsion/engine/longitudinal-ctrl-rad              ALIVE                    0.0196    791      0
+propulsion/engine/lateral-ctrl-rad                   ALIVE                    0.0169    791      0
+fcs/throttle-cmd-norm[0]                             DEAD(constant)           0.0000    791      0
+fcs/collective-cmd-norm                              ALIVE                    0.7400    791      0
+fcs/elevator-cmd-norm                                ALIVE                    0.1000    791      0
+fcs/aileron-cmd-norm                                 DEAD(constant)           0.0000    791      0
+fcs/rudder-cmd-norm                                  DEAD(constant)           0.0000    791      0
+gear/unit[0]/compressed-ft                           DEAD(constant)           0.0000    791      0
+gear/unit[0]/WOW                                     ALIVE                    1.0000    791      0
+inertia/weight-lbs                                   DEAD(constant)           0.0000    791      0
+----------------------------------------------------------------------------------------
+ALIVE: 31 / DEAD: 22
+r-radps vs psi微分 残差: mean=0.1247°/s max=39.2429°/s (r-dead=>max大)
+证据: platform\fdm_spike\audit_results\liveness_20260830_173445.json
+exit=0

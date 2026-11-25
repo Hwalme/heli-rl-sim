@@ -1,0 +1,441 @@
+=== FDM SPIKE v2 (helispike, hover coll=0.72) ===
+
+
+     JSBSim Flight Dynamics Model v1.3.1 [GitHub build 1837/commit 3b25f25e49b42d0489c04ac805674fc1450ca579] May 17 2026 14:28:34
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+Reading Aircraft Configuration File: helispike
+                            Version: 2.0
+
+
+This aircraft model is an SPIKE release!!!
+
+This aircraft model may not even properly load, and probably will not fly as expected.
+
+Use this model for development purposes ONLY!!!
+
+  Description:   Minimal self-built helicopter FDM (R22 Beta II class) with industrial
+  Model Author:  Track B director session (D2 ledger track b, FDM SPIKE 2026-08-30)
+  Creation Date: 2026-08-30
+  Version:       0.1
+
+  Aircraft Metrics:
+    WingArea: 0.000000
+    WingSpan: 0.000000
+    Incidence: 0.000000
+    Chord: 0.000000
+    H. Tail Area: 3.229173
+    H. Tail Arm: 12.467192
+    V. Tail Area: 2.690978
+    V. Tail Arm: 13.779528
+    Eyepoint (x, y, z): -35.433071 , 0.000000 , 11.811024
+    Ref Pt (x, y, z): 0.000000 , 0.000000 , 23.622047
+    Visual Ref Pt (x, y, z): 0.000000 , 0.000000 , 0.000000
+
+  Mass and Balance:
+    baseIxx: 480.000000 slug-ft2
+    baseIyy: 1150.000000 slug-ft2
+    baseIzz: 800.000000 slug-ft2
+    baseIxy: -0.000000 slug-ft2
+    baseIxz: 0.000000 slug-ft2
+    baseIyz: -0.000000 slug-ft2
+    Empty Weight: 900.000000 lbm
+    CG (x, y, z): 0.000000 , 0.000000 , -21.653543
+    Point Mass Object: 170.000000 lbs. at X, Y, Z (in.): -33.464567  0.000000  0.000000
+
+  Ground Reactions: 
+    BOGEY skid_front_left
+      Location: -29.527559 , -36.614173 , -45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_front_right
+      Location: -29.527559 , 36.614173 , -45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_rear_left
+      Location: 37.401575 , -36.614173 , -45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    BOGEY skid_rear_right
+      Location: 37.401575 , 36.614173 , -45.275591
+      Spring Constant:  4000.000000
+      Damping Constant: 800.000000 (linear)
+      Rebound Damping Constant: 800.000000 (linear)
+      Dynamic Friction: 0.600000
+      Static Friction:  0.850000
+      Rolling Friction: 0.050000
+      Steering Type:    FIXED
+      Grouping:         NONE
+      Max Steer Angle:  0.000000
+      Retractable:      0
+    STRUCTURE tail_bumper
+      Location: 169.291339 , 0.000000 , -13.779528
+      Spring Constant:  1000.000000
+      Damping Constant: 200.000000 (linear)
+      Rebound Damping Constant: 200.000000 (linear)
+      Dynamic Friction: 0.400000
+      Static Friction:  0.500000
+    STRUCTURE rotor_head
+      Location: 0.000000 , 0.000000 , 61.023622
+      Spring Constant:  1000.000000
+      Damping Constant: 200.000000 (linear)
+      Rebound Damping Constant: 200.000000 (linear)
+      Dynamic Friction: 0.400000
+      Static Friction:  0.500000
+
+  Propulsion:
+       (FUEL) tank holds 120 lbs. FUEL
+      currently at 75% of maximum capacity
+      Tank location (X, Y, Z): 0, 0, -15.748
+      Effective radius: 0 inches
+      Initial temperature: -9999 Fahrenheit
+      Priority: 1
+    2 dimensional table with 7 rows, 4 columns.
+		0	50	100	150	
+	503	0.357	0.38	0.4	0.425	
+	1048	0.586	0.589	0.6	0.621	
+	1328	0.707	0.721	0.731	0.757	
+	1496	0.779	0.786	0.808	0.821	
+	1684	0.85	0.857	0.874	0.9	
+	1896	0.914	0.929	0.946	0.971	
+	2117	1	1.011	1.029	1.043	
+    Function: propulsion/engine[0]/EnginePowerVC
+Engine location ignored, only thruster location is used.
+
+    Rotor Name: hs_main_rotor
+      Diameter = 25.164 ft.
+      Number of Blades = 2
+      Gear Ratio = 63.208
+      Sense = -1
+      Nominal RPM = 530
+      Minimal RPM = 1
+      Maximal RPM = 600
+      Blade Chord = 0.600394
+      Lift Curve Slope = 5.75
+      Blade Twist = -0.14
+      Hinge Offset = 0
+      Blade Flapping Moment = 40
+      Blade Mass Moment = 15
+      Polar Moment = 88
+      Inflow Lag = 0.08
+      Tip Loss = 0.97
+      Lock Number = 5.0959 (SL)
+      Solidity = 0.0303785
+      Max Brake Power = 3 HP
+      Gear Loss = 1 HP
+      Gear Moment = 8.8
+      Control Mapping = Main Rotor
+      X = 0
+      Y = 0
+      Z = 61.0236
+      Pitch = 90 degrees
+      Yaw = 0 degrees
+    2 dimensional table with 7 rows, 9 columns.
+		0	5	60	86	94	96	98	100	102	
+	-100	0	0.4	0.4	0.4	0.4	0.4	1	2	3	
+	1.2e+04	0	0.03	1	2	3	4	5	6	7	
+	2.4e+04	0	0.03	3	63	110	130	152	176	188	
+	2.7e+04	0	0.084	5.21	66	121	141	164	190	202	
+	3.35e+04	0	0.084	8.4	62	124	145	168	193	205	
+	3.7e+04	0	0.084	8.4	56	121	142	166	191	203	
+	4e+04	0	0	0	0	0	0	0	0	0	
+    2 dimensional table with 5 rows, 2 columns.
+		0	1	
+	0	0	0	
+	15	100	100	
+	60	180	460	
+	96	270	620	
+	100	280	670	
+Engine location ignored, only thruster location is used.
+
+    Rotor Name: hs_tail_rotor
+      Diameter = 3.5105 ft.
+      Number of Blades = 2
+      Gear Ratio = 10.47
+      Sense = 1
+      Nominal RPM = 3200
+      Minimal RPM = 1
+      Maximal RPM = 6400
+      RPM source set to thruster 0
+      Blade Chord = 0.328084
+      Lift Curve Slope = 6
+      Blade Twist = 0
+      Hinge Offset = 0.015
+      Blade Flapping Moment = 2
+      Blade Mass Moment = 0.8
+      Polar Moment = 4.4
+      Inflow Lag = 0.3
+      Tip Loss = 1
+      Lock Number = 0.0220109 (SL)
+      Solidity = 0.118994
+      Max Brake Power = 0.0336931 HP
+      Gear Loss = 0 HP
+      Gear Moment = 0
+      Control Mapping = Tail Rotor
+      X = 181.102
+      Y = 9.84252
+      Z = 11.811
+      Pitch = 0 degrees
+      Yaw = 91.5 degrees
+
+      Engine Name: hs_dummy
+      Power Watts: 745.7
+
+    Declared properties
+
+      fcs/hs/ff-sign (initial value: 1)
+
+      fcs/hs/afcs-enable (initial value: 1)
+
+      fcs/collective-cmd-norm (initial value: 0)
+
+
+  System: hs_afcs_min
+
+    Channel collective
+
+    Loading Component "fcs/hs/collective-ctrl" of type: FCS_FUNCTION
+    1 dimensional table with 2 rows.
+	0	0	
+	1	0.3	
+      OUTPUT: collective-ctrl-rad
+      OUTPUT: collective-ctrl
+
+    Channel yaw_afcs
+
+    Loading Component "fcs/hs/antitorque-ff" of type: FCS_FUNCTION
+    1 dimensional table with 6 rows.
+	0	0	
+	0.3	0.06	
+	0.5	0.16	
+	0.7	0.26	
+	0.85	0.33	
+	1	0.4	
+      OUTPUT: antitorque-ff
+
+    Loading Component "fcs/hs/pedal-gain" of type: PURE_GAIN
+      INPUT: rudder-cmd-norm
+      GAIN: constant value 0.350000
+      OUTPUT: pedal-gain
+
+    Loading Component "fcs/hs/antitorque-sum" of type: SUMMER
+      Minimum limit: constant value -0.700000
+      Maximum limit: constant value 0.700000
+      INPUTS: 
+       antitorque-ff
+       pedal-gain
+      OUTPUT: antitorque-ctrl-rad
+      OUTPUT: antitorque-sum
+
+    Channel pitch_roll_centering
+
+    Loading Component "fcs/hs/ele-center" of type: PURE_GAIN
+      INPUT: elevator-cmd-norm
+      GAIN: constant value 1.000000
+      OUTPUT: longitudinal-ctrl-rad
+      OUTPUT: ele-center
+
+    Loading Component "fcs/hs/roll-trim-from-ff" of type: FCS_FUNCTION
+    1 dimensional table with 4 rows.
+	0	0	
+	0.5	0.012	
+	0.7	0.024	
+	1	0.036	
+      OUTPUT: roll-trim-from-ff
+
+    Loading Component "fcs/hs/ail-center" of type: PURE_GAIN
+      INPUT: aileron-cmd-norm
+      GAIN: constant value 1.000000
+      OUTPUT: ail-center
+
+    Loading Component "fcs/hs/lat-sum" of type: SUMMER
+      Minimum limit: constant value -0.300000
+      Maximum limit: constant value 0.300000
+      INPUTS: 
+       ail-center
+       roll-trim-from-ff
+      OUTPUT: lateral-ctrl-rad
+      OUTPUT: lat-sum
+
+    Channel rpm_governor
+
+In file C:/Users/Administrator/AppData/Roaming/Python/Python313/site-packages/jsbsim/aircraft/helispike/Systems/hs_afcs_min.xml: line 103
+Unknown FCS component: description
+
+    Loading Component "fcs/hs/gov-throttle" of type: FCS_FUNCTION
+      Minimum limit: constant value 0.000000
+      Maximum limit: constant value 1.000000
+    1 dimensional table with 5 rows.
+	470	1	
+	500	0.8	
+	530	0.35	
+	555	0.1	
+	575	0	
+      OUTPUT: throttle-cmd-norm
+      OUTPUT: gov-throttle
+
+  FCS: helispike_fcs
+
+  The aerodynamic moment axis system has been set by default to the bodyXYZ system.
+
+  Aerodynamics (Lift|Side|Drag axes):
+
+    Function: aero/force/flatplate-drag
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0   -21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m          90       0       0 -15.748           0           0           0
+                                                                                                                                            
+    Total:                            1160.0    -4.9     0.0   -18.0       494.6      1199.6       835.1         0.0        22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0   -21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m          90       0       0 -15.748           0           0           0
+                                                                                                                                            
+    Total:                            1160.0    -4.9     0.0   -18.0       494.6      1199.6       835.1         0.0        22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+GEAR_CONTACT: 0.333333 seconds: skid_front_left 1
+GEAR_CONTACT: 0.333333 seconds: skid_front_right 1
+GEAR_CONTACT: 0.333333 seconds: skid_rear_left 1
+GEAR_CONTACT: 0.333333 seconds: skid_rear_right 1
+
+Touchdown report for skid_front_left (WOW at time: 0.508333 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000207 knots,  0.000106 mps
+  Maximum contact force: 5236.145834 lbs,    23290.376668 Newtons
+  Maximum strut travel:  1.999275 inches, 5.078160 cm
+  Distance traveled:     0.030744 ft,     0.009371 meters
+
+Touchdown report for skid_front_right (WOW at time: 0.508333 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000207 knots,  0.000106 mps
+  Maximum contact force: 5219.438040 lbs,    23216.060400 Newtons
+  Maximum strut travel:  1.999243 inches, 5.078077 cm
+  Distance traveled:     0.030744 ft,     0.009371 meters
+
+Touchdown report for skid_rear_left (WOW at time: 0.508333 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000207 knots,  0.000106 mps
+  Maximum contact force: 5227.882534 lbs,    23253.621509 Newtons
+  Maximum strut travel:  1.710162 inches, 4.343812 cm
+  Distance traveled:     0.030744 ft,     0.009371 meters
+
+Touchdown report for skid_rear_right (WOW at time: 0.508333 seconds)
+  Sink rate at contact:  0.000000 fps,    0.000000 mps
+  Contact ground speed:  0.000207 knots,  0.000106 mps
+  Maximum contact force: 5211.175394 lbs,    23179.308151 Newtons
+  Maximum strut travel:  1.709542 inches, 4.342235 cm
+  Distance traveled:     0.030744 ft,     0.009371 meters
+GEAR_CONTACT: 19.875000 seconds: skid_rear_right 0
+GEAR_CONTACT: 19.891667 seconds: skid_rear_left 0
+GEAR_CONTACT: 19.925000 seconds: skid_front_right 0
+GEAR_CONTACT: 19.933333 seconds: skid_front_left 0
+GEAR_CONTACT: 22.341667 seconds: tail_bumper 1
+GEAR_CONTACT: 22.350000 seconds: skid_rear_right 1
+GEAR_CONTACT: 22.400000 seconds: skid_front_right 1
+GEAR_CONTACT: 22.425000 seconds: rotor_head 1
+GEAR_CONTACT: 22.583333 seconds: skid_front_left 1
+GEAR_CONTACT: 22.600000 seconds: skid_front_left 0
+GEAR_CONTACT: 22.600000 seconds: tail_bumper 0
+GEAR_CONTACT: 22.608333 seconds: skid_front_right 0
+GEAR_CONTACT: 22.608333 seconds: skid_rear_right 0
+GEAR_CONTACT: 22.608333 seconds: rotor_head 0
+GEAR_CONTACT: 22.616667 seconds: skid_front_left 1
+GEAR_CONTACT: 22.616667 seconds: skid_front_right 1
+GEAR_CONTACT: 22.616667 seconds: skid_rear_left 1
+GEAR_CONTACT: 22.616667 seconds: skid_rear_right 1
+GEAR_CONTACT: 22.616667 seconds: tail_bumper 1
+GEAR_CONTACT: 22.616667 seconds: rotor_head 1
+GEAR_CONTACT: 22.625000 seconds: skid_front_left 0
+GEAR_CONTACT: 22.625000 seconds: skid_front_right 0
+GEAR_CONTACT: 22.625000 seconds: skid_rear_left 0
+GEAR_CONTACT: 22.625000 seconds: skid_rear_right 0
+GEAR_CONTACT: 22.625000 seconds: tail_bumper 0
+GEAR_CONTACT: 22.625000 seconds: rotor_head 0
+[sign-cal] rnd0: roll发散帧=210 pitch发散帧=1 (roll_sign=+1 pitch_sign=+1)
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0   -21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m     89.8467       0       0 -15.748           0           0           0
+                                                                                                                                            
+    Total:                            1159.8    -4.9     0.0   -18.0       494.6      1199.6       835.1         0.0        22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+GEAR_CONTACT: 22.833333 seconds: skid_rear_right 1
+GEAR_CONTACT: 22.858333 seconds: skid_front_right 1
+GEAR_CONTACT: 22.866667 seconds: skid_rear_left 1
+GEAR_CONTACT: 22.941667 seconds: skid_front_left 1
+GEAR_CONTACT: 172.700000 seconds: skid_front_left 0
+GEAR_CONTACT: 172.708333 seconds: skid_rear_left 0
+GEAR_CONTACT: 172.733333 seconds: skid_front_right 0
+GEAR_CONTACT: 172.733333 seconds: skid_rear_right 0
+[sign-cal] rnd1: roll发散帧=14 pitch发散帧=49 (roll_sign=-1 pitch_sign=-1)
+
+  Mass Properties Report (English units: lbf, in, slug-ft^2)
+                                      Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz
+    Base Vehicle                         900.0     0.0     0.0   -21.7       480.0      1150.0       800.0        -0.0         0.0        -0.0
+0   Pilot                                170.0   -33.5     0.0     0.0         0.0         0.0         0.0        -0.0         0.0        -0.0
+[1m0   Fuel                          [22m     89.8467       0       0 -15.748           0           0           0
+                                                                                                                                            
+    Total:                            1159.8    -4.9     0.0   -18.0       494.6      1199.6       835.1         0.0        22.1         0.0
+
+End of vehicle configuration loading.
+-------------------------------------------------------------------------------
+GEAR_CONTACT: 173.816667 seconds: skid_rear_right 1
+GEAR_CONTACT: 173.850000 seconds: skid_front_right 1
+GEAR_CONTACT: 173.850000 seconds: skid_rear_left 1
+GEAR_CONTACT: 173.975000 seconds: skid_front_left 1
+GEAR_CONTACT: 323.700000 seconds: skid_front_left 0
+GEAR_CONTACT: 323.700000 seconds: skid_rear_left 0
+GEAR_CONTACT: 323.733333 seconds: skid_rear_right 0
+GEAR_CONTACT: 323.741667 seconds: skid_front_right 0
+GEAR_CONTACT: 325.425000 seconds: tail_bumper 1
+GEAR_CONTACT: 325.558333 seconds: skid_rear_right 1
+GEAR_CONTACT: 325.608333 seconds: skid_front_right 1
+GEAR_CONTACT: 325.608333 seconds: rotor_head 1
+GEAR_CONTACT: 325.766667 seconds: skid_front_left 1
+GEAR_CONTACT: 325.783333 seconds: skid_front_left 0
+GEAR_CONTACT: 325.791667 seconds: skid_front_right 0
+GEAR_CONTACT: 325.791667 seconds: skid_rear_right 0
+GEAR_CONTACT: 325.791667 seconds: tail_bumper 0
+GEAR_CONTACT: 325.791667 seconds: rotor_head 0
+[FAIL] 3 轮符号尝试后姿态仍发散——物理层问题，如实报告
+exit=1

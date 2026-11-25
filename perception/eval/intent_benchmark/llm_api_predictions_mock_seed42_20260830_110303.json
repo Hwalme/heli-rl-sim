@@ -1,0 +1,5131 @@
+{
+ "engine": "mock_keyword_rule",
+ "model": "mock_keyword_rule",
+ "base_url": "local://mock",
+ "mock": true,
+ "mock_seed": 42,
+ "n_episodes": 220,
+ "n_correct": 60,
+ "n_error": 0,
+ "plan_acc": 0.2727,
+ "acceptance_line": 0.95,
+ "acceptance_passed": false,
+ "error_stats": {
+  "length_mismatch": 142,
+  "turn_missed": 76,
+  "hover_missed": 55,
+  "hover_extra": 35,
+  "exact_match": 60,
+  "turn_extra": 33,
+  "vertical_extra": 5,
+  "vertical_missed": 2,
+  "turn_direction_wrong": 10,
+  "order_error": 2
+ },
+ "predictions": {
+  "seen-000008": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000009": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000031": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000037": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000111": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000112": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000129": [
+   "FORWARD"
+  ],
+  "seen-000142": [
+   "FORWARD"
+  ],
+  "seen-000160": [
+   "FORWARD"
+  ],
+  "seen-000167": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000182": [
+   "FORWARD"
+  ],
+  "seen-000201": [
+   "FORWARD"
+  ],
+  "seen-000205": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000240": [
+   "FORWARD"
+  ],
+  "seen-000245": [
+   "FORWARD"
+  ],
+  "seen-000247": [
+   "FORWARD"
+  ],
+  "seen-000292": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000302": [
+   "FORWARD"
+  ],
+  "seen-000312": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000331": [
+   "FORWARD"
+  ],
+  "seen-000332": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000352": [
+   "FORWARD"
+  ],
+  "seen-000374": [
+   "FORWARD",
+   "DESCEND",
+   "FORWARD"
+  ],
+  "seen-000402": [
+   "FORWARD"
+  ],
+  "seen-000415": [
+   "FORWARD"
+  ],
+  "seen-000455": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD",
+   "HOVER"
+  ],
+  "seen-000474": [
+   "FORWARD"
+  ],
+  "seen-000498": [
+   "FORWARD"
+  ],
+  "seen-000512": [
+   "FORWARD"
+  ],
+  "seen-000541": [
+   "FORWARD"
+  ],
+  "seen-000574": [
+   "FORWARD",
+   "CLIMB",
+   "HOVER",
+   "FORWARD"
+  ],
+  "seen-000616": [
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000631": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "TURN_RIGHT"
+  ],
+  "seen-000659": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "seen-000664": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "seen-000702": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000704": [
+   "FORWARD"
+  ],
+  "seen-000708": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000713": [
+   "FORWARD",
+   "CLIMB",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "DESCEND",
+   "FORWARD"
+  ],
+  "seen-000722": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000753": [
+   "FORWARD"
+  ],
+  "seen-000761": [
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000774": [
+   "FORWARD"
+  ],
+  "seen-000794": [
+   "FORWARD"
+  ],
+  "seen-000835": [
+   "FORWARD",
+   "TURN_RIGHT"
+  ],
+  "seen-000852": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000871": [
+   "FORWARD"
+  ],
+  "seen-000884": [
+   "CLIMB",
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "seen-000887": [
+   "FORWARD"
+  ],
+  "seen-000903": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "TURN_RIGHT"
+  ],
+  "seen-000909": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-000924": [
+   "FORWARD",
+   "CLIMB",
+   "FORWARD"
+  ],
+  "seen-000985": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-000997": [
+   "FORWARD"
+  ],
+  "seen-001030": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001049": [
+   "FORWARD",
+   "TURN_LEFT"
+  ],
+  "seen-001067": [
+   "FORWARD"
+  ],
+  "seen-001084": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001103": [
+   "FORWARD"
+  ],
+  "seen-001109": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001115": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001123": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "seen-001137": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001159": [
+   "FORWARD"
+  ],
+  "seen-001163": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001176": [
+   "FORWARD",
+   "TURN_LEFT"
+  ],
+  "seen-001233": [
+   "FORWARD"
+  ],
+  "seen-001251": [
+   "FORWARD"
+  ],
+  "seen-001255": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001267": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001280": [
+   "FORWARD"
+  ],
+  "seen-001290": [
+   "FORWARD"
+  ],
+  "seen-001313": [
+   "FORWARD"
+  ],
+  "seen-001346": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "seen-001360": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001369": [
+   "FORWARD"
+  ],
+  "seen-001375": [
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001380": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001383": [
+   "FORWARD"
+  ],
+  "seen-001384": [
+   "FORWARD"
+  ],
+  "seen-001470": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "seen-001482": [
+   "FORWARD"
+  ],
+  "seen-001487": [
+   "FORWARD",
+   "TURN_LEFT"
+  ],
+  "seen-001508": [
+   "FORWARD"
+  ],
+  "seen-001524": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001527": [
+   "FORWARD"
+  ],
+  "seen-001532": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001619": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001629": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001634": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "seen-001639": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001654": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "seen-001708": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "seen-001719": [
+   "FORWARD"
+  ],
+  "seen-001758": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "seen-001761": [
+   "FORWARD"
+  ],
+  "seen-001764": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "seen-001765": [
+   "FORWARD"
+  ],
+  "seen-001777": [
+   "FORWARD"
+  ],
+  "seen-001785": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000002": [
+   "FORWARD"
+  ],
+  "unseen-000011": [
+   "FORWARD"
+  ],
+  "unseen-000061": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000063": [
+   "FORWARD",
+   "TURN_LEFT"
+  ],
+  "unseen-000077": [
+   "FORWARD"
+  ],
+  "unseen-000083": [
+   "FORWARD",
+   "TURN_LEFT"
+  ],
+  "unseen-000107": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000117": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000149": [
+   "FORWARD"
+  ],
+  "unseen-000162": [
+   "FORWARD"
+  ],
+  "unseen-000191": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000205": [
+   "FORWARD"
+  ],
+  "unseen-000214": [
+   "FORWARD"
+  ],
+  "unseen-000237": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000244": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000253": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "unseen-000284": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000296": [
+   "FORWARD"
+  ],
+  "unseen-000340": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000347": [
+   "FORWARD"
+  ],
+  "unseen-000353": [
+   "FORWARD",
+   "TURN_RIGHT"
+  ],
+  "unseen-000384": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000427": [
+   "FORWARD"
+  ],
+  "unseen-000442": [
+   "FORWARD"
+  ],
+  "unseen-000479": [
+   "FORWARD"
+  ],
+  "unseen-000498": [
+   "FORWARD"
+  ],
+  "unseen-000522": [
+   "FORWARD"
+  ],
+  "unseen-000595": [
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "unseen-000609": [
+   "FORWARD"
+  ],
+  "unseen-000628": [
+   "FORWARD",
+   "HOVER"
+  ],
+  "unseen-000633": [
+   "FORWARD"
+  ],
+  "unseen-000636": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "unseen-000637": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER"
+  ],
+  "unseen-000665": [
+   "FORWARD"
+  ],
+  "unseen-000676": [
+   "FORWARD"
+  ],
+  "unseen-000726": [
+   "FORWARD"
+  ],
+  "unseen-000749": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000777": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000784": [
+   "FORWARD"
+  ],
+  "unseen-000785": [
+   "FORWARD"
+  ],
+  "unseen-000799": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000806": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "unseen-000808": [
+   "FORWARD"
+  ],
+  "unseen-000843": [
+   "TURN_RIGHT"
+  ],
+  "unseen-000850": [
+   "FORWARD"
+  ],
+  "unseen-000855": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "unseen-000879": [
+   "FORWARD"
+  ],
+  "unseen-000880": [
+   "FORWARD"
+  ],
+  "unseen-000884": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-000898": [
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "unseen-000913": [
+   "FORWARD"
+  ],
+  "unseen-000929": [
+   "FORWARD"
+  ],
+  "unseen-000979": [
+   "FORWARD"
+  ],
+  "unseen-001003": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "unseen-001014": [
+   "FORWARD",
+   "TURN_LEFT"
+  ],
+  "unseen-001076": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "unseen-001090": [
+   "FORWARD"
+  ],
+  "unseen-001091": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "unseen-001175": [
+   "FORWARD"
+  ],
+  "unseen-001176": [
+   "FORWARD",
+   "TURN_RIGHT"
+  ],
+  "train-000307": [
+   "FORWARD"
+  ],
+  "train-003388": [
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-004292": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-004811": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "FORWARD"
+  ],
+  "train-005945": [
+   "FORWARD"
+  ],
+  "train-007025": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-008907": [
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-018706": [
+   "FORWARD"
+  ],
+  "train-020283": [
+   "FORWARD"
+  ],
+  "train-024901": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-025635": [
+   "FORWARD"
+  ],
+  "train-027083": [
+   "FORWARD"
+  ],
+  "train-027124": [
+   "FORWARD"
+  ],
+  "train-028483": [
+   "FORWARD"
+  ],
+  "train-028646": [
+   "FORWARD"
+  ],
+  "train-029547": [
+   "FORWARD"
+  ],
+  "train-031225": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-034080": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "train-034304": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-035830": [
+   "FORWARD"
+  ],
+  "train-038115": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "train-038690": [
+   "FORWARD"
+  ],
+  "train-039230": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "train-041211": [
+   "FORWARD"
+  ],
+  "train-045232": [
+   "FORWARD",
+   "HOVER"
+  ],
+  "train-046206": [
+   "FORWARD"
+  ],
+  "train-048153": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "train-048362": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-051337": [
+   "FORWARD"
+  ],
+  "train-052377": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-053636": [
+   "FORWARD"
+  ],
+  "train-055869": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ],
+  "train-056329": [
+   "FORWARD"
+  ],
+  "train-059950": [
+   "FORWARD"
+  ],
+  "train-061370": [
+   "FORWARD"
+  ],
+  "train-061916": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-062966": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-064809": [
+   "FORWARD"
+  ],
+  "train-067851": [
+   "FORWARD"
+  ],
+  "train-069535": [
+   "FORWARD"
+  ],
+  "train-072416": [
+   "FORWARD"
+  ],
+  "train-073145": [
+   "FORWARD",
+   "HOVER",
+   "TURN_RIGHT"
+  ],
+  "train-075215": [
+   "FORWARD"
+  ],
+  "train-075320": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT"
+  ],
+  "train-078822": [
+   "FORWARD",
+   "TURN_LEFT"
+  ],
+  "train-079791": [
+   "FORWARD"
+  ],
+  "train-082097": [
+   "FORWARD"
+  ],
+  "train-084542": [
+   "FORWARD"
+  ],
+  "train-084591": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-086876": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-090436": [
+   "FORWARD"
+  ],
+  "train-090733": [
+   "FORWARD"
+  ],
+  "train-091116": [
+   "FORWARD"
+  ],
+  "train-092235": [
+   "FORWARD"
+  ],
+  "train-093089": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-094732": [
+   "FORWARD"
+  ],
+  "train-095892": [
+   "FORWARD",
+   "TURN_RIGHT"
+  ],
+  "train-097688": [
+   "FORWARD"
+  ],
+  "train-097909": [
+   "FORWARD",
+   "TURN_RIGHT",
+   "FORWARD"
+  ],
+  "train-098251": [
+   "FORWARD",
+   "HOVER",
+   "TURN_LEFT",
+   "FORWARD"
+  ]
+ },
+ "details": [
+  {
+   "id": "seen-000008",
+   "instruction": "Veer left toward a large , gray and black building characterized by tall , reflective windows . Move ahead to it . Go ri",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000009",
+   "instruction": "Proceed straight to a large brown building featuring fire escapes , then go right to another large building , light brow",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "seen-000031",
+   "instruction": "Start by continuing straight towards a white , large U - shaped building . Then , turn right to approach a large , light",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "seen-000037",
+   "instruction": "Move ahead towards a light gray , medium - sized , rectangular building with a flat roof . Then , turn right in the dire",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "seen-000111",
+   "instruction": "Move ahead to the beige building featuring futuristic architecture with a spiral design , then slightly turn right and h",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-000112",
+   "instruction": "Start by walking straight toward a tall building characterized by a gray color with glass reflections , a reflective gla",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000129",
+   "instruction": "Proceed directly towards the large building characterized by its light grey / white color and curved , modern architectu",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000142",
+   "instruction": "Proceed directly ahead towards a tall building characterized by a white and black grid - like pattern with windows . The",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000160",
+   "instruction": "Proceed directly toward a tall building characterized by its light gray color and numerous windows . Then , slightly vee",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000167",
+   "instruction": "Move upwards towards the light gray apartment building characterized by glass balconies with a blue tint , medium height",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000182",
+   "instruction": "Advance forward to a light gray urban building characterized by large size , rectangular windows , and a flat roof . Sli",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000201",
+   "instruction": "Proceed towards the blue structure characterized by its vertical light stripes . It stands tall and is identified as a b",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000205",
+   "instruction": "Walk directly towards a modern skyscraper that is large , painted white , and features square windows , then slightly tu",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-000240",
+   "instruction": "Move forward to the dark gray , medium - sized façade section , which features rectangular windows with grid patterns , ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000245",
+   "instruction": "Continue straight towards a dark blue skyscraper with yellowish white illumination , characterized by a tall structure f",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000247",
+   "instruction": "Proceed directly ahead to the large , red , rectangular building with visible rooftop equipment and windows .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000292",
+   "instruction": "Proceed straight towards the gray , medium - sized office building featuring modern architecture with a flat rooftop and",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "seen-000302",
+   "instruction": "Proceed directly to the commercial building characterized by its light grey and white color . This medium - sized struct",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000312",
+   "instruction": "Begin by climbing to a large , dark building characterized by its rectangular shape with numerous illuminated windows . ",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-000331",
+   "instruction": "Proceed directly to the large grey building , which is rectangular with an open courtyard in the center .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000332",
+   "instruction": "\" Advance forward to a building with a black - and - white color scheme featuring lit sections , characterized by a grid",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "seen-000352",
+   "instruction": "Walk directly to a gray , medium - sized flat open surface with building materials , identified as the roof of a buildin",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000374",
+   "instruction": "Proceed directly to the large blue - gray commercial building with a rooftop equipped with ventilation systems , then ge",
+   "gt": [
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "DESCEND",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "vertical_extra"
+   ]
+  },
+  {
+   "id": "seen-000402",
+   "instruction": "itCitoitnittitiitnituiteit itsittitritaitiitgithittit ittitoitwitaitritditsit ittithiteit ithitiitsittitoitritiitcit itb",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000415",
+   "instruction": "\" Walk straight to a modern building with a flat rooftop design , featuring a light gray color , a flat rooftop with rec",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000455",
+   "instruction": "Ascend towards a light grey building with a flat roof and large size , then proceed towards another large building that ",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ],
+   "correct": false,
+   "error_types": [
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000474",
+   "instruction": "Move forward to a gray high - rise building with rectangular windows and a flat roof , which is tall . Then , go slightl",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000498",
+   "instruction": "Proceed towards the white and black rectangular skyscraper , characterized by vertical building edges and numerous windo",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000512",
+   "instruction": "Here ’s the refined and combined sentence : \" Head straight to a beige residential building characterized by balconies a",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000541",
+   "instruction": "Move forward to a large , light gray arched steel structure , identified as a bridge , then slightly turn right and proc",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000574",
+   "instruction": "Proceed towards the brown building with a large rooftop area , then ascend slightly while continuing straight to the mul",
+   "gt": [
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "CLIMB",
+    "HOVER",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "vertical_extra"
+   ]
+  },
+  {
+   "id": "seen-000616",
+   "instruction": "Move ahead to a large gray building characterized by a rectangular façade featuring numerous dark windows and a grid - l",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "seen-000631",
+   "instruction": "Proceed to the large , beige building with tall , rectangular features and vertical window strips , then slightly turn l",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-000659",
+   "instruction": "Starting at a medium - sized gray building characterized by multiple windows with intricate architectural details and a ",
+   "gt": [
+    "HOVER",
+    "CLIMB",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "turn_extra",
+    "vertical_missed"
+   ]
+  },
+  {
+   "id": "seen-000664",
+   "instruction": "Move forward to a large gray modern building characterized by its tall structure with a grid - like window pattern , the",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-000702",
+   "instruction": "Walk directly to a large , gray building characterized by a spacious open balcony supported by columns . Then , turn lef",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-000704",
+   "instruction": "Proceed towards the circular structure characterized by a medium - sized , building - like dome with a gray / silver col",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000708",
+   "instruction": "First , move forward to a large , dark gray building facade characterized by a brick - textured wall and rectangular win",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000713",
+   "instruction": "Proceed straight towards the gray building , featuring large arched windows with columns . Slightly ascend to encounter ",
+   "gt": [
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "CLIMB",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "DESCEND",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra",
+    "vertical_extra"
+   ]
+  },
+  {
+   "id": "seen-000722",
+   "instruction": "Proceed straight to the large gray and beige building featuring a flat roof with glass panels , then slightly turn right",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000753",
+   "instruction": "\" Proceed directly ahead to a large , white dome - shaped structure characterized by a grid - like pattern on its surfac",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000761",
+   "instruction": "Begin by heading straight towards the blue building with illuminated windows and tall size . Slightly turn right and mov",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-000774",
+   "instruction": "Proceed straight towards the medium - sized building characterized by its grey color and modern architecture , featuring",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000794",
+   "instruction": "Starting with a historical building characterized by a gray brick and panel facade featuring arched windows , medium in ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000835",
+   "instruction": "Proceed to the structure characterized by its blue color , horizontal light stripes , and large size , identified as a b",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "seen-000852",
+   "instruction": "Proceed towards a gray circular area with surrounding pavement , then turn left to a tall , white high - rise building w",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "seen-000871",
+   "instruction": "Proceed towards the beige office building featuring horizontal window strips , which is mid-sized .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000884",
+   "instruction": "Ascend towards the large , gray office building characterized by a grid - like facade with windows . Proceed to the larg",
+   "gt": [
+    "HOVER",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "CLIMB",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed",
+    "vertical_extra"
+   ]
+  },
+  {
+   "id": "seen-000887",
+   "instruction": "Proceed straight towards the large , beige historical building with an ornate dome top , then slightly turn left and con",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-000903",
+   "instruction": "Proceed straight to the light beige building distinguished by a tall structure with vertical window grids , then slightl",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-000909",
+   "instruction": "Proceed to the ** beige skyscraper ** featuring ** tall rectangular windows **. From there , continue to itSlightly turn",
+   "gt": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-000924",
+   "instruction": "Proceed directly ahead to a modern building characterized by its light gray color , large size , and a roof equipped wit",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "CLIMB",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed",
+    "vertical_extra"
+   ]
+  },
+  {
+   "id": "seen-000985",
+   "instruction": "Proceed forward towards a large , gray building characterized by protruding horizontal elements . Slightly turn right an",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "seen-000997",
+   "instruction": "Walk straight into a medium - sized park or garden characterized by green and brown colors and an open area with trees .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001030",
+   "instruction": "Proceed onwards to a tall , beige rectangular building adorned with numerous windows . Slightly turn left and continue a",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001049",
+   "instruction": "Advance towards the red medium - sized clock tower building , then slightly veer left and proceed to the large gray rect",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-001067",
+   "instruction": "Proceed directly towards the beige skyscraper , which is large , tall with multiple tiers and large windows .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001084",
+   "instruction": "Proceed directly to a large gray and black building distinguished by multiple stories with striped patterns and rooftop ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-001103",
+   "instruction": "Walk straight to a medium - sized beige building , characterized by its multi -story structure with distinct rectangular",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001109",
+   "instruction": "Head straight to a small gray vent featuring a metallic - framed ventilation grille , then slightly turn right and proce",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "seen-001115",
+   "instruction": "Move ahead to the large , gray , multi - story rectangular building , then slightly turn left and proceed straight to th",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001123",
+   "instruction": "Proceed straight towards a building characterized by a grey color , a flat roof with mechanical equipment , and a medium",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001137",
+   "instruction": "Proceed directly to a medium - sized building with a white color accented by dark brown , featuring a modern rectangular",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-001159",
+   "instruction": "Walk straight towards a gray building characterized by tall , rectangular windows with vertical alignment , then slightl",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001163",
+   "instruction": "Move ahead to a gray building with rectangular windows that are medium - sized . Then , slightly turn right and proceed ",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001176",
+   "instruction": "Head straight toward a large white and brown residential apartment building characterized by multiple windows and balcon",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "seen-001233",
+   "instruction": "Move ahead towards a beige , large , multi - story building with rectangular windows , then slightly turn right to conti",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001251",
+   "instruction": "\" Walk straight to a medium - sized , beige and brown , multi - story building featuring alternating vertical windows an",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001255",
+   "instruction": "Proceed towards the tall beige building with vertical parallel grooves , then slightly turn left and move forward . Next",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001267",
+   "instruction": "Head straight towards a light beige skyscraper featuring a rectangular shape with a stepped top and vertical rows of win",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "seen-001280",
+   "instruction": "Advance forward to a modern building characterized by a gray - and - beige color palette , a grid - like pattern of wind",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001290",
+   "instruction": "Continue straight until you reach a white building with red rooftops , characterized as U - shaped and surrounded by gre",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001313",
+   "instruction": "Proceed forward to the dark grey skyscraper featuring a multistory structured facade with horizontal lines and large dim",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001346",
+   "instruction": "Continue heading straight until you see a medium to large grey residential building with solar panels on roofs , then sl",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001360",
+   "instruction": "Proceed ahead to the gray , rectangular tower featuring horizontal stripes , characterized by its tall stature and class",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001369",
+   "instruction": "Proceed directly ahead towards a large brown building with windows , then slightly turn left and walk straight towards a",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001375",
+   "instruction": "Proceed straight towards a gray building with multiple air conditioning units in large size , then slightly turn right a",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "seen-001380",
+   "instruction": "Turn to the right to a white building with glass windows , characterized by modern architecture with rectangular shapes ",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "seen-001383",
+   "instruction": "Proceed forward to the gray skyscraper , a large tall residential building with balconies . Then , slightly turn right a",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001384",
+   "instruction": "Proceed straight to the modern building characterized by large blue horizontal lines .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001470",
+   "instruction": "Proceed straight to the dark grey gothic building with a large size . Then slightly turn left and continue straight to i",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001482",
+   "instruction": "Proceed directly to the Blue rectangular tennis courts with clear markings and surrounding fences , a medium - sized are",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001487",
+   "instruction": "Proceed directly ahead to a medium - sized white and gray building characterized by a circular rooftop structure with a ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-001508",
+   "instruction": "Proceed straight towards a large gray building with a rectangular form featuring horizontal lines and windows , then mak",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001524",
+   "instruction": "First , walk straight towards the large gray building characterized by its geometric , rectangular shape . Then , slight",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001527",
+   "instruction": "Move forward to the gray - colored building , characterized by a distinctive grid pattern with evenly spaced horizontal ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001532",
+   "instruction": "Continue heading straight toward the large gray building with a brick texture and arched windows . Slightly turn right ,",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-001619",
+   "instruction": "Head straight towards the large grey building with a flat rooftop and vehicles parked in its courtyard . Then , slightly",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001629",
+   "instruction": "Proceed straight towards a large grey building with multiple identical windows , then make a right turn at a large grey ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001634",
+   "instruction": "Continue straight towards a large , green building characterized by its rectangular structure with distinctive paneling ",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "seen-001639",
+   "instruction": "Continue straight towards the gray rectangular glass structures of medium size , which are greenhouses . Then , turn rig",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-001654",
+   "instruction": "\" Move forward to a light pink , medium - sized rectangular building with a flat roof and rooftop structures , then take",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001708",
+   "instruction": "Starting at a landmark named \" Rise \" , which is a dark gray skyscraper characterized by a tall structure with a spire a",
+   "gt": [
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "order_error"
+   ]
+  },
+  {
+   "id": "seen-001719",
+   "instruction": "Proceed directly to the gray structure featuring horizontal slats with thin vertical lines , characterized by a large si",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001758",
+   "instruction": "Proceed directly to the grey urban rooftop featuring antennas and equipment on a medium - sized building , then slightly",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "seen-001761",
+   "instruction": "Starting at a medium to large rectangular building featuring a light brown color , a central open courtyard with visible",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001764",
+   "instruction": "Advance forward to the light brown skyscraper , characterized by a tall structure with multiple levels of windows . Slig",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "seen-001765",
+   "instruction": "Move forward towards a gray modern building facade with large , rectangular vertical panels . Then , turn to the right s",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "seen-001777",
+   "instruction": "Proceed straight to the large , white square featuring a circular cross shape , then slightly turn left and proceed stra",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "seen-001785",
+   "instruction": "Proceed directly to the large , gray , multi - story building adorned with rectangular glass panels , then slightly turn",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000002",
+   "instruction": "Walk straight towards the large , white building characterized by many windows . Then , slightly turn left and move forw",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000011",
+   "instruction": "Proceed straight , then veer slightly to the left , and move ahead towards the medium - sized dark green cylindrical com",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000061",
+   "instruction": "Advance forward slightly , then turn left and proceed straight toward a large , gray , tall rectangular structure with m",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000063",
+   "instruction": "Advance to the large white dome - shaped building with a distinctive circular pattern , then go left towards the medium ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "unseen-000077",
+   "instruction": "Walk straight to the gray skyscraper , a large and tall building with multiple floors . Then slightly turn left and head",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000083",
+   "instruction": "Proceed directly ahead towards the light gray skyscraper characterized by its very tall structure and vertical lines , t",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000107",
+   "instruction": "Continue moving straight towards the large white building with a curved roof ; then slightly turn right and proceed stra",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "unseen-000117",
+   "instruction": "Proceed forward towards a green setting characterized by trees lining a canal with a bridge , resembling a medium - size",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "order_error"
+   ]
+  },
+  {
+   "id": "unseen-000149",
+   "instruction": "Proceed to the white , large rectangular building , then slightly veer to the right and go directly towards the gray , m",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000162",
+   "instruction": "Proceed to the medium - sized office building with a modern grid facade , characterized by its gray color .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000191",
+   "instruction": "Continue walking straight towards the medium - sized , white building , which is rectangular with blue accents . Then , ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000205",
+   "instruction": "Proceed towards the dark skyscraper , characterized by a tall structure and an antenna on its roof .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000214",
+   "instruction": "Proceed towards a gray , medium - sized residential building with a flat roof , then slightly turn left and advance towa",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000237",
+   "instruction": "Advance toward the structure characterized by red and white hues , featuring large , tall , vertical elements , then sli",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "unseen-000244",
+   "instruction": "Move ahead to None , then slightly turn right and move forward to the dark gray , large modern skyscraper .",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000253",
+   "instruction": "Proceed straight towards the bluish - gray skyscraper with vertical lines , which is large in size , then slightly turn ",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "unseen-000284",
+   "instruction": "Move forward towards the green , grassy area with trees , which is a large golf course , then slightly turn right and pr",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000296",
+   "instruction": "Proceed straight to a medium - sized , multi - story gray building featuring balconies . Then veer right to a medium - s",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000340",
+   "instruction": "Head directly ahead towards a large park or golf course characterized by greenery , trees , and grass . Shift left sligh",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000347",
+   "instruction": "Proceed directly to the large black building with glass curtain walls , then slightly turn left and move forward to the ",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000353",
+   "instruction": "Move directly ahead until reaching a medium - sized , historical building featuring a clock tower with a green dome , wh",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000384",
+   "instruction": "Advance forward to a beige building with a large billboard on top and slightly turn left to head straight towards a beig",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "unseen-000427",
+   "instruction": "Proceed directly towards the medium - sized gray building with rooftop water tanks , then slightly turn left to advance ",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000442",
+   "instruction": "Proceed towards the large , white building with grid - like windows . Then , veer left slightly to approach it . Finally",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000479",
+   "instruction": "Proceed forward to the multi - colored seating area with large letters , identified as a large stadium or sports arena .",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000498",
+   "instruction": "Proceed straight ahead and veer slightly to the right towards a location that appears to be a medium - sized gray buildi",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000522",
+   "instruction": "Advance forward to a building characterized by gray and white colors , featuring vertical lines with a staggered pattern",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000595",
+   "instruction": "Proceed upwards to the tall commercial building characterized by its brown color and modern design . Then , advance forw",
+   "gt": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000609",
+   "instruction": "Elevate to the structure with gray color , rectangular windows , large size , and identified as a building , then procee",
+   "gt": [
+    "HOVER",
+    "CLIMB",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "vertical_missed"
+   ]
+  },
+  {
+   "id": "unseen-000628",
+   "instruction": "Climb the dark gray skyscraper with large glass windows , then go directly ahead to another large gray skyscraper with r",
+   "gt": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000633",
+   "instruction": "Proceed to the office building , which has a medium size and features a vertical stripe pattern with multiple windows , ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000636",
+   "instruction": "Elevate to the red building with brick walls featuring windows and a large size , then keep going straight to the medium",
+   "gt": [
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000637",
+   "instruction": "Elevate to none , proceed straight to a dark skyscraper with large , rectangular shapes resembling windows , slightly tu",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000665",
+   "instruction": "Move forward to the gray , large building featuring a tall tower with arched openings , then veer left towards the white",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000676",
+   "instruction": "Proceed towards the large brown building with a rectangular roof .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000726",
+   "instruction": "Proceed toward a light gray , multi - story residential building of large size , then shift right to a white building wi",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000749",
+   "instruction": "Advance forward to a dark , grid - like facade of a large building , then slightly turn right . Proceed straight to a gr",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000777",
+   "instruction": "Walk straight to the large green park featuring trees and grass , then make a right turn to the large gray clubhouse bui",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000784",
+   "instruction": "Proceed directly to the brown commercial building featuring medium - sized arched windows .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-000785",
+   "instruction": "First , go directly ahead to a dark gray building with a large , curved façade featuring vertical lines of windows . Nex",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000799",
+   "instruction": "Begin by moving forward towards a large university campus or complex characterized by red and gray hues , featuring mult",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000806",
+   "instruction": "Proceed straight to the large white building with rectangular windows and multiple floors , then slightly turn right and",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000808",
+   "instruction": "Advance forward to the brownish - red , medium - sized rectangular residential building . Slightly turn right and keep g",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000843",
+   "instruction": "Walk straight towards a light grey rectangular residential complex . Slightly turn left and continue walking towards lar",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "unseen-000850",
+   "instruction": "Proceed along the path until you reach a gray , medium - sized building with a rectangular shape and a flat roof . Then ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000855",
+   "instruction": "Proceed directly towards the tall , rectangular skyscraper with a gray color and large size . Then , slightly turn left ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000879",
+   "instruction": "Move forward to the large green building with a dome , then slightly turn left and move ahead to the large dark skyscrap",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000880",
+   "instruction": "Proceed directly to the area characterized by red and beige residential buildings with prominent rooftops and facades of",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000884",
+   "instruction": "Proceed directly ahead to the large building with a dark , reflective glass facade . Slightly turn right and keep going ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-000898",
+   "instruction": "Continue straight until reaching a point where you should slightly turn left and proceed directly ahead towards a large ",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "unseen-000913",
+   "instruction": "Proceed forward to the large gray building featuring a rectangular shape with a flat roof , then turn to the left toward",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "unseen-000929",
+   "instruction": "Proceed straight towards the large sports complex characterized by its blue and green hues and multiple sports courts . ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-000979",
+   "instruction": "Proceed to the red and white medium - sized building with a rooftop , then slightly turn right slightly and advance towa",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-001003",
+   "instruction": "Walk straight towards the large red - brown building with a vertical ribbed facade , then go right to a large white buil",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "unseen-001014",
+   "instruction": "Proceed directly to a building characterized by a light beige color , large rectangular windows , and a significant size",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "unseen-001076",
+   "instruction": "Proceed straight ahead to the black high - rise building with reflective windows , slightly bear left to another large g",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-001090",
+   "instruction": "Proceed forward and then slightly turn left towards a location characterized by a dark red color with black trim , featu",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "unseen-001091",
+   "instruction": "Walk straight to the large gray mechanical equipment , which is a large HVAC unit , then slightly turn right and move fo",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "unseen-001175",
+   "instruction": "Walk straight towards a large , white apartment complex characterized by its rectangular buildings with balconies . Then",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "unseen-001176",
+   "instruction": "Proceed directly to the red - brown historic building with an ornate roofline , then slightly turn right and continue st",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-000307",
+   "instruction": "Walk directly toward the large , red and white , multi - story building featuring geometric architecture , then turn sli",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-003388",
+   "instruction": "Move forward to a large building with a beige color and brick texture featuring windows . Slightly turn right and walk s",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-004292",
+   "instruction": "Proceed straight towards the brown building , characterized by multiple windows and fire escape stairs , which is of med",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "train-004811",
+   "instruction": "Move upward to a pink , slim , and tall tower with an illuminated design . Then , advance forward to a beige , multi - s",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-005945",
+   "instruction": "Proceed towards the medium - sized , grey building with a dome - like structure on its rooftop . Slightly turn left and ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-007025",
+   "instruction": "Proceed directly towards the large , tall blue building , then slightly turn left and walk straight to the large art ins",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "train-008907",
+   "instruction": "Move upward to a beige skyscraper with large rectangular windows featuring a grid pattern , then continue forward to it ",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-018706",
+   "instruction": "Proceed directly to the medium - sized , multi - story building characterized by its light gray color with blue accents ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-020283",
+   "instruction": "Proceed straight to the large , white multistory building with a rectangular layout and a rooftop area . Then , turn lef",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-024901",
+   "instruction": "Elevate towards the gray office building , which is tall with many windows , then advance to the beige office building w",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-025635",
+   "instruction": "Proceed straight towards the tall building with brown rectangular windows , then slightly turn left and head straight to",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-027083",
+   "instruction": "Proceed straight towards a large gray skyscraper with rectangular windows , then slightly turn right and advance forward",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-027124",
+   "instruction": "Move forward to the large brown building that is tall and rectangular , slightly turn right , then proceed straight to t",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-028483",
+   "instruction": "Proceed towards the gray office building , characterized by its medium size and large glass windows .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-028646",
+   "instruction": "Proceed to the office building characterized by its hexagonal - shaped roof with mechanical equipment , which features a",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-029547",
+   "instruction": "Proceed straight , making a slight right , and continue moving forward towards a tall , large rectangular building with ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-031225",
+   "instruction": "Proceed directly to the tall , brown skyscraper with a narrow rectangular shape . Slightly turn right towards the large ",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-034080",
+   "instruction": "Proceed directly ahead to a medium - to - large school playground or recreational area with green and red colors , featu",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "train-034304",
+   "instruction": "Proceed straight towards a large gray building with a polygonal roof , then slightly turn left . Continue straight to a ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "train-035830",
+   "instruction": "Begin by moving ahead to the gray building with a curved façade . Slightly turn left slightly and continue past it . Tak",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-038115",
+   "instruction": "Proceed directly towards the large grey skyscraper featuring a billboard , then slightly veer right and continue straigh",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-038690",
+   "instruction": "Proceed directly forward to the gray building , a high - rise characterized by its grid - like window pattern and toweri",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-039230",
+   "instruction": "Proceed straight ahead towards a large gray building characterized by tall rectangular windows , then slightly veer left",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-041211",
+   "instruction": "Proceed straight towards a beige building featuring grid - like windows , then shift left to face a gray urban skyscrape",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-045232",
+   "instruction": "Ascend a tall , gray building with many windows , advance forward to a modern office structure featuring a gray glass fa",
+   "gt": [
+    "HOVER",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "train-046206",
+   "instruction": "Proceed straight towards a medium - sized , blue fountain or small pond with a circular shape . Then , turn slightly rig",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-048153",
+   "instruction": "Proceed straight toward the white , large building with rectangular windows , then slightly turn left and advance forwar",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch"
+   ]
+  },
+  {
+   "id": "train-048362",
+   "instruction": "Proceed directly ahead to the dark brown building that is tall with windows and large in size . Then , slightly turn rig",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-051337",
+   "instruction": "Begin by ascending to the medium - sized white building adorned with arched windows , then continue straight to reach th",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-052377",
+   "instruction": "Proceed directly to the light blue building with large rectangular windows , then slightly turn left . Continue straight",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_direction_wrong"
+   ]
+  },
+  {
+   "id": "train-053636",
+   "instruction": "Proceed directly towards the tall , rectangular brown building with many windows ; then , make a left turn towards the t",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-055869",
+   "instruction": "Proceed to the blue construction crane with a lattice structure and large size , then veer left toward the gray large bu",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-056329",
+   "instruction": "The journey begins by heading straight to a sports facility featuring green and white hues , consisting of outdoor sport",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-059950",
+   "instruction": "Proceed toward the brown building characterized by large rectangular windows , then slightly turn left , continue straig",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-061370",
+   "instruction": "Proceed towards the gray building with large square windows , then slightly turn left and continue straight towards it .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-061916",
+   "instruction": "Walk straight to the light beige building with large rectangular windows , then slightly turn left and proceed straight ",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "train-062966",
+   "instruction": "Proceed towards the white building with rectangular windows of medium size , then slightly turn right and continue headi",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-064809",
+   "instruction": "Proceed directly to the large white building with a rooftop , then slightly turn left and continue straight towards the ",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-067851",
+   "instruction": "Move forward to the large white building , characterized by its rectangular shape with windows . Then , slightly turn le",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-069535",
+   "instruction": "First , veer right towards a large white building characterized by horizontal lines . Then , advance forward slightly an",
+   "gt": [
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-072416",
+   "instruction": "Continue straight towards the red - brown high - rise building featuring rectangular windows and a stepped design ; it '",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-073145",
+   "instruction": "Proceed to the grey building featuring decorative roof structures of medium size , then move forward to another grey bui",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_extra"
+   ]
+  },
+  {
+   "id": "train-075215",
+   "instruction": "First , head straight to the large pink and black residential high - rise building characterized by its curved architect",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-075320",
+   "instruction": "Proceed directly towards the medium - sized white and pink building with a striped design and multiple balconies , and s",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_extra",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-078822",
+   "instruction": "Walk straight towards the blue skyscraper with large horizontal blinds , then slightly turn left to go directly ahead .",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_LEFT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-079791",
+   "instruction": "Proceed straight towards the tall , light grey , rectangular structure with dark accents and many windows emitting light",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-082097",
+   "instruction": "Move ahead to the gray building with large rectangular windows featuring vertical green lines . Then , slightly turn lef",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-084542",
+   "instruction": "Proceed straight ahead to a gray building with an arched roof ; then turn left slightly towards it . Advance forward to ",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-084591",
+   "instruction": "Walk directly towards the large , blue - gray building characterized by a distinctive , wavy pattern , then slightly tur",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-086876",
+   "instruction": "Starting your journey , ** go directly ahead ** to a ** large green tennis court ** , described as a ** rectangular spor",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_missed",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-090436",
+   "instruction": "Proceed towards the gray , multi - story building with a flat roof , then slightly turn left and continue straight to th",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-090733",
+   "instruction": "To simplify and smoothen your given data into a comprehensible sentence , here 's the accurate transformation : \" Procee",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-091116",
+   "instruction": "Proceed directly to the light brown or grey structure characterized by a rectangular block shape with multiple floors an",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-092235",
+   "instruction": "Continue straight towards the gray building featuring large rectangular windows with open interior sections . Slightly t",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-093089",
+   "instruction": "Proceed directly ahead to a large gray building with a rectangular layout featuring a courtyard . Then slightly turn rig",
+   "gt": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-094732",
+   "instruction": "Proceed to the modern skyscraper with a large , illuminated roof featuring pyramid shapes , characterized by its blue co",
+   "gt": [
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": true,
+   "error_types": [
+    "exact_match"
+   ]
+  },
+  {
+   "id": "train-095892",
+   "instruction": "Walk directly towards the tall white building with rectangular windows featuring an arched design at the top , then slig",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_extra"
+   ]
+  },
+  {
+   "id": "train-097688",
+   "instruction": "Begin by proceeding directly towards a large , gray , multi - story building characterized by its rectangular windows . ",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "hover_missed",
+    "turn_missed"
+   ]
+  },
+  {
+   "id": "train-097909",
+   "instruction": "Move ahead to a multi - color high - rise residential complex with large dimensions , slightly turn right to a large bui",
+   "gt": [
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT"
+   ],
+   "pred": [
+    "FORWARD",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "hover_missed"
+   ]
+  },
+  {
+   "id": "train-098251",
+   "instruction": "Walk straight to the large red building with a brick exterior , then slightly turn left and advance forward towards it .",
+   "gt": [
+    "FORWARD",
+    "TURN_LEFT",
+    "FORWARD",
+    "HOVER",
+    "TURN_RIGHT",
+    "FORWARD"
+   ],
+   "pred": [
+    "FORWARD",
+    "HOVER",
+    "TURN_LEFT",
+    "FORWARD"
+   ],
+   "correct": false,
+   "error_types": [
+    "length_mismatch",
+    "turn_missed"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>驾驶舱 · 低空具身智能  | FG 实时 × RL 回放</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a1120'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23ffc043' stroke-width='1.5' opacity='.5'/%3E%3Cline x1='16' y1='4' x2='16' y2='28' stroke='%23ffc043' stroke-width='1.2'/%3E%3Cline x1='4' y1='16' x2='28' y2='16' stroke='%23ffc043' stroke-width='1.2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2335e08a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/cockpit.css">
+</head>
+<body>
+<div class="ck-app">
+
+<!-- ============ 顶部状态条 ============ -->
+<header class="ck-top">
+  <div class="ck-brand">
+    <div class="logo">◤◥</div>
+    <div>
+      <h1>全数字仿真驾驶舱</h1>
+      <div class="sub mono"> · BO-105（FG 实时） × AH-1S（RL 回放）</div>
+    </div>
+  </div>
+
+  <div class="ck-switch">
+    <button id="btnFg" class="on">FG 实时</button>
+    <button id="btnRl">RL 回放</button>
+  </div>
+
+  <div class="ck-src">
+    <span id="connDot" class="ck-dot"></span>
+    <span id="connText">正在连接…</span>
+  </div>
+
+  <div class="spacer"></div>
+
+  <span class="ck-chip">机型 <b id="chipAircraft">–</b></span>
+  <span class="ck-chip">科目 <b id="chipTask">–</b></span>
+  <span class="ck-chip">任务时 <b id="chipTime">–</b> s</span>
+  <span class="ck-chip" id="chipClock">–</span>
+  <button id="btnKeys" class="ck-chip" title="查看驾驶舱操控与 FlightGear 快捷键/属性的映射表">⌨ 快捷键映射</button>
+  <button id="btnTakeover" class="ck-chip ck-takeover" title="允许把驾驶舱操作写回仿真（默认关闭）">接管操纵：关</button>
+  <a class="ck-link" href="index.html">← 展示站</a>
+</header>
+
+<div class="ck-banner" id="ckBanner">正在接入数据源…</div>
+
+<!-- ============ 主仪表板：一整块面板，仪表内嵌 ============ -->
+<main class="ck-deck">
+
+  <!-- 左列 -->
+  <div class="bay ias">
+    <canvas id="cvIAS"></canvas>
+  </div>
+  <div class="bay alt">
+    <canvas id="cvALT"></canvas>
+  </div>
+  <div class="bay sq tq">
+    <canvas id="cvTQ"></canvas>
+  </div>
+
+  <!-- 中央：FlightGear 实时驾驶场景（中间上面完整显示） -->
+  <div class="bay fgview" id="bayFGView">
+    <img id="fgView" class="fg-view" src="" alt="FG 实时画面">
+    <div class="fg-pip adi-pip" id="pipADI">
+      <span class="pip-tag">ADI<span class="cn">姿态</span></span>
+      <canvas id="cvADI"></canvas>
+    </div>
+    <div class="fg-pip hsi-pip" id="pipHSI">
+      <span class="pip-tag">HSI<span class="cn">航向</span></span>
+      <canvas id="cvHSI"></canvas>
+    </div>
+    <div class="fg-overlay" id="fgOverlay">等待 FG 画面…</div>
+  </div>
+
+  <!-- 右列 -->
+  <div class="bay vsi">
+    <canvas id="cvVSI"></canvas>
+  </div>
+  <div class="bay rpm">
+    <canvas id="cvRPM"></canvas>
+  </div>
+  <div class="bay sq eng">
+    <canvas id="cvENG"></canvas>
+  </div>
+
+  <!-- 下排四个功能凹槽：操纵量 / 告警灯 / 航迹 / 燃油 -->
+  <div class="bay sq ctl">
+    <div class="ctl-wrap">
+      <div class="ctl" id="ctlColl">
+        <div class="ctl-row">
+          <span class="ctl-name">COLLECTIVE<span class="cn">总距</span></span>
+          <span class="ctl-val">–</span>
+        </div>
+        <div class="ctl-track"><div class="mid"></div><div class="ctl-fill"></div><div class="ctl-knob"></div></div>
+      </div>
+      <div class="ctl" id="ctlLat">
+        <div class="ctl-row">
+          <span class="ctl-name">CYCLIC LAT<span class="cn">周期变距·横</span></span>
+          <span class="ctl-val">–</span>
+        </div>
+        <div class="ctl-track"><div class="mid"></div><div class="ctl-fill"></div><div class="ctl-knob"></div></div>
+      </div>
+      <div class="ctl" id="ctlLon">
+        <div class="ctl-row">
+          <span class="ctl-name">CYCLIC LON<span class="cn">周期变距·纵</span></span>
+          <span class="ctl-val">–</span>
+        </div>
+        <div class="ctl-track"><div class="mid"></div><div class="ctl-fill"></div><div class="ctl-knob"></div></div>
+      </div>
+      <div class="ctl" id="ctlPed">
+        <div class="ctl-row">
+          <span class="ctl-name">PEDAL<span class="cn">脚蹬</span></span>
+          <span class="ctl-val">–</span>
+        </div>
+        <div class="ctl-track"><div class="mid"></div><div class="ctl-fill"></div><div class="ctl-knob"></div></div>
+      </div>
+      <div class="ro-grid">
+        <div class="ro" id="roRollRate"><div class="k">ROLL °/s</div><div class="v">–</div></div>
+        <div class="ro" id="roPitchRate"><div class="k">PITCH °/s</div><div class="v">–</div></div>
+        <div class="ro" id="roYawRate"><div class="k">YAW °/s</div><div class="v">–</div></div>
+        <div class="ro" id="roG"><div class="k">G 载荷</div><div class="v">–</div></div>
+        <div class="ro" id="roTail"><div class="k">TAIL RPM</div><div class="v">–</div></div>
+        <div class="ro" id="roAlt"><div class="k">AGL m</div><div class="v">–</div></div>
+        <div class="ro" id="roSpd"><div class="k">SPD km/h</div><div class="v">–</div></div>
+        <div class="ro" id="roPos"><div class="k">POS 位置</div><div class="v">–</div></div>
+      </div>
+      <div class="ctl-note" id="ctlNote"></div>
+    </div>
+  </div>
+
+  <div class="bay sq ann">
+    <div class="ann-wrap"><div class="ann-grid" id="annun"></div></div>
+  </div>
+
+  <div class="bay sq nav">
+    <div class="nav-wrap">
+      <canvas id="cvTrack" class="nav-track"></canvas>
+      <canvas id="cvProfile" class="nav-profile"></canvas>
+    </div>
+  </div>
+
+  <div class="bay sq fuel">
+    <div class="fuel-wrap">
+      <canvas id="cvFUEL" class="fuel-canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- ---- 操纵台：摇杆 / 总距杆 / 脚蹬 / 开关面板 ---- -->
+  <div class="bay sq cyc" id="bayCyc">
+    <canvas id="cvCyclic"></canvas>
+  </div>
+  <div class="bay sq col" id="bayCol">
+    <canvas id="cvCollective"></canvas>
+  </div>
+  <div class="bay sq ped" id="bayPed">
+    <canvas id="cvPedals"></canvas>
+  </div>
+  <div class="bay sq swt" id="baySwt">
+    <div class="sw-wrap">
+      <div class="sw-col btns">
+        <div class="sw-cap">PUSH<span class="cn">按压开关</span></div>
+        <div id="swButtons" style="display:flex;flex-direction:column;gap:clamp(2px,.4vh,5px);"></div>
+      </div>
+      <div class="sw-col knobs">
+        <div class="sw-cap">ROTARY<span class="cn">旋钮开关</span></div>
+        <div id="swKnobs" style="display:flex;flex-direction:column;gap:clamp(2px,.4vh,5px);"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 面板铭牌 -->
+  <div class="ck-nameplate">
+    <span></span>
+    <span>全数字仿真 · <b id="npSource">FG LIVE</b></span>
+    <span>采样 <b id="npRate">10 Hz</b></span>
+    <span id="npNote">数据源只读 · 不回写仿真</span>
+  </div>
+</main>
+
+</div>
+
+<!-- ============ 快捷键映射 / 操作分析弹窗 ============ -->
+<div class="ck-modal hidden" id="keysModal">
+  <div class="ck-modal-backdrop"></div>
+  <div class="ck-modal-body">
+    <div class="ck-modal-head">
+      <span>快捷键映射表 &amp; 操作分析</span>
+      <button class="ck-modal-close" id="keysClose">✕</button>
+    </div>
+    <div class="ck-modal-tabs">
+      <button class="on" data-tab="map">操控映射</button>
+      <button data-tab="analysis">我的操作分析</button>
+    </div>
+    <div class="ck-modal-content" id="keysMap"></div>
+    <div class="ck-modal-content hidden" id="keysAnalysis"></div>
+  </div>
+</div>
+
+<!-- ============ RL 回放控制条（悬浮，不占版面） ============ -->
+<div class="ck-replay hidden" id="rpPanel">
+  <select id="rpFile"><option>载入轨迹清单…</option></select>
+  <select id="rpEp"></select>
+  <button id="rpReload" title="重新扫描 rl_train/results">⟳</button>
+  <button class="play" id="rpPlay">▶ 播放</button>
+  <button id="rpStepB" title="后退一帧">⏴</button>
+  <button id="rpStepF" title="前进一帧">⏵</button>
+  <div class="rate" id="rpRate"></div>
+  <div class="ck-scrub">
+    <input type="range" id="rpScrub" min="0" max="100" step="0.1" value="0">
+    <span class="t" id="rpTime">– / – s</span>
+  </div>
+  <span class="ck-tag" id="rpTag">未载入</span>
+</div>
+
+<script src="assets/cockpit-gauges.js"></script>
+<script src="assets/cockpit-controls.js"></script>
+<script src="assets/cockpit.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+{
+  "ckpt_dir": "rl_train\\results\\checkpoints\\jsbsim_ppo_takeoff_fg_v20260830T093344",
+  "task": "takeoff_fg",
+  "mode": "direct",
+  "screen": [
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_1250000_steps.zip",
+      "success_rate": 0.2,
+      "crash_rate": 0.1
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_250000_steps.zip",
+      "success_rate": 0.2,
+      "crash_rate": 0.2
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_500000_steps.zip",
+      "success_rate": 0.2,
+      "crash_rate": 0.3
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_1500000_steps.zip",
+      "success_rate": 0.1,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_1750000_steps.zip",
+      "success_rate": 0.1,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_2000000_steps.zip",
+      "success_rate": 0.1,
+      "crash_rate": 0.1
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_2750000_steps.zip",
+      "success_rate": 0.1,
+      "crash_rate": 0.2
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_750000_steps.zip",
+      "success_rate": 0.1,
+      "crash_rate": 0.2
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_1000000_steps.zip",
+      "success_rate": 0.1,
+      "crash_rate": 0.3
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_3000000_steps.zip",
+      "success_rate": 0.1,
+      "crash_rate": 0.3
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_2250000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_2500000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.1
+    }
+  ],
+  "final": [
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_1250000_steps.zip",
+      "overall_success_rate": 0.1,
+      "overall_crash_rate": 0.12000000000000002,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.2,
+          "crash_rate": 0.1
+        },
+        "seed_123": {
+          "success_rate": 0.1,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.1,
+          "crash_rate": 0.1
+        },
+        "seed_0": {
+          "success_rate": 0.1,
+          "crash_rate": 0.2
+        },
+        "seed_99": {
+          "success_rate": 0.0,
+          "crash_rate": 0.2
+        }
+      }
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_500000_steps.zip",
+      "overall_success_rate": 0.1,
+      "overall_crash_rate": 0.15999999999999998,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.2,
+          "crash_rate": 0.3
+        },
+        "seed_123": {
+          "success_rate": 0.1,
+          "crash_rate": 0.1
+        },
+        "seed_7": {
+          "success_rate": 0.0,
+          "crash_rate": 0.1
+        },
+        "seed_0": {
+          "success_rate": 0.2,
+          "crash_rate": 0.2
+        },
+        "seed_99": {
+          "success_rate": 0.0,
+          "crash_rate": 0.1
+        }
+      }
+    },
+    {
+      "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_250000_steps.zip",
+      "overall_success_rate": 0.1,
+      "overall_crash_rate": 0.16,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.2,
+          "crash_rate": 0.2
+        },
+        "seed_123": {
+          "success_rate": 0.1,
+          "crash_rate": 0.1
+        },
+        "seed_7": {
+          "success_rate": 0.1,
+          "crash_rate": 0.1
+        },
+        "seed_0": {
+          "success_rate": 0.1,
+          "crash_rate": 0.2
+        },
+        "seed_99": {
+          "success_rate": 0.0,
+          "crash_rate": 0.2
+        }
+      }
+    }
+  ],
+  "best": {
+    "checkpoint": "jsbsim_ppo_takeoff_fg_v20260830T093344_1250000_steps.zip",
+    "overall_success_rate": 0.1,
+    "overall_crash_rate": 0.12000000000000002,
+    "seed_results": {
+      "seed_42": {
+        "success_rate": 0.2,
+        "crash_rate": 0.1
+      },
+      "seed_123": {
+        "success_rate": 0.1,
+        "crash_rate": 0.0
+      },
+      "seed_7": {
+        "success_rate": 0.1,
+        "crash_rate": 0.1
+      },
+      "seed_0": {
+        "success_rate": 0.1,
+        "crash_rate": 0.2
+      },
+      "seed_99": {
+        "success_rate": 0.0,
+        "crash_rate": 0.2
+      }
+    }
+  },
+  "timestamp": "2026-08-30 10:23:19"
+}

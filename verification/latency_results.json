@@ -1,0 +1,43 @@
+{
+  "benchmark_samples": 1000,
+  "procurement_requirement_target": "<= 200 ms",
+  "breakdown": {
+    "1_state_extraction": {
+      "mean_ms": 0.0147,
+      "p50_ms": 0.013,
+      "p95_ms": 0.0233,
+      "p99_ms": 0.0336,
+      "max_ms": 0.2668
+    },
+    "2_policy_inference_cpu": {
+      "mean_ms": 0.1988,
+      "p50_ms": 0.1692,
+      "p95_ms": 0.338,
+      "p99_ms": 0.5794,
+      "max_ms": 1.6565
+    },
+    "3_control_write": {
+      "mean_ms": 0.0305,
+      "p50_ms": 0.0268,
+      "p95_ms": 0.0479,
+      "p99_ms": 0.0865,
+      "max_ms": 0.1863
+    },
+    "4_physics_step_jsbsim": {
+      "mean_ms": 0.0294,
+      "p50_ms": 0.0254,
+      "p95_ms": 0.0478,
+      "p99_ms": 0.095,
+      "max_ms": 0.1618
+    },
+    "total_end_to_end": {
+      "mean_ms": 0.2738,
+      "p50_ms": 0.2354,
+      "p95_ms": 0.4559,
+      "p99_ms": 0.7835,
+      "max_ms": 2.2242
+    }
+  },
+  "target_pass": true,
+  "verified_timestamp": "2026-08-28 14:15:45"
+}

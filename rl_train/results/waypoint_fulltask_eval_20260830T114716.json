@@ -1,0 +1,41 @@
+{
+  "model": "results/jsbsim_ppo_waypoint.zip",
+  "criterion": "FULL-TASK (course_phase=2 forced): 3 waypoints (80m L-shape, 10m radius) all reached, no crash",
+  "episodes_per_seed": 19,
+  "overall_success_rate": 0.4842,
+  "overall_crash_rate": 0.0,
+  "acceptance_passed": false,
+  "seed_results": {
+    "seed_42": {
+      "success_rate": 0.5789,
+      "crash_rate": 0.0,
+      "mean_wp_miss_m": 29.58,
+      "episodes": 19
+    },
+    "seed_123": {
+      "success_rate": 0.5263,
+      "crash_rate": 0.0,
+      "mean_wp_miss_m": 35.65,
+      "episodes": 19
+    },
+    "seed_7": {
+      "success_rate": 0.4211,
+      "crash_rate": 0.0,
+      "mean_wp_miss_m": 43.99,
+      "episodes": 19
+    },
+    "seed_0": {
+      "success_rate": 0.5263,
+      "crash_rate": 0.0,
+      "mean_wp_miss_m": 22.12,
+      "episodes": 19
+    },
+    "seed_99": {
+      "success_rate": 0.3684,
+      "crash_rate": 0.0,
+      "mean_wp_miss_m": 61.22,
+      "episodes": 19
+    }
+  },
+  "verified_timestamp": "2026-08-30 11:47:16"
+}

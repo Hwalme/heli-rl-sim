@@ -1,0 +1,158 @@
+{
+  "ckpt_dir": "rl_train\\results\\checkpoints\\jsbsim_ppo_landing_v20260830T120956",
+  "task": "landing",
+  "mode": "direct",
+  "screen": [
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1000000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1250000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1500000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1750000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_2000000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_500000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_750000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 0.0
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_250000_steps.zip",
+      "success_rate": 0.0,
+      "crash_rate": 1.0
+    }
+  ],
+  "final": [
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1000000_steps.zip",
+      "overall_success_rate": 0.0,
+      "overall_crash_rate": 0.0,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_123": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_0": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_99": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        }
+      }
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1250000_steps.zip",
+      "overall_success_rate": 0.0,
+      "overall_crash_rate": 0.0,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_123": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_0": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_99": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        }
+      }
+    },
+    {
+      "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1500000_steps.zip",
+      "overall_success_rate": 0.0,
+      "overall_crash_rate": 0.0,
+      "seed_results": {
+        "seed_42": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_123": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_7": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_0": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        },
+        "seed_99": {
+          "success_rate": 0.0,
+          "crash_rate": 0.0
+        }
+      }
+    }
+  ],
+  "best": {
+    "checkpoint": "jsbsim_ppo_landing_v20260830T120956_1000000_steps.zip",
+    "overall_success_rate": 0.0,
+    "overall_crash_rate": 0.0,
+    "seed_results": {
+      "seed_42": {
+        "success_rate": 0.0,
+        "crash_rate": 0.0
+      },
+      "seed_123": {
+        "success_rate": 0.0,
+        "crash_rate": 0.0
+      },
+      "seed_7": {
+        "success_rate": 0.0,
+        "crash_rate": 0.0
+      },
+      "seed_0": {
+        "success_rate": 0.0,
+        "crash_rate": 0.0
+      },
+      "seed_99": {
+        "success_rate": 0.0,
+        "crash_rate": 0.0
+      }
+    }
+  },
+  "timestamp": "2026-08-30 12:41:38"
+}
