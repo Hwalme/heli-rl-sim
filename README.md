@@ -13,6 +13,10 @@
 
 ![总览看板](screenshots/01_总览看板_整页.png)
 
+![FlightGear 三维画面：AI 悬停策略回放](screenshots/10_FlightGear三维画面_悬停.png)
+
+*FlightGear 三维画面：AI 悬停策略（一代悬停模型）的飞行轨迹回放，起飞后稳定悬停于约 27 m。FlightGear 只负责渲染（不做物理），轨迹由 JSBSim 物理仿真产出，所用回合通过了回放质量闸门与逐点保真验证；画面中的 Bo-105 是可视化替身，物理机型为 AH-1S。*
+
 ## 核心成果一览
 
 | 维度 | 结果 | 口径 |
@@ -58,7 +62,7 @@ heli-rl-sim/
 ├── interfaces/          # 跨模块数据契约与版本记录
 ├── platform/            # FlightGear 桥接、自研 FDM 物理探针、座舱资产
 ├── docs/                # 技术总结 / 复盘 / 诊断报告（脱敏版）
-├── screenshots/         # 展示站整页截图（9 张）
+├── screenshots/         # 展示站整页截图（9 张）+ FlightGear 三维画面（4 张）
 └── 启动*.bat            # 一键启动：展示站 / 桥接 / 驾驶舱 / FlightGear
 ```
 
@@ -101,7 +105,34 @@ python website/serve.py --port 8080   # 构建 watch + 静态服务一体
 http://127.0.0.1:8080/#tab=flightlogs&expand=BEST_heli_hover_2M_20260912&frame=last
 ```
 
+### FlightGear 三维回放（可选）
+
+FlightGear 只作**显示壳**（`--fdm=null`，不跑物理），把 JSBSim 轨迹渲染成三维画面；画面里的 Bo-105 是可视化替身，物理机型是 AH-1S。`screenshots/10`~`13` 即由这套流程抓取。
+
+```bash
+# 1) 查哪些回合允许回放（回放质量闸门：只放行成功且轨迹质量达标的回合）
+python verification/g4_replay_gate.py rl_train/results/jsbsim_ppo_landing_250k_g2verify_trajectory.json
+
+# 2) 启动 FlightGear：platform/fg_shell/fg_shell_launch.bat（按本机安装路径修改；Windows 下用 WMI 分离启动）
+
+# 3) 回放并逐点比对画面与轨迹，输出 PASS/FAIL
+cd platform/fg_shell
+python verify_replay.py --file ../../rl_train/results/jsbsim_ppo_landing_250k_g2verify_trajectory.json --seed 42 --episode-index 1
+```
+
 ## 更多截图
+
+**FlightGear 三维画面 · 地面仰拍（同一悬停回合）**
+
+![FlightGear 飞行](screenshots/11_FlightGear三维画面_飞行.png)
+
+**FlightGear 三维画面 · 进场着陆（降落策略带速度飞越跑道后减速、轻接地，接地垂速 1.1 m/s）**
+
+![FlightGear 进场](screenshots/12_FlightGear三维画面_进场.png)
+
+**FlightGear 座舱视角 · AI 飞行员第一视角（爬升中）**
+
+![FlightGear 座舱](screenshots/13_FlightGear座舱视角.png)
 
 **成果总览（三幕递进叙事）**
 
@@ -135,7 +166,7 @@ http://127.0.0.1:8080/#tab=flightlogs&expand=BEST_heli_hover_2M_20260912&frame=l
 
 ![进度与指标](screenshots/07_进度与指标_整页.png)
 
-完整 9 张见 [`screenshots/`](screenshots/)，12 张数据图集见 [`website/assets/showcase/`](website/assets/showcase/)。
+完整 13 张（9 张展示站整页 + 4 张 FlightGear 三维画面）见 [`screenshots/`](screenshots/)，12 张数据图集见 [`website/assets/showcase/`](website/assets/showcase/)。
 
 ## 证据纪律（本仓库的立场）
 

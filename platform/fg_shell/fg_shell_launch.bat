@@ -4,8 +4,8 @@ rem B-Shell display-shell launcher (platform/fg_shell)
 rem 2026-09-02 E终审：回放路径 (fdm=null + playback.py)
 rem JSBSim 物理权威 (已完成) → playback.py 回放 → fdm=null FG 显示壳 → 录屏
 rem 根除三症状：
-rem   1. 黑夜 → --timeofday=noon + --enable-astro=0 (关闭星空/黄昏计算)
-rem   2. 穿地 → playback 用真值坐标 + PHNL锚定 (B 已修)
+rem   1. 黑夜 → --timeofday=noon
+rem   2. 穿地 → playback 用真值坐标 + PHNL锚定 + 实测标高基准 22.9ft (2026-11 修)
 rem   3. 副屏 → FG 窗口由用户主控；这里只确保默认 1280x800 居中
 rem VISUAL STAND-IN: rendered model is bo105, physics is AH-1S(repaired)。
 rem ============================================================
@@ -26,7 +26,6 @@ if "%PROTO%"=="" set PROTO=jsbsim_replay
   --disable-real-weather-fetch ^
   --disable-terrasync ^
   --timeofday=noon ^
-  --enable-astro=0 ^
   --disable-ai-models ^
   --disable-ai-traffic ^
   --disable-random-objects ^

@@ -58,7 +58,8 @@ M_PER_DEG_LAT = 111320.0
 DEFAULT_TRAJ_DIR = os.path.normpath(os.path.join(
     os.path.dirname(os.path.abspath(__file__)), "..", "..", "rl_train", "results"))
 DEFAULT_ORIGIN = (21.32525, -157.92516)   # PHNL 08L/26R 中点（apt.dat 实测）
-DEFAULT_ELEV_FT = 13.0                    # PHNL 场压高（apt.dat: "1 13 1 1 PHNL"）
+DEFAULT_ELEV_FT = 22.9                    # 实测校准: FG 地形在回放原点的地面标高 18.37ft + bo105 静止时机身参考高度 4.56ft
+                                        # (旧值 13.0 = apt.dat 机场基准标高, 低于实际地形, 外视角下接地会沉入地面约 1.6m)
 DEFAULT_NOMINAL_RPM = 428.0               # bo105 governor 飞行位实测（B1 交接文档 §3.3）
 
 
